@@ -1,0 +1,43 @@
+# Auto generated
+
+read_verilog -sv \
+    -I/workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/synth \
+    -I/workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/common \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/common/adder.sv \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/common/alu.sv \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/common/alu_control.sv \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/common/constants.sv \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/common/control_transfer.sv \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/common/data_memory_interface.sv \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/common/immediate_generator.sv \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/common/instruction_decoder.sv \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/common/multiplexer.sv \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/common/multiplexer2.sv \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/common/multiplexer4.sv \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/common/multiplexer8.sv \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/common/regfile.sv \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/common/register.sv \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/singlecycle/riscv_core.sv \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/singlecycle/singlecycle_control.sv \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/singlecycle/singlecycle_ctlpath.sv \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/singlecycle/singlecycle_datapath.sv \
+    /workspace/Incremental-Synthesis-Flow/results/eco-001/work/new/core/singlecycle/toplevel.sv \
+
+hierarchy -top riscv_core
+
+
+proc
+
+opt
+
+memory
+
+opt_clean
+
+stat
+
+write_rtlil /workspace/Incremental-Synthesis-Flow/results/eco-001/new/design.rtlil
+
+write_json /workspace/Incremental-Synthesis-Flow/results/eco-001/new/design.json
+
+write_verilog /workspace/Incremental-Synthesis-Flow/results/eco-001/new/design.v
