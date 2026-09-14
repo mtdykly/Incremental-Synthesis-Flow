@@ -1,53 +1,187 @@
 import hashlib
+import json
+from collections import defaultdict
 
 
-def normalize_bits(bits):
-    """
-    Normalize Yosys bit representation.
-    """
-    return sorted(
-        [str(x) for x in bits]
+def _hash(obj):
+
+    text = json.dumps(
+        obj,
+        sort_keys=True,
+        separators=(",", ":"),
+        default=str,
     )
 
+    return hashlib.sha256(
+        text.encode("utf-8")
+    ).hexdigest()
 
-def cell_fingerprint(cell_name, cell_data, module):
 
-    cell_type = cell_data["type"]
+def intrinsic_fingerprint(graph, node):
 
+    data = graph.graph.nodes[node]
 
-    connections = cell_data.get(
+    directions = data.get(
+        "port_directions",
+        {}
+    )
+
+    connections = data.get(
         "connections",
         {}
     )
 
+    ports = []
 
-    conn_items=[]
+    for port_name in sorted(connections.keys()):
 
+        bits = connections[port_name]
 
-    for port, bits in connections.items():
-
-        norm_bits = normalize_bits(bits)
-
-        conn_items.append(
-            (
-                port,
-                tuple(norm_bits)
-            )
+        ports.append(
+            {
+                "name": port_name,
+                "direction": directions.get(
+                    port_name,
+                    "unknown"
+                ),
+                "width": len(bits),
+            }
         )
 
+    signature = {
+        "type": data.get("type"),
+        "parameters": data.get(
+            "parameters",
+            {}
+        ),
+        "ports": ports,
+    }
 
-    conn_items.sort()
+    return _hash(signature)
 
 
-    signature = (
-        cell_type,
-        tuple(conn_items)
+def _input_token(
+        netlist,
+        bit,
+        previous_fp
+):
+
+    # constants
+    if isinstance(bit, str):
+        return f"CONST:{bit}"
+
+    bit_key = str(bit)
+
+    # top-level primary input
+    if bit_key in netlist.primary_inputs:
+
+        return (
+            "PI:"
+            +
+            netlist.primary_inputs[bit_key]
+        )
+
+    # driven by another cell
+    driver = netlist.bit_driver.get(
+        bit_key
+    )
+
+    if driver is None:
+        return "UNDRIVEN"
+
+    driver_cell, driver_port, driver_index = driver
+
+    return (
+        "CELL:"
+        + previous_fp[driver_cell]
+        + ":"
+        + driver_port
+        + ":"
+        + str(driver_index)
     )
 
 
-    text = repr(signature)
+def compute_fingerprints(
+        netlist,
+        rounds=4
+):
 
+    # round 0: only intrinsic properties
+    fp = {
+        node: intrinsic_fingerprint(
+            netlist,
+            node
+        )
+        for node in netlist.graph.nodes
+    }
 
-    return hashlib.sha256(
-        text.encode()
-    ).hexdigest()
+    for _ in range(rounds):
+
+        next_fp = {}
+
+        for node in netlist.graph.nodes:
+
+            data = netlist.graph.nodes[node]
+
+            directions = data.get(
+                "port_directions",
+                {}
+            )
+
+            connections = data.get(
+                "connections",
+                {}
+            )
+
+            input_ports = []
+
+            for port_name in sorted(
+                connections.keys()
+            ):
+
+                direction = directions.get(
+                    port_name
+                )
+
+                if direction not in (
+                    "input",
+                    "inout"
+                ):
+                    continue
+
+                bits = connections[
+                    port_name
+                ]
+
+                # 注意：这里绝对不能排序 bits
+                bit_tokens = []
+
+                for bit in bits:
+
+                    bit_tokens.append(
+                        _input_token(
+                            netlist,
+                            bit,
+                            fp
+                        )
+                    )
+
+                input_ports.append(
+                    {
+                        "port": port_name,
+                        "bits": bit_tokens,
+                    }
+                )
+
+            signature = {
+                "self": fp[node],
+                "inputs": input_ports,
+            }
+
+            next_fp[node] = _hash(
+                signature
+            )
+
+        fp = next_fp
+
+    return fp

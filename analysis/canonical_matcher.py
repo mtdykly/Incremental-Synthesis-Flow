@@ -1,0 +1,725 @@
+from collections import defaultdict
+
+from canonical import canonical_record
+from fingerprint import compute_fingerprints
+
+
+def _group_unique(
+        base_nodes,
+        new_nodes,
+        base_records,
+        new_records,
+        key_func
+):
+
+    base_groups = defaultdict(list)
+    new_groups = defaultdict(list)
+
+    for node in base_nodes:
+
+        key = key_func(
+            base_records[node]
+        )
+
+        if key is not None:
+            base_groups[key].append(node)
+
+    for node in new_nodes:
+
+        key = key_func(
+            new_records[node]
+        )
+
+        if key is not None:
+            new_groups[key].append(node)
+
+    pairs = []
+
+    for key in (
+        set(base_groups.keys())
+        &
+        set(new_groups.keys())
+    ):
+
+        b = base_groups[key]
+        n = new_groups[key]
+
+        #
+        # 只接受唯一的一对一关系。
+        #
+        # 如果一边出现多个，
+        # 就保留给后面的 formal。
+        #
+        if len(b) == 1 and len(n) == 1:
+
+            pairs.append(
+                (
+                    b[0],
+                    n[0]
+                )
+            )
+
+    return pairs
+
+
+def _source_anchor_key(record):
+
+    if not record["sources"]:
+        return None
+
+    if record["scope"] == "<global>":
+        return None
+
+    return (
+        record["scope"],
+        record["type"],
+        tuple(record["sources"]),
+        record["intrinsic"],
+    )
+
+
+def _scope_struct_key(record):
+
+    if record["scope"] == "<global>":
+        return None
+
+    return (
+        record["scope"],
+        record["type"],
+        record["intrinsic"],
+    )
+
+
+def _add_matches(
+        pairs,
+        method,
+        matches,
+        base_unmatched,
+        new_unmatched
+):
+
+    for base_node, new_node in pairs:
+
+        if base_node not in base_unmatched:
+            continue
+
+        if new_node not in new_unmatched:
+            continue
+
+        matches.append(
+            {
+                "base":
+                    base_node,
+
+                "new":
+                    new_node,
+
+                "method":
+                    method,
+            }
+        )
+
+        base_unmatched.remove(
+            base_node
+        )
+
+        new_unmatched.remove(
+            new_node
+        )
+
+
+def _neighbor_agreement_score(
+        base,
+        new,
+        base_node,
+        new_node,
+        base_to_new
+):
+
+    score = 0
+
+    new_preds = set(
+        new.graph.predecessors(
+            new_node
+        )
+    )
+
+    new_succs = set(
+        new.graph.successors(
+            new_node
+        )
+    )
+
+    #
+    # 已经确认匹配的 fanin
+    #
+    mapped_preds = []
+
+    for pred in base.graph.predecessors(
+        base_node
+    ):
+
+        mapped = base_to_new.get(
+            pred
+        )
+
+        if mapped is not None:
+            mapped_preds.append(
+                mapped
+            )
+
+    if mapped_preds:
+
+        hit = sum(
+            1
+            for x in mapped_preds
+            if x in new_preds
+        )
+
+        score += (
+            20.0
+            *
+            hit
+            /
+            len(mapped_preds)
+        )
+
+    #
+    # 已确认匹配的 fanout
+    #
+    mapped_succs = []
+
+    for succ in base.graph.successors(
+        base_node
+    ):
+
+        mapped = base_to_new.get(
+            succ
+        )
+
+        if mapped is not None:
+            mapped_succs.append(
+                mapped
+            )
+
+    if mapped_succs:
+
+        hit = sum(
+            1
+            for x in mapped_succs
+            if x in new_succs
+        )
+
+        score += (
+            10.0
+            *
+            hit
+            /
+            len(mapped_succs)
+        )
+
+    return score
+
+
+def _candidate_score(
+        base,
+        new,
+        base_node,
+        new_node,
+        base_records,
+        new_records,
+        base_fp,
+        new_fp,
+        base_to_new
+):
+
+    br = base_records[
+        base_node
+    ]
+
+    nr = new_records[
+        new_node
+    ]
+
+    score = 0.0
+    reasons = []
+
+    #
+    # scope
+    #
+    if br["scope"] == nr["scope"]:
+
+        score += 30
+
+        reasons.append(
+            "same_scope"
+        )
+
+    #
+    # cell type
+    #
+    if br["type"] == nr["type"]:
+
+        score += 25
+
+        reasons.append(
+            "same_type"
+        )
+
+    #
+    # intrinsic cell shape
+    #
+    if br["intrinsic"] == nr["intrinsic"]:
+
+        score += 25
+
+        reasons.append(
+            "same_intrinsic"
+        )
+
+    #
+    # RTL src
+    #
+    bsrc = set(
+        br["sources"]
+    )
+
+    nsrc = set(
+        nr["sources"]
+    )
+
+    exact_src = (
+        bsrc
+        &
+        nsrc
+    )
+
+    if exact_src:
+
+        score += 35
+
+        reasons.append(
+            "same_source_location"
+        )
+
+    else:
+
+        bfiles = {
+            x[0]
+            for x in bsrc
+        }
+
+        nfiles = {
+            x[0]
+            for x in nsrc
+        }
+
+        if bfiles & nfiles:
+
+            score += 15
+
+            reasons.append(
+                "same_source_file"
+            )
+
+    #
+    # topology fingerprint
+    #
+    if (
+        base_fp.get(base_node)
+        ==
+        new_fp.get(new_node)
+    ):
+
+        score += 30
+
+        reasons.append(
+            "same_topology_fingerprint"
+        )
+
+    #
+    # 已确定邻居对应关系
+    #
+    neighbor_score = (
+        _neighbor_agreement_score(
+            base,
+            new,
+            base_node,
+            new_node,
+            base_to_new
+        )
+    )
+
+    if neighbor_score > 0:
+
+        score += neighbor_score
+
+        reasons.append(
+            "matched_neighbors"
+        )
+
+    return score, reasons
+
+
+def canonical_match(
+        base,
+        new,
+        topology_rounds=2,
+        top_candidates=3
+):
+
+    base_nodes = set(
+        base.graph.nodes
+    )
+
+    new_nodes = set(
+        new.graph.nodes
+    )
+
+    base_records = {
+        node:
+            canonical_record(
+                node,
+                base.graph.nodes[node]
+            )
+
+        for node
+        in base_nodes
+    }
+
+    new_records = {
+        node:
+            canonical_record(
+                node,
+                new.graph.nodes[node]
+            )
+
+        for node
+        in new_nodes
+    }
+
+    base_unmatched = set(
+        base_nodes
+    )
+
+    new_unmatched = set(
+        new_nodes
+    )
+
+    matches = []
+
+    #
+    # =====================================================
+    # Stage 1
+    #
+    # scope + RTL source + type + intrinsic
+    #
+    # 最强 anchor
+    # =====================================================
+    #
+
+    pairs = _group_unique(
+
+        base_unmatched,
+        new_unmatched,
+
+        base_records,
+        new_records,
+
+        _source_anchor_key
+    )
+
+    _add_matches(
+        pairs,
+        "source_anchor",
+        matches,
+        base_unmatched,
+        new_unmatched
+    )
+
+    #
+    # =====================================================
+    # Stage 2
+    #
+    # same scope + same type + same intrinsic
+    #
+    # 仅 unique bucket 才接受
+    # =====================================================
+    #
+
+    pairs = _group_unique(
+
+        base_unmatched,
+        new_unmatched,
+
+        base_records,
+        new_records,
+
+        _scope_struct_key
+    )
+
+    _add_matches(
+        pairs,
+        "scope_struct_unique",
+        matches,
+        base_unmatched,
+        new_unmatched
+    )
+
+    #
+    # =====================================================
+    # Stage 3
+    #
+    # topology fingerprint
+    #
+    # 仍然限制在 same scope/type
+    # =====================================================
+    #
+
+    base_fp = compute_fingerprints(
+        base,
+        rounds=topology_rounds
+    )
+
+    new_fp = compute_fingerprints(
+        new,
+        rounds=topology_rounds
+    )
+
+    def topology_key_base(record, node):
+
+        return (
+            record["scope"],
+            record["type"],
+            record["intrinsic"],
+            base_fp[node],
+        )
+
+    def topology_key_new(record, node):
+
+        return (
+            record["scope"],
+            record["type"],
+            record["intrinsic"],
+            new_fp[node],
+        )
+
+    base_groups = defaultdict(list)
+    new_groups = defaultdict(list)
+
+    for node in base_unmatched:
+
+        r = base_records[node]
+
+        if r["scope"] == "<global>":
+            continue
+
+        base_groups[
+            topology_key_base(
+                r,
+                node
+            )
+        ].append(node)
+
+    for node in new_unmatched:
+
+        r = new_records[node]
+
+        if r["scope"] == "<global>":
+            continue
+
+        new_groups[
+            topology_key_new(
+                r,
+                node
+            )
+        ].append(node)
+
+    topo_pairs = []
+
+    for key in (
+        set(base_groups)
+        &
+        set(new_groups)
+    ):
+
+        if (
+            len(base_groups[key]) == 1
+            and
+            len(new_groups[key]) == 1
+        ):
+
+            topo_pairs.append(
+                (
+                    base_groups[key][0],
+                    new_groups[key][0]
+                )
+            )
+
+    _add_matches(
+        topo_pairs,
+        "topology_unique",
+        matches,
+        base_unmatched,
+        new_unmatched
+    )
+
+    #
+    # =====================================================
+    # Stage 4
+    #
+    # 剩余 ambiguous 节点：
+    #
+    # 不直接配对，
+    # 只生成 formal candidates。
+    # =====================================================
+    #
+
+    base_to_new = {
+        item["base"]:
+            item["new"]
+
+        for item
+        in matches
+    }
+
+    formal_candidates = []
+
+    for base_node in sorted(
+        base_unmatched
+    ):
+
+        br = base_records[
+            base_node
+        ]
+
+        candidates = []
+
+        #
+        # 第一优先：
+        # 同 scope + 同 type
+        #
+        possible = [
+
+            n
+            for n in new_unmatched
+
+            if (
+                new_records[n]["scope"]
+                ==
+                br["scope"]
+            )
+
+            and
+
+            (
+                new_records[n]["type"]
+                ==
+                br["type"]
+            )
+        ]
+
+        #
+        # fallback：
+        # 如果没有同 scope 节点，
+        # 允许同 type，但降低可信度。
+        #
+        if not possible:
+
+            possible = [
+
+                n
+                for n in new_unmatched
+
+                if (
+                    new_records[n]["type"]
+                    ==
+                    br["type"]
+                )
+            ]
+
+        for new_node in possible:
+
+            score, reasons = (
+                _candidate_score(
+                    base,
+                    new,
+
+                    base_node,
+                    new_node,
+
+                    base_records,
+                    new_records,
+
+                    base_fp,
+                    new_fp,
+
+                    base_to_new
+                )
+            )
+
+            candidates.append(
+                {
+                    "new":
+                        new_node,
+
+                    "score":
+                        round(
+                            score,
+                            3
+                        ),
+
+                    "reasons":
+                        reasons,
+                }
+            )
+
+        candidates.sort(
+            key=lambda x: x["score"],
+            reverse=True
+        )
+
+        if candidates:
+
+            formal_candidates.append(
+                {
+                    "base":
+                        base_node,
+
+                    "base_scope":
+                        br["scope"],
+
+                    "base_type":
+                        br["type"],
+
+                    "candidates":
+                        candidates[
+                            :top_candidates
+                        ],
+                }
+            )
+
+    return {
+
+        "matches":
+            matches,
+
+        "base_unmatched":
+            sorted(
+                base_unmatched
+            ),
+
+        "new_unmatched":
+            sorted(
+                new_unmatched
+            ),
+
+        "formal_candidates":
+            formal_candidates,
+
+        "base_records":
+            base_records,
+
+        "new_records":
+            new_records,
+    }

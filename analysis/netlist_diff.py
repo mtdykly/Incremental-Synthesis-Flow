@@ -1,87 +1,105 @@
-import hashlib
 from collections import defaultdict
 
-
-
-def fingerprint(data):
-
-
-    text=str(
-        (
-            data["type"],
-            sorted(
-                (
-                    k,
-                    sorted(
-                        map(
-                            str,
-                            v
-                        )
-                    )
-                )
-
-                for k,v
-                in data["connections"].items()
-
-            )
-        )
-    )
-
-
-    return hashlib.md5(
-        text.encode()
-    ).hexdigest()
-
-
+from fingerprint import compute_fingerprints
 
 
 def diff_netlist(
-        base_graph,
-        new_graph
+        base,
+        new,
+        rounds=4
 ):
 
+    base_fps = compute_fingerprints(
+        base,
+        rounds=rounds
+    )
 
-    base_fp=defaultdict(list)
+    new_fps = compute_fingerprints(
+        new,
+        rounds=rounds
+    )
 
-    new_fp=defaultdict(list)
+    base_groups = defaultdict(list)
+    new_groups = defaultdict(list)
 
+    for node, fp in base_fps.items():
+        base_groups[fp].append(node)
 
+    for node, fp in new_fps.items():
+        new_groups[fp].append(node)
 
-    for n,d in base_graph.nodes(data=True):
+    all_fps = (
+        set(base_groups.keys())
+        |
+        set(new_groups.keys())
+    )
 
-        base_fp[
-            fingerprint(d)
-        ].append(n)
+    matched_pairs = []
 
+    base_only = []
+    new_only = []
 
+    for fp in all_fps:
 
-    for n,d in new_graph.nodes(data=True):
+        base_nodes = sorted(
+            base_groups.get(
+                fp,
+                []
+            )
+        )
 
-        new_fp[
-            fingerprint(d)
-        ].append(n)
+        new_nodes = sorted(
+            new_groups.get(
+                fp,
+                []
+            )
+        )
 
+        matched_count = min(
+            len(base_nodes),
+            len(new_nodes)
+        )
 
+        for i in range(
+            matched_count
+        ):
 
+            matched_pairs.append(
+                {
+                    "base": base_nodes[i],
+                    "new": new_nodes[i],
+                    "fingerprint": fp,
+                }
+            )
 
-    changed=[]
+        base_only.extend(
+            base_nodes[
+                matched_count:
+            ]
+        )
 
+        new_only.extend(
+            new_nodes[
+                matched_count:
+            ]
+        )
 
+    return {
+        "base_cell_count":
+            len(base_fps),
 
-    for fp,nodes in base_fp.items():
+        "new_cell_count":
+            len(new_fps),
 
-        if fp not in new_fp:
+        "matched_count":
+            len(matched_pairs),
 
-            changed.extend(nodes)
+        "base_only":
+            sorted(base_only),
 
+        "new_only":
+            sorted(new_only),
 
-
-    for fp,nodes in new_fp.items():
-
-        if fp not in base_fp:
-
-            changed.extend(nodes)
-
-
-
-    return changed
+        "matched_pairs":
+            matched_pairs,
+    }

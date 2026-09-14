@@ -1,0 +1,1875 @@
+{
+  "summary": {
+    "base_cells": 316,
+    "new_cells": 314,
+    "matched_cells": 234,
+    "base_only_cells": 82,
+    "new_only_cells": 80,
+    "base_full_fanout_cone": 131,
+    "new_full_fanout_cone": 129,
+    "base_comb_cone": 129,
+    "new_comb_cone": 127
+  },
+  "base_only_cells": [
+    "$auto$ff.cc:337:slice$2209",
+    "$auto$ff.cc:337:slice$2212",
+    "$auto$opt_dff.cc:320:make_patterns_logic$2211",
+    "$auto$opt_share.cc:199:merge_operators$2200",
+    "$auto$opt_share.cc:246:merge_operators$2203",
+    "$flatten\\immediate_generator.$procmux$1701",
+    "$flatten\\immediate_generator.$procmux$1706_ANY",
+    "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1727",
+    "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1734",
+    "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1744",
+    "$flatten\\singlecycle_ctlpath.\\control_transfer.$ternary$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/control_transfer.sv:27$46",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1970",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1974",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1984",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1994",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1996",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$144",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$204",
+    "$flatten\\singlecycle_datapath.\\adder_pc_plus_4.$add$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/adder.sv:17$131",
+    "$flatten\\singlecycle_datapath.\\adder_pc_plus_immediate.$add$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/adder.sv:17$131",
+    "$flatten\\singlecycle_datapath.\\alu.$add$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:29$4",
+    "$flatten\\singlecycle_datapath.\\alu.$and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:38$13",
+    "$flatten\\singlecycle_datapath.\\alu.$div$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:50$18",
+    "$flatten\\singlecycle_datapath.\\alu.$div$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:55$20",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:59$22",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:59$23",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:64$26",
+    "$flatten\\singlecycle_datapath.\\alu.$lt$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:34$9",
+    "$flatten\\singlecycle_datapath.\\alu.$lt$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:35$10",
+    "$flatten\\singlecycle_datapath.\\alu.$mod$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:62$25",
+    "$flatten\\singlecycle_datapath.\\alu.$mod$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:67$27",
+    "$flatten\\singlecycle_datapath.\\alu.$mul$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:76$29",
+    "$flatten\\singlecycle_datapath.\\alu.$mul$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:78$31",
+    "$flatten\\singlecycle_datapath.\\alu.$or$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:37$12",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1781",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1798",
+    "$flatten\\singlecycle_datapath.\\alu.$shl$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:31$6",
+    "$flatten\\singlecycle_datapath.\\alu.$shr$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:32$7",
+    "$flatten\\singlecycle_datapath.\\alu.$sshr$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:33$8",
+    "$flatten\\singlecycle_datapath.\\alu.$xor$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:36$11",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1851",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1852_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1853_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1854_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_operand_a.\\multiplexer.$procmux$140",
+    "$flatten\\singlecycle_datapath.\\mux_operand_b.\\multiplexer.$procmux$140",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1691",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1696_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1697_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1698_CMP0",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2014",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2019",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2024",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2029",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2034",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2039",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2044",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2049",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2054",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2059",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2064",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2069",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2074",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2079",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2084",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2089",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2094",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2099",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2104",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2109",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2114",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2119",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2124",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2129",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2134",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2139",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2144",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2149",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2154",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2159",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2164",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2169"
+  ],
+  "new_only_cells": [
+    "$auto$ff.cc:337:slice$2150",
+    "$auto$ff.cc:337:slice$2153",
+    "$auto$opt_dff.cc:320:make_patterns_logic$2152",
+    "$auto$opt_share.cc:199:merge_operators$2141",
+    "$auto$opt_share.cc:246:merge_operators$2144",
+    "$flatten\\immediate_generator.$procmux$1669",
+    "$flatten\\immediate_generator.$procmux$1674_ANY",
+    "$flatten\\singlecycle_ctlpath.\\control_transfer.$logic_not$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:21$44",
+    "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1686",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1917",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1923",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1927",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1937",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$143",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$203",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$239",
+    "$flatten\\singlecycle_datapath.\\adder_pc_plus_4.$add$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/adder.sv:17$130",
+    "$flatten\\singlecycle_datapath.\\adder_pc_plus_immediate.$add$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/adder.sv:17$130",
+    "$flatten\\singlecycle_datapath.\\alu.$add$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:29$4",
+    "$flatten\\singlecycle_datapath.\\alu.$and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:38$13",
+    "$flatten\\singlecycle_datapath.\\alu.$div$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:50$18",
+    "$flatten\\singlecycle_datapath.\\alu.$div$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:55$20",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:59$22",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:59$23",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:64$26",
+    "$flatten\\singlecycle_datapath.\\alu.$lt$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:34$9",
+    "$flatten\\singlecycle_datapath.\\alu.$lt$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:35$10",
+    "$flatten\\singlecycle_datapath.\\alu.$mod$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:62$25",
+    "$flatten\\singlecycle_datapath.\\alu.$mod$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:67$27",
+    "$flatten\\singlecycle_datapath.\\alu.$mul$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:76$29",
+    "$flatten\\singlecycle_datapath.\\alu.$mul$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:78$31",
+    "$flatten\\singlecycle_datapath.\\alu.$or$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:37$12",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1728",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1745",
+    "$flatten\\singlecycle_datapath.\\alu.$shl$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:31$6",
+    "$flatten\\singlecycle_datapath.\\alu.$shr$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:32$7",
+    "$flatten\\singlecycle_datapath.\\alu.$sshr$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:33$8",
+    "$flatten\\singlecycle_datapath.\\alu.$xor$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:36$11",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1798",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1799_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1800_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1801_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_operand_a.\\multiplexer.$procmux$139",
+    "$flatten\\singlecycle_datapath.\\mux_operand_b.\\multiplexer.$procmux$139",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1659",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1664_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1665_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1666_CMP0",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1959",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1964",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1969",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1974",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1979",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1984",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1989",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1994",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1999",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2004",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2009",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2014",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2019",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2024",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2029",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2034",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2039",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2044",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2049",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2054",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2059",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2064",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2069",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2074",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2079",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2084",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2089",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2094",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2099",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2104",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2109",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2114"
+  ],
+  "base_full_fanout_cone": [
+    "$auto$ff.cc:337:slice$2209",
+    "$auto$ff.cc:337:slice$2212",
+    "$auto$opt_dff.cc:320:make_patterns_logic$2211",
+    "$auto$opt_share.cc:199:merge_operators$2200",
+    "$auto$opt_share.cc:246:merge_operators$2203",
+    "$flatten\\data_memory_interface.$and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:53$59",
+    "$flatten\\data_memory_interface.$and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:54$61",
+    "$flatten\\data_memory_interface.$procmux$1708",
+    "$flatten\\data_memory_interface.$procmux$1713",
+    "$flatten\\data_memory_interface.$shl$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:32$49",
+    "$flatten\\data_memory_interface.$shl$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:40$53",
+    "$flatten\\data_memory_interface.$shr$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:47$56",
+    "$flatten\\immediate_generator.$procmux$1701",
+    "$flatten\\immediate_generator.$procmux$1706_ANY",
+    "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1727",
+    "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1734",
+    "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1744",
+    "$flatten\\singlecycle_ctlpath.\\control_transfer.$ternary$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/control_transfer.sv:27$46",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1970",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1974",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1984",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1994",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1996",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$144",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$204",
+    "$flatten\\singlecycle_datapath.\\adder_pc_plus_4.$add$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/adder.sv:17$131",
+    "$flatten\\singlecycle_datapath.\\adder_pc_plus_immediate.$add$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/adder.sv:17$131",
+    "$flatten\\singlecycle_datapath.\\alu.$add$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:29$4",
+    "$flatten\\singlecycle_datapath.\\alu.$and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:38$13",
+    "$flatten\\singlecycle_datapath.\\alu.$div$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:50$18",
+    "$flatten\\singlecycle_datapath.\\alu.$div$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:55$20",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:23$2",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:59$22",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:59$23",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:64$26",
+    "$flatten\\singlecycle_datapath.\\alu.$logic_and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:59$24",
+    "$flatten\\singlecycle_datapath.\\alu.$lt$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:34$9",
+    "$flatten\\singlecycle_datapath.\\alu.$lt$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:35$10",
+    "$flatten\\singlecycle_datapath.\\alu.$mod$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:62$25",
+    "$flatten\\singlecycle_datapath.\\alu.$mod$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:67$27",
+    "$flatten\\singlecycle_datapath.\\alu.$mul$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:76$29",
+    "$flatten\\singlecycle_datapath.\\alu.$mul$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:78$31",
+    "$flatten\\singlecycle_datapath.\\alu.$or$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:37$12",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1781",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1788",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1798",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1806",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1815",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1827",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1832",
+    "$flatten\\singlecycle_datapath.\\alu.$shl$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:31$6",
+    "$flatten\\singlecycle_datapath.\\alu.$shr$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:32$7",
+    "$flatten\\singlecycle_datapath.\\alu.$sshr$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:33$8",
+    "$flatten\\singlecycle_datapath.\\alu.$xor$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:36$11",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1851",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1852_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1853_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1854_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_operand_a.\\multiplexer.$procmux$140",
+    "$flatten\\singlecycle_datapath.\\mux_operand_b.\\multiplexer.$procmux$140",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1691",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1696_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1697_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1698_CMP0",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2015",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2020",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2025",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2030",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2040",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2045",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2050",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2055",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2060",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2065",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2070",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2075",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2080",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2085",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2090",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2095",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2100",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2105",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2110",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2115",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2120",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2125",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2130",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2135",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2140",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2145",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2150",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2155",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2160",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2165",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2014",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2019",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2024",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2029",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2034",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2039",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2044",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2049",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2054",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2059",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2064",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2069",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2074",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2079",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2084",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2089",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2094",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2099",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2104",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2109",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2114",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2119",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2124",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2129",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2134",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2139",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2144",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2149",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2154",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2159",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2164",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2169",
+    "$flatten\\singlecycle_datapath.\\regfile.$procmux$1003",
+    "$flatten\\singlecycle_datapath.\\regfile.$procmux$275",
+    "$flatten\\singlecycle_datapath.\\regfile.$procmux$308"
+  ],
+  "new_full_fanout_cone": [
+    "$auto$ff.cc:337:slice$2150",
+    "$auto$ff.cc:337:slice$2153",
+    "$auto$opt_dff.cc:320:make_patterns_logic$2152",
+    "$auto$opt_share.cc:199:merge_operators$2141",
+    "$auto$opt_share.cc:246:merge_operators$2144",
+    "$flatten\\data_memory_interface.$and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:53$56",
+    "$flatten\\data_memory_interface.$and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:54$58",
+    "$flatten\\data_memory_interface.$procmux$1676",
+    "$flatten\\data_memory_interface.$procmux$1681",
+    "$flatten\\data_memory_interface.$shl$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:32$46",
+    "$flatten\\data_memory_interface.$shl$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:40$50",
+    "$flatten\\data_memory_interface.$shr$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:47$53",
+    "$flatten\\immediate_generator.$procmux$1669",
+    "$flatten\\immediate_generator.$procmux$1674_ANY",
+    "$flatten\\singlecycle_ctlpath.\\control_transfer.$logic_not$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:21$44",
+    "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1686",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1917",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1923",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1927",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1937",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$143",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$203",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$239",
+    "$flatten\\singlecycle_datapath.\\adder_pc_plus_4.$add$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/adder.sv:17$130",
+    "$flatten\\singlecycle_datapath.\\adder_pc_plus_immediate.$add$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/adder.sv:17$130",
+    "$flatten\\singlecycle_datapath.\\alu.$add$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:29$4",
+    "$flatten\\singlecycle_datapath.\\alu.$and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:38$13",
+    "$flatten\\singlecycle_datapath.\\alu.$div$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:50$18",
+    "$flatten\\singlecycle_datapath.\\alu.$div$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:55$20",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:23$2",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:59$22",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:59$23",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:64$26",
+    "$flatten\\singlecycle_datapath.\\alu.$logic_and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:59$24",
+    "$flatten\\singlecycle_datapath.\\alu.$lt$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:34$9",
+    "$flatten\\singlecycle_datapath.\\alu.$lt$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:35$10",
+    "$flatten\\singlecycle_datapath.\\alu.$mod$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:62$25",
+    "$flatten\\singlecycle_datapath.\\alu.$mod$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:67$27",
+    "$flatten\\singlecycle_datapath.\\alu.$mul$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:76$29",
+    "$flatten\\singlecycle_datapath.\\alu.$mul$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:78$31",
+    "$flatten\\singlecycle_datapath.\\alu.$or$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:37$12",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1728",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1735",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1745",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1753",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1762",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1774",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1779",
+    "$flatten\\singlecycle_datapath.\\alu.$shl$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:31$6",
+    "$flatten\\singlecycle_datapath.\\alu.$shr$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:32$7",
+    "$flatten\\singlecycle_datapath.\\alu.$sshr$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:33$8",
+    "$flatten\\singlecycle_datapath.\\alu.$xor$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:36$11",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1798",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1799_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1800_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1801_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_operand_a.\\multiplexer.$procmux$139",
+    "$flatten\\singlecycle_datapath.\\mux_operand_b.\\multiplexer.$procmux$139",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1659",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1664_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1665_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1666_CMP0",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1955",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1960",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1965",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1970",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1975",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1980",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1985",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1990",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1995",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2000",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2005",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2015",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2020",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2025",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2030",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2040",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2045",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2050",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2055",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2060",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2065",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2070",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2075",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2080",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2085",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2090",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2095",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2100",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2105",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2110",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1959",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1964",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1969",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1974",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1979",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1984",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1989",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1994",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1999",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2004",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2009",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2014",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2019",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2024",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2029",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2034",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2039",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2044",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2049",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2054",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2059",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2064",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2069",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2074",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2079",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2084",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2089",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2094",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2099",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2104",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2109",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2114",
+    "$flatten\\singlecycle_datapath.\\regfile.$procmux$1023",
+    "$flatten\\singlecycle_datapath.\\regfile.$procmux$243",
+    "$flatten\\singlecycle_datapath.\\regfile.$procmux$276"
+  ],
+  "base_comb_cone": [
+    "$auto$ff.cc:337:slice$2209",
+    "$auto$ff.cc:337:slice$2212",
+    "$auto$opt_dff.cc:320:make_patterns_logic$2211",
+    "$auto$opt_share.cc:199:merge_operators$2200",
+    "$auto$opt_share.cc:246:merge_operators$2203",
+    "$flatten\\data_memory_interface.$and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:53$59",
+    "$flatten\\data_memory_interface.$and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:54$61",
+    "$flatten\\data_memory_interface.$procmux$1708",
+    "$flatten\\data_memory_interface.$procmux$1713",
+    "$flatten\\data_memory_interface.$shl$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:32$49",
+    "$flatten\\data_memory_interface.$shl$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:40$53",
+    "$flatten\\data_memory_interface.$shr$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:47$56",
+    "$flatten\\immediate_generator.$procmux$1701",
+    "$flatten\\immediate_generator.$procmux$1706_ANY",
+    "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1727",
+    "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1734",
+    "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1744",
+    "$flatten\\singlecycle_ctlpath.\\control_transfer.$ternary$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/control_transfer.sv:27$46",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1970",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1974",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1984",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1994",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1996",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$144",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$204",
+    "$flatten\\singlecycle_datapath.\\adder_pc_plus_4.$add$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/adder.sv:17$131",
+    "$flatten\\singlecycle_datapath.\\adder_pc_plus_immediate.$add$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/adder.sv:17$131",
+    "$flatten\\singlecycle_datapath.\\alu.$add$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:29$4",
+    "$flatten\\singlecycle_datapath.\\alu.$and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:38$13",
+    "$flatten\\singlecycle_datapath.\\alu.$div$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:50$18",
+    "$flatten\\singlecycle_datapath.\\alu.$div$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:55$20",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:23$2",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:59$22",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:59$23",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:64$26",
+    "$flatten\\singlecycle_datapath.\\alu.$logic_and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:59$24",
+    "$flatten\\singlecycle_datapath.\\alu.$lt$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:34$9",
+    "$flatten\\singlecycle_datapath.\\alu.$lt$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:35$10",
+    "$flatten\\singlecycle_datapath.\\alu.$mod$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:62$25",
+    "$flatten\\singlecycle_datapath.\\alu.$mod$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:67$27",
+    "$flatten\\singlecycle_datapath.\\alu.$mul$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:76$29",
+    "$flatten\\singlecycle_datapath.\\alu.$mul$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:78$31",
+    "$flatten\\singlecycle_datapath.\\alu.$or$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:37$12",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1781",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1788",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1798",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1806",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1815",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1827",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1832",
+    "$flatten\\singlecycle_datapath.\\alu.$shl$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:31$6",
+    "$flatten\\singlecycle_datapath.\\alu.$shr$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:32$7",
+    "$flatten\\singlecycle_datapath.\\alu.$sshr$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:33$8",
+    "$flatten\\singlecycle_datapath.\\alu.$xor$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:36$11",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1851",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1852_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1853_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1854_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_operand_a.\\multiplexer.$procmux$140",
+    "$flatten\\singlecycle_datapath.\\mux_operand_b.\\multiplexer.$procmux$140",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1691",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1696_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1697_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1698_CMP0",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2015",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2020",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2025",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2030",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2040",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2045",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2050",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2055",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2060",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2065",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2070",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2075",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2080",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2085",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2090",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2095",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2100",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2105",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2110",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2115",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2120",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2125",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2130",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2135",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2140",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2145",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2150",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2155",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2160",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2165",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2014",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2019",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2024",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2029",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2034",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2039",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2044",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2049",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2054",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2059",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2064",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2069",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2074",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2079",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2084",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2089",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2094",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2099",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2104",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2109",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2114",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2119",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2124",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2129",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2134",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2139",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2144",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2149",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2154",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2159",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2164",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2169",
+    "$flatten\\singlecycle_datapath.\\regfile.$procmux$1003"
+  ],
+  "new_comb_cone": [
+    "$auto$ff.cc:337:slice$2150",
+    "$auto$ff.cc:337:slice$2153",
+    "$auto$opt_dff.cc:320:make_patterns_logic$2152",
+    "$auto$opt_share.cc:199:merge_operators$2141",
+    "$auto$opt_share.cc:246:merge_operators$2144",
+    "$flatten\\data_memory_interface.$and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:53$56",
+    "$flatten\\data_memory_interface.$and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:54$58",
+    "$flatten\\data_memory_interface.$procmux$1676",
+    "$flatten\\data_memory_interface.$procmux$1681",
+    "$flatten\\data_memory_interface.$shl$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:32$46",
+    "$flatten\\data_memory_interface.$shl$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:40$50",
+    "$flatten\\data_memory_interface.$shr$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:47$53",
+    "$flatten\\immediate_generator.$procmux$1669",
+    "$flatten\\immediate_generator.$procmux$1674_ANY",
+    "$flatten\\singlecycle_ctlpath.\\control_transfer.$logic_not$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:21$44",
+    "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1686",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1917",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1923",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1927",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1937",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$143",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$203",
+    "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$239",
+    "$flatten\\singlecycle_datapath.\\adder_pc_plus_4.$add$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/adder.sv:17$130",
+    "$flatten\\singlecycle_datapath.\\adder_pc_plus_immediate.$add$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/adder.sv:17$130",
+    "$flatten\\singlecycle_datapath.\\alu.$add$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:29$4",
+    "$flatten\\singlecycle_datapath.\\alu.$and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:38$13",
+    "$flatten\\singlecycle_datapath.\\alu.$div$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:50$18",
+    "$flatten\\singlecycle_datapath.\\alu.$div$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:55$20",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:23$2",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:59$22",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:59$23",
+    "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:64$26",
+    "$flatten\\singlecycle_datapath.\\alu.$logic_and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:59$24",
+    "$flatten\\singlecycle_datapath.\\alu.$lt$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:34$9",
+    "$flatten\\singlecycle_datapath.\\alu.$lt$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:35$10",
+    "$flatten\\singlecycle_datapath.\\alu.$mod$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:62$25",
+    "$flatten\\singlecycle_datapath.\\alu.$mod$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:67$27",
+    "$flatten\\singlecycle_datapath.\\alu.$mul$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:76$29",
+    "$flatten\\singlecycle_datapath.\\alu.$mul$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:78$31",
+    "$flatten\\singlecycle_datapath.\\alu.$or$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:37$12",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1728",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1735",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1745",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1753",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1762",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1774",
+    "$flatten\\singlecycle_datapath.\\alu.$procmux$1779",
+    "$flatten\\singlecycle_datapath.\\alu.$shl$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:31$6",
+    "$flatten\\singlecycle_datapath.\\alu.$shr$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:32$7",
+    "$flatten\\singlecycle_datapath.\\alu.$sshr$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:33$8",
+    "$flatten\\singlecycle_datapath.\\alu.$xor$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:36$11",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1798",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1799_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1800_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1801_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_operand_a.\\multiplexer.$procmux$139",
+    "$flatten\\singlecycle_datapath.\\mux_operand_b.\\multiplexer.$procmux$139",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1659",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1664_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1665_CMP0",
+    "$flatten\\singlecycle_datapath.\\mux_reg_writeback.\\multiplexer.$procmux$1666_CMP0",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1955",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1960",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1965",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1970",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1975",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1980",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1985",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1990",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1995",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2000",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2005",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2015",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2020",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2025",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2030",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2040",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2045",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2050",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2055",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2060",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2065",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2070",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2075",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2080",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2085",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2090",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2095",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2100",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2105",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2110",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1959",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1964",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1969",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1974",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1979",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1984",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1989",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1994",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$1999",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2004",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2009",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2014",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2019",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2024",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2029",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2034",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2039",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2044",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2049",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2054",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2059",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2064",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2069",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2074",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2079",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2084",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2089",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2094",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2099",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2104",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2109",
+    "$flatten\\singlecycle_datapath.\\regfile.$auto$opt_dff.cc:337:make_patterns_logic$2114",
+    "$flatten\\singlecycle_datapath.\\regfile.$procmux$1023"
+  ],
+  "matched_pairs": [
+    {
+      "base": "$flatten\\data_memory_interface.$and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:54$61",
+      "new": "$flatten\\data_memory_interface.$and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:54$58",
+      "fingerprint": "4c07f6c47fbb98e36006a009260affd87d4104184f452ef6d9b0f5a84d74d73a"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2045",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1990",
+      "fingerprint": "d9be72e3ef2de71374dd63701484e629a302a4949ac358943934afc9cb8f362e"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$291_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$259_CMP0",
+      "fingerprint": "4694eea325ab7ad896098d766d3733d7817d4c434b3fce23b3614eb672ec55b2"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:23$2",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:23$2",
+      "fingerprint": "d2b2c635c8ffee42033434d93e7dbb4ef50f90ba1e7c6096591db7eee815158d"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$732_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$700_CMP0",
+      "fingerprint": "7b0977534b730925250e0fe50b655fa2947809c3e607994c0715ade004cc96b6"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1612_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1580_CMP0",
+      "fingerprint": "a265e41d05ff6371df9ace94471c1eb4f6170e7ca87d30d2ad78bc633a36d951"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2120",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2065",
+      "fingerprint": "ca5e686770b19e6e2dc2afbedfde1aa179059eae31c5caafecc27ffc26ba1b15"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$336_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$304_CMP0",
+      "fingerprint": "f289ac5c9940f3fecd3f5b697a5334c062fe93b032df3c63abab8cae84f9a341"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$337_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$305_CMP0",
+      "fingerprint": "72d1a1edeaf7e3e2ba7861a45e8a20a722114e4707b847c924555717f0a88964"
+    },
+    {
+      "base": "$flatten\\data_memory_interface.$and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:53$59",
+      "new": "$flatten\\data_memory_interface.$and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:53$56",
+      "fingerprint": "027f1374afde441629674ac93adcbeb202525d0af2e680da48d6a0c7b41a7580"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$328_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$296_CMP0",
+      "fingerprint": "b14b7469621a7074fec8519884317ebff06cb4405b7f3d18c9b40b562b403327"
+    },
+    {
+      "base": "$flatten\\data_memory_interface.$not$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:54$60",
+      "new": "$flatten\\data_memory_interface.$not$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:54$57",
+      "fingerprint": "3445bdd76653e68d2f732b1da280d42925cc30b7426efb03c2e019e610403b68"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2090",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "fingerprint": "de0e5b6105ce476ae92556c96d50d0a683a15bfb8bc29f18c5f6b53fc83fe987"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1842_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1789_CMP0",
+      "fingerprint": "3198b971605078f2ee44be39856ac1e1ad59a03c0c33bd04ff03fd1b42c5c4e8"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$562_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$530_CMP0",
+      "fingerprint": "24f37df39a6d4a1e302af30aa291430e38f876955b8a5892bb7636634782a053"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2040",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1985",
+      "fingerprint": "cc9329e8bce166231f54ab8403d62e99962cf37cd45af11af9f60a58da21f528"
+    },
+    {
+      "base": "$flatten\\data_memory_interface.$procmux$1711_CMP0",
+      "new": "$flatten\\data_memory_interface.$procmux$1679_CMP0",
+      "fingerprint": "d05cfb29409647fb590693b3c41842fcde0f3962718ff1991544970fd04dc626"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2095",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2040",
+      "fingerprint": "69e2d2aad43dda03d804de7d39b325292f1298f9c4b94c306a2b1bf86c8f37eb"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$332_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$300_CMP0",
+      "fingerprint": "d5485171c20cb324382839a62a6a2077e7c24aa2dde9ef4eaa31ac8091c28916"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$266_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$241_CMP0",
+      "fingerprint": "0517ad06b5099b8e1891a4c3e8c4e5e0c904194a1a077b87f14cd7960a305777"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$logic_and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:59$24",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$logic_and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:59$24",
+      "fingerprint": "fc9b6d610d3bba79bee88f21aee1e1c748d7e9a3564b0a45848acd1cdb15db41"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$memory$auto$proc_rom.cc:155:do_switch$133$rdmux[0][0][0]$2200",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$memory$auto$proc_rom.cc:155:do_switch$132$rdmux[0][0][0]$2141",
+      "fingerprint": "e6a2b29d4adfda78703862b34471ade7133d8db0f0c1aec9efd82815b91897b9"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$302_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$270_CMP0",
+      "fingerprint": "376b1036b3363a8b86718432d1617d6bde9860c85a98125f2ff86377ab29e59c"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$858_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$826_CMP0",
+      "fingerprint": "d8ffd4720af3a1e42ae50168037d03519b25a5f971f9ddd74b1224663fe75ee8"
+    },
+    {
+      "base": "$flatten\\data_memory_interface.$shl$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:32$49",
+      "new": "$flatten\\data_memory_interface.$shl$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:32$46",
+      "fingerprint": "2c3e1808b8642004dd9b469daf3853692b3ee4fc07efced63e43f69478bc4855"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$277_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$245_CMP0",
+      "fingerprint": "e0eb087b1ce12acb17516fd0d5329801cb0a87ac6da33928f96b91d8a8d9e61b"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1846_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1793_CMP0",
+      "fingerprint": "d9fb94dd13126cfa55e95f99434622475d88b073c3e815ddf878da2ecfe789b1"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1756",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1703",
+      "fingerprint": "06dd53f597e020d9884ea066edd198cd98bd70a38a83209292fd00b8c7343262"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$301_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$269_CMP0",
+      "fingerprint": "51ddf86c0b984fd36ad602548fe3afba059eaa4b48b521a87de8420a8e3c2e84"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$311_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$279_CMP0",
+      "fingerprint": "897e8e701c89ebb93e42e2974ea7795296ba94313c6afdc89768b30d3690f593"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$442_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$410_CMP0",
+      "fingerprint": "62b759e9754e739d31afb15d1b4f588b2c4054304205b883c669e16f1c7abfe7"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$memory$auto$proc_rom.cc:155:do_switch$133$rdmux[0][1][0]$2203",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$memory$auto$proc_rom.cc:155:do_switch$132$rdmux[0][1][0]$2144",
+      "fingerprint": "4b3c911f2284dd12c9044ba21017bb47345c765d7ac49e460e423c27880decbf"
+    },
+    {
+      "base": "$flatten\\data_memory_interface.$procmux$1714_CMP0",
+      "new": "$flatten\\data_memory_interface.$procmux$1682_CMP0",
+      "fingerprint": "ad4ccffdba286418a9a22367d718be90588cf287f33b7336e843ffaccdbbdd07"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2015",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1960",
+      "fingerprint": "d2a9c596dbb9be72668b86cb4c70e66cc1e68d936082d846d9a7e2d929d5ac2f"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1850_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1797_CMP0",
+      "fingerprint": "4df2d495f73dfaed1bb198487689157ee3f3c38ab51e5685dbbd9af78a35626c"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1788",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1735",
+      "fingerprint": "eeef3edc714faf72e420f4577710a5ac76a1ca3dd3dd238dbb04ad816023a15b"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$424_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$392_CMP0",
+      "fingerprint": "a7208b45a74f8449d50b19b010851233ba227e47e3e28e9c0b28748e36a765fa"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1844_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1791_CMP0",
+      "fingerprint": "6746c831146b9991bcb922a17593eb2c6ea38806920ec36204fca488f1606405"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2145",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2090",
+      "fingerprint": "a7b5e5ea1fb98031331a4d76683fb37f06aa16d3bbda220c5207677c0acd6599"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1222_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1190_CMP0",
+      "fingerprint": "c67d76a3207866a75308a3003e2a962f087a88fd981e34c6e825765ff10d9dad"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$320_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$288_CMP0",
+      "fingerprint": "8db3c6bb3fddb75345badd6edbf4c21d8cddcd843d98ecc4d7fa3395b4c49f5d"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$321_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$289_CMP0",
+      "fingerprint": "3b907fb0a22a097a25896da1562652d4e27213d0c8b0d73ae8894880c5029804"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1837_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1784_CMP0",
+      "fingerprint": "27cf0a5d465da579da180b304d7c461015360bb7ba333bd5f36a40a94c4b3dee"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1761",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1708",
+      "fingerprint": "eb3317aef6bd2e96d90a59ae7562a7c33be7d8e5ce73e5dddcfbacf252d43b64"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1847_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1794_CMP0",
+      "fingerprint": "b89e6538e992c543bc08a2db89ada4a1a7cccb7c502dcfba256c9626feb125df"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1833_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1780_CMP0",
+      "fingerprint": "d1c28cfa82c57183253a059cfc14d56888378295c1af39ef6ac3ae7d78c13aee"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$292_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$260_CMP0",
+      "fingerprint": "a9701ec9989ce1ef32e67611b07a4f97e081910e53de546d0a7c9a74824669c3"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$317_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$285_CMP0",
+      "fingerprint": "2b42ac47adfeda4ffcacdf85c52e90157cc4a42310585f75643d8fc90498149e"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1848_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1795_CMP0",
+      "fingerprint": "65d6e700ef9451a9dea6677947ed82dc516fa9ec201f5a5015e29874c253ba34"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1990",
+      "new": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1931",
+      "fingerprint": "d79590ce8643c058fade3c0912580abac4c8c8d7e8e64e0c1521e93207b3872d"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$267_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$242_CMP0",
+      "fingerprint": "7b86003b36433a447b98308709766e59d515eb3a8bd5f54c959ad0a0d0557325"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$326_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$294_CMP0",
+      "fingerprint": "ca1fe2646021b5c1f1d6f926e6c584959b19b7e6f8c864abd4e850d8788b1db0"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$270_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$233_CMP0",
+      "fingerprint": "ef36480f04cefa9c4d49e7e6545167ddf50ba81f632dbed16ade93fe92d40d5e"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1773",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1720",
+      "fingerprint": "e316d311c77ac8aa9ffaad76253913d79d7ae36cd9768e69434e22d408e2c686"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$318_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$286_CMP0",
+      "fingerprint": "773b4958517410354ca1ecd84b5d36219e532d0fe3faf49d72b1f88c7c7b74b2"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$508_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$476_CMP0",
+      "fingerprint": "1aae5bca3f18b22d1ff7ae2badfd9868b1be41a7675af6d1e2ba45ebefd1ef52"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$303_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$271_CMP0",
+      "fingerprint": "13a40748a9d500edad3c5f242fe3a4d399e5fc55eb7659d10409f8b4b0b16b68"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1108_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1076_CMP0",
+      "fingerprint": "ac1846a7959dfe2bd6a66c29d16ce1f1a5a1a471b5a6d963d27c13ac4bd8e228"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$308",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$276",
+      "fingerprint": "a2a877ae2cba5eaa7029c6d0b7a90fb1df19c45a1474acf5678c7d330f8d1704"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2125",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2070",
+      "fingerprint": "bdd7c3e9f5a2a2b0061102e2e84ffca041aca2865b83eddc6c72f8a678d1a469"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$323_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$291_CMP0",
+      "fingerprint": "13339cd5fc76037f5fe4a249dc771ba2dc899a02e0d6758c91c9da60e714ec1c"
+    },
+    {
+      "base": "data_memory_interface",
+      "new": "data_memory_interface",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "immediate_generator",
+      "new": "immediate_generator",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "instruction_decoder",
+      "new": "instruction_decoder",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "singlecycle_ctlpath",
+      "new": "singlecycle_ctlpath",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "singlecycle_ctlpath.alu_control",
+      "new": "singlecycle_ctlpath.alu_control",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "singlecycle_ctlpath.control_transfer",
+      "new": "singlecycle_ctlpath.control_transfer",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "singlecycle_ctlpath.singlecycle_control",
+      "new": "singlecycle_ctlpath.singlecycle_control",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "singlecycle_datapath",
+      "new": "singlecycle_datapath",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "singlecycle_datapath.adder_pc_plus_4",
+      "new": "singlecycle_datapath.adder_pc_plus_4",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "singlecycle_datapath.adder_pc_plus_immediate",
+      "new": "singlecycle_datapath.adder_pc_plus_immediate",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "singlecycle_datapath.alu",
+      "new": "singlecycle_datapath.alu",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "singlecycle_datapath.mux_next_pc_select",
+      "new": "singlecycle_datapath.mux_next_pc_select",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "singlecycle_datapath.mux_next_pc_select.multiplexer",
+      "new": "singlecycle_datapath.mux_next_pc_select.multiplexer",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "singlecycle_datapath.mux_operand_a",
+      "new": "singlecycle_datapath.mux_operand_a",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "singlecycle_datapath.mux_operand_a.multiplexer",
+      "new": "singlecycle_datapath.mux_operand_a.multiplexer",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "singlecycle_datapath.mux_operand_b",
+      "new": "singlecycle_datapath.mux_operand_b",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "singlecycle_datapath.mux_operand_b.multiplexer",
+      "new": "singlecycle_datapath.mux_operand_b.multiplexer",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "singlecycle_datapath.mux_reg_writeback",
+      "new": "singlecycle_datapath.mux_reg_writeback",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "singlecycle_datapath.mux_reg_writeback.multiplexer",
+      "new": "singlecycle_datapath.mux_reg_writeback.multiplexer",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "singlecycle_datapath.program_counter",
+      "new": "singlecycle_datapath.program_counter",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "singlecycle_datapath.regfile",
+      "new": "singlecycle_datapath.regfile",
+      "fingerprint": "b7fa1b8fe8e37442fc37346df9a6dc5adad6a8cf3e6a864c521fde5d914b92c7"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$168",
+      "new": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$167",
+      "fingerprint": "42b3809785f8c78115f28b55af584aec2779e3032a82e7dce1e4bb816d9a8f22"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$268_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$231_CMP0",
+      "fingerprint": "74c4c3863bc7214d72c2ba993407e54ee471444f3e804424b858bccab520fb03"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1838_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1785_CMP0",
+      "fingerprint": "4c06d1898e9f42fbde7543a3f94e0542c179a1f459352f09fff9252d9c2e01d0"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2060",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2005",
+      "fingerprint": "928bc942e7cf9b10a95f39852357cd86cc7bd2f06b625ab6f903b4f2c949144f"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$memory$auto$proc_rom.cc:155:do_switch$133$rdmux[0][2][0]$2209",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$memory$auto$proc_rom.cc:155:do_switch$132$rdmux[0][2][3]$2159",
+      "fingerprint": "4d589ff501f2b28b7c4095e417e09ea54f47a3910352c0d062c5028261da7aac"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$312_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$280_CMP0",
+      "fingerprint": "29c58ed593f6c00fbc098f39e7d2bddbd4641c55ffaa41d4f5d182cd91b98be9"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1164_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1132_CMP0",
+      "fingerprint": "18867763e4317e5376a17e2dc6b47ef3699e9ecea3b96ee60011244ae02fedc3"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$265_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$240_CMP0",
+      "fingerprint": "f0a7ea47c452c2a67d48783cf6dcd623a21f0e319433c92476347708db8518eb"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$280_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$248_CMP0",
+      "fingerprint": "e91927cab1df78bb95dfec5c172d877720e8593a75196834019de289cc9bfacc"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1827",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1774",
+      "fingerprint": "abde7b2a3b835396b9e20b1471fcad30b4dd66ac9c5361e5d334a23d9f453fcd"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$279_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$247_CMP0",
+      "fingerprint": "20788612b270da0fe40f64eb5412b7148deaf74557081a47f4d3848862d8bb3b"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$289_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$257_CMP0",
+      "fingerprint": "c52d75520e22794b9ab144a4632701ef5f0eff0d8ee01e33f5528f19d29676bd"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1980",
+      "fingerprint": "bde1dc9738d5d509c5b7d47df1e3af238bba313a7b58920c652cc81dfa07c1a6"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$auto$opt_reduce.cc:131:opt_pmux$2008",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$auto$opt_reduce.cc:131:opt_pmux$1953",
+      "fingerprint": "9efa9d2bf25f498a337f21a01a3e77d5234e3db41326305096c88451b495a4a5"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1832",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1779",
+      "fingerprint": "108ff08564a43a333d5b58cbb5a1c71b3892ab097c24812ba71193a3feaaf21a"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$952_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$920_CMP0",
+      "fingerprint": "d13ec023d7f8e86907d9a3ed4b9d7317ba1194477e3cb3896527da6493456574"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1054_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1022_CMP0",
+      "fingerprint": "594aa37c864f447bff8454cd0f9e81522858de9bfeabffaa19119e46c7fe0680"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2020",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1965",
+      "fingerprint": "a01183020968737aadd2809dbbf7069e386bfbe0d0033bb1596b33b26e0432fe"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$auto$opt_reduce.cc:131:opt_pmux$2002",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$auto$opt_reduce.cc:131:opt_pmux$1947",
+      "fingerprint": "c3a5b484451ec37198ec686e80524c545aa9465fd305f04384b20cf911f3c56c"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1003",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1023",
+      "fingerprint": "4b9b923817798ef7de19b0be67748d1c3f9dbd907f05249b0ca7b9b52d8431df"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2155",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2100",
+      "fingerprint": "25569efde7101a95b27c8aa243f3c6c07466fbc03d95ec653693504cec086e88"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$286_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$254_CMP0",
+      "fingerprint": "0cd7d9cf32e96c85877ac3de573f2c8c1deab804c17441522c7e763941377df3"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2075",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2020",
+      "fingerprint": "fcceaa50d1dc66e775392e7765288aec403e994aa83987b8e0cf3c81c57abade"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$316_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$284_CMP0",
+      "fingerprint": "11c99f3944ca41978d8b93a6c1bfb8eebf52239fb84fe7c7a0a7123454370fe2"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$330_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$298_CMP0",
+      "fingerprint": "802feddf426dc3050919a1402f28c14df401d1ee95dab80ef918e2daa163c7ae"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1815",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1762",
+      "fingerprint": "382a446d589ee45d615f8a1af90df12b428977b8223e21f0f018251978a4c5bb"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$287_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$255_CMP0",
+      "fingerprint": "7702bc08fa117ca64bc0ca039ebfaeb887b33c3e9ec4225f2defd9856f32b44f"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$592_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$560_CMP0",
+      "fingerprint": "5a6a6adef1e9c11078b5766f15c7e50239b0a28a4e53479dc5c5eb11c0e644b2"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$269_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$232_CMP0",
+      "fingerprint": "9c5c34af3a4039236e81a2c3594800971541a9b31d2dd6798b499d34309fccbe"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1736_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1697_CMP0",
+      "fingerprint": "ab313501d6d790bd47713ccda51ba8ceb8faed4a2a9c7c44dc35fb21117e3d4b"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2105",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2050",
+      "fingerprint": "2ee6337db97e308b9980893368bdcabb3627c190c2e977c80c5ab99c541d69e6"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$271_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$234_CMP0",
+      "fingerprint": "34b122f25eb37082fdbb9eb15fbd499e79ab16f27d86bde0aefeecc177365231"
+    },
+    {
+      "base": "$flatten\\immediate_generator.$procmux$1705_CMP0",
+      "new": "$flatten\\immediate_generator.$procmux$1673_CMP0",
+      "fingerprint": "1ffdd18ef9ca8867f20e432f71f97a16f57934f5c9a540316897a6d9e057b8a0"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1764",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1711",
+      "fingerprint": "aa041edab15d0946c9cc69e9f1b2ee969b496f902a3be351ba42c0da3bbff937"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$309_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$277_CMP0",
+      "fingerprint": "0ad718d0c0922d546f3241deb37bb7f5911b0e0053781b98d347c60949c6d660"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1739_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1691_CMP0",
+      "fingerprint": "2974ebb909d2481d5b66b5e03072897f705da7e7ff618b8ba9e96a7322908f1f"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$memory$auto$proc_rom.cc:155:do_switch$133$rdmux[0][1][1]$2206",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$memory$auto$proc_rom.cc:155:do_switch$132$rdmux[0][1][1]$2147",
+      "fingerprint": "ddb4f410dadeb01e29274f4767354f0a24ae2f6346e697b8a449033584d63620"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:43$35",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$eq$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:43$35",
+      "fingerprint": "f55c1315544e67e3cf0a742facb774829cb4c4375d55278424afe72242f43d37"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$694_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$662_CMP0",
+      "fingerprint": "69cae9d941f94e296a59f22ea2ad09c2e185d27c1a7121b5151eb76da722c9ae"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$325_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$293_CMP0",
+      "fingerprint": "0c2563abb7638079e1336ba31ccc465a6a52c8ae7b55a226b2609862dc9fa8c8"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2055",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2000",
+      "fingerprint": "c842bcbe47832535099ca58765849f149de80f9eb4de375225fb00fe8bbce848"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1849_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1796_CMP0",
+      "fingerprint": "c1614ef6db7f768c74059f50b235e8bcea983c4cf4019ed04d1fe195bd615918"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2070",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2015",
+      "fingerprint": "c31865ff184997002f9d957650944c604ee9543019a73e24576daa27f710913d"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1777_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1724_CMP0",
+      "fingerprint": "bc85e1edb50f1c964b5dee534cdec336539413df07502edf58703c3441eb6774"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2130",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2075",
+      "fingerprint": "d1045380984d0ba5a2d3bf1a50e8c4f141272368cf4429bda27d8d307cd9a2c4"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2150",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2095",
+      "fingerprint": "d4705acea8bd38a8fd6063708c02bf6c2e8d2ba12590f7dd05c39b085bffabe8"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$382_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$350_CMP0",
+      "fingerprint": "8f9e04a2000a9c60bf3faf8f7a87f33ee1a9853445a4c12f73fb6c86ab06e394"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$658_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$626_CMP0",
+      "fingerprint": "76b8a673e621dafb2564f141d8bb66db4ac5828c75d48716c1269a421474642a"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$315_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$283_CMP0",
+      "fingerprint": "fdd982f888b8c0bd4cd9892f5fbfebb6349613e13374d392fd378d7495e9b590"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2140",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2085",
+      "fingerprint": "324a1ade4a3325309195dc47e523e14a6e46b2e6b6395f567e09b79d4ebf48d9"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2065",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "fingerprint": "7ed13802c0b06f3db6d77620f728907b787869454d8ad4eab06a42ae717850a7"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$534_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$502_CMP0",
+      "fingerprint": "6398fccdb63b6d3dd076291bca6540d1274aa2c63f82e5d77c50155d48b0f52b"
+    },
+    {
+      "base": "$flatten\\immediate_generator.$procmux$1705_ANY",
+      "new": "$flatten\\immediate_generator.$procmux$1673_ANY",
+      "fingerprint": "1cc8357414a47c7ecd2b22cdd42a107f4f6c51a0fa118340263359fbe8061c7a"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1740_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1705_CMP0",
+      "fingerprint": "0a410cd5734f74bbc43f3b22521af1c6042846fd743233413ff8e714b1d21ca2"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1775_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1722_CMP0",
+      "fingerprint": "8b67a1206b77453c9635a96f883936c905050f218ea630fbba46e30feaff20da"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$295_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$263_CMP0",
+      "fingerprint": "52e61f3e01239c758b04651d07e6eac3fea52b380ef2eb92f957172e65fd286d"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1841_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1788_CMP0",
+      "fingerprint": "54e0a084353b58279a0970010af678a40a4f9c6d27117c67c6e6fbe89679e9ab"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$282_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$250_CMP0",
+      "fingerprint": "19290be6392d1e9b354bb87417219069efe2df7c408107dea07fdf424749572c"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1282_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1250_CMP0",
+      "fingerprint": "54ebfd0f496e68cf3a8862d18b9b2038c5f40852582f985d5375d0e7dfba5268"
+    },
+    {
+      "base": "$auto$opt_reduce.cc:131:opt_pmux$2205",
+      "new": "$auto$opt_reduce.cc:131:opt_pmux$2146",
+      "fingerprint": "935f577e66d5cc11e6c036b9ac2bbb05855766aee10ab646c35c90d1af864c48"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$304_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$272_CMP0",
+      "fingerprint": "ec73dae691293bf87ed62f6fca3ad8118a9a7374372c2f12b8c82a8441548f2f"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$338_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$306_CMP0",
+      "fingerprint": "fe6198aadf32e85dc9a07ea44063aa628450162eeefc17df34a5854e1dadf48f"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$324_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$292_CMP0",
+      "fingerprint": "3d4e7b0c985c2a3bc5ba008d5f215e55dba027e842cc4e9a9e93ed9f6c526b63"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$772_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$740_CMP0",
+      "fingerprint": "37c89a920a34efefaccde98224b01175e423f88d833cd3000b722aa352b2e5e7"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1845_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1792_CMP0",
+      "fingerprint": "bfd3ed8c46a2d51724787d233dd53a303eb2deffdd89aefae673450373ed16ee"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$306_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$274_CMP0",
+      "fingerprint": "93d981427caf46435a1926f5be3bb0cb6be0c2d788ce592b3c0eec3d3ba75918"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1839_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1786_CMP0",
+      "fingerprint": "6484adc41820acf9e3008ed8b65e818e1d2b5407eeb2763f558524ac87e68faa"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$314_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$282_CMP0",
+      "fingerprint": "22740dc03d0028b6f477d0e2aee31a92351ee11b5f768602c307cf6ba260a324"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1748",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1695",
+      "fingerprint": "6e7beba3d161ceb0b2bed9f1ee1930c16db1feedf209c7bfbe051045cb313d7b"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$305_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$273_CMP0",
+      "fingerprint": "d274fccd168c06ed5c3b95742be850ea977530b8976ba46d5fb315627ea98725"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$624_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$592_CMP0",
+      "fingerprint": "0a9ff78bf7a84c041b765b00eefe0c4d383b49aafdcb314721f6e6751d6813b9"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1843_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1790_CMP0",
+      "fingerprint": "fca87b72526cc42ca6df24297b5c6273ff288a3b9c3dac1737099fec940b240b"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$memory$auto$proc_rom.cc:155:do_switch$137$rdmux[0][2][2]$2194",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$memory$auto$proc_rom.cc:155:do_switch$136$rdmux[0][2][2]$2135",
+      "fingerprint": "d1780b7ab073c91bd8a946c44148299cded7372e18d10dc34ea6fff46ba0e78e"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$327_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$295_CMP0",
+      "fingerprint": "ff168511148ce853ca32047445cd2ba7d750d77cccaef1f6af9ade778dd05022"
+    },
+    {
+      "base": "$auto$opt_share.cc:246:merge_operators$2198",
+      "new": "$auto$opt_share.cc:246:merge_operators$2139",
+      "fingerprint": "0d8a59531ba26d63b35ef9f144b3089daa056fcf692c775b4980d229efe1e4dc"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$339_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$307_CMP0",
+      "fingerprint": "88a75034fb11f1ce6d2759df3f756cb5f4ced89f40a4bccddf32353aec2c6d94"
+    },
+    {
+      "base": "$flatten\\data_memory_interface.$procmux$1708",
+      "new": "$flatten\\data_memory_interface.$procmux$1676",
+      "fingerprint": "1d5d7f43defed7e4e667d72856f4037da62a6460a2f0f4afd9699f401e5df086"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$462_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$430_CMP0",
+      "fingerprint": "c56bb5c994634acf38e8683d2704ca6a102b224d7f04757273832343de4ce7a2"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\control_transfer.$auto$opt_reduce.cc:131:opt_pmux$2171",
+      "new": "$flatten\\singlecycle_ctlpath.\\control_transfer.$auto$opt_reduce.cc:131:opt_pmux$1943",
+      "fingerprint": "cdd39713cbe8419503bf42852c1d936c2c5604172f3049f71212ca96de90197a"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$276_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$244_CMP0",
+      "fingerprint": "0bfbe0c9f6125e06e7fe6bcfd03af33fbe6d827761194d696cbe38a9157afd9f"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2080",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2025",
+      "fingerprint": "1dfcb026d41ed925e2c02ceb7ec592f33b66a69acf7f05376e14f8b48458a346"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2030",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1975",
+      "fingerprint": "810fb8b200b94dc5f2a58dbb444c942021c716b47f713d59621b1649fd4bfd5e"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2050",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1995",
+      "fingerprint": "9e024a1e61107a173412d73625751af541f89d033c9e57120666187384015813"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2100",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2045",
+      "fingerprint": "160d003979d4503c5e48f4c063b63576af7dbc9bbda941f9e37f88925135b112"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$296_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$264_CMP0",
+      "fingerprint": "65b9d004b92c01566fb5acbbe195769832d9c31d1083f4aa6983e8b434679677"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$300_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$268_CMP0",
+      "fingerprint": "2be17e6cd54d1203f3ceae33cc3d26ab987d79ff4976171a928c94f104d15141"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$272_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$235_CMP0",
+      "fingerprint": "8a31097470079775f918caf2f60e17eb02f2dc1dc78b1c56f6a87a40767408f5"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$313_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$281_CMP0",
+      "fingerprint": "4bae1480c599940b2103256f6c875d12e199b4afb2f5cb1487144fa0c37d8a95"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1774_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1721_CMP0",
+      "fingerprint": "798cd91ad6e8a6d9c0323d248a3f146b923ea7879daca772d7bb4c8299131d93"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$288_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$256_CMP0",
+      "fingerprint": "7bff1216a2be54011ed2a83d6ec57fdacef66376740052405ee23f1fcef03c52"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$logic_and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:43$36",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$logic_and$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:43$36",
+      "fingerprint": "30eac6871109784c2f123d6c5a276bc423abb84556e1d2c3e25e279bcd0dc4ad"
+    },
+    {
+      "base": "$flatten\\immediate_generator.$procmux$1706_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$237_CMP0",
+      "fingerprint": "b837c377544c98b90cf5396d57efaa62132541d661b39127f473dc2f51487f15"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2135",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2080",
+      "fingerprint": "835faa5fa8615ec476f4b5adf8280372b4c03cceb5bd883b6e317385743de884"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1344_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1312_CMP0",
+      "fingerprint": "36c801f3aa47d0ca22a45143930fa2eadfb1d9a037a077c914e85415ff0145b8"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$298_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$266_CMP0",
+      "fingerprint": "4ddb132acfbe07349ba3d56e84d535e5100a15bb50c8640ea6f7b9a707cfe418"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$394_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$362_CMP0",
+      "fingerprint": "a079c4f8f8341207912c03ea2260f5b885023744465c437024a119f558e59ae7"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$284_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$252_CMP0",
+      "fingerprint": "09416421d8c9e16796b03ee5f5b90d6d4d9047d3d3dde21ae626b9686dc0f2fe"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2110",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2055",
+      "fingerprint": "34ca115323d200cea8e0f33c8bd5e18743c87110e022d7e4ca16169a97fc3e94"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1408_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1376_CMP0",
+      "fingerprint": "cfd7971ea4d61b976ba4e3907f0a3cf77aff2092f005cbd2a766f0b1d154c1d2"
+    },
+    {
+      "base": "$flatten\\data_memory_interface.$shr$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:47$56",
+      "new": "$flatten\\data_memory_interface.$shr$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:47$53",
+      "fingerprint": "fd09bcdd9bbfecf8f5cd86be82ab9a05f966528cf86cdcac81286f2a5d72e1ca"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$293_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$261_CMP0",
+      "fingerprint": "232be2b7d69c2ee6fb57fd930fea45df26312f4ddac733960147214fe6b7f90c"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1684_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1652_CMP0",
+      "fingerprint": "f58380e4905c359402f788d925a4f642d16085322903be213f8d172cfc1ff01a"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$290_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$258_CMP0",
+      "fingerprint": "a600dba2ee18f6af714850ab5e1e2ffb55fe2933a6401f37c6ba2c6d03e83d73"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1542_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1510_CMP0",
+      "fingerprint": "a850e9f24b25e7b643b8cdc6affb8ac71c0fb7c6823fcd9aa476f076f38074f0"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1776_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1723_CMP0",
+      "fingerprint": "2aa50c3dd962b6331b9dfab27c53bf79f42c4620184a531d2a968fa23c2f1b49"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1836_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1783_CMP0",
+      "fingerprint": "c967123eaf36437b8765287b78a2348caf18a939929e8b658dac5871e7a19d86"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$408_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$376_CMP0",
+      "fingerprint": "c6eae0c3f577c39b16b2f37e97fd2c00d182182ede062d58b8212272db000177"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1737_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1689_CMP0",
+      "fingerprint": "3b2cde2eb0f024f3022b917921ecde7da023c9d621a0fe8f025031f40fd4f471"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$memory$auto$proc_rom.cc:155:do_switch$137$rdmux[0][1][1]$2185",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$memory$auto$proc_rom.cc:155:do_switch$136$rdmux[0][1][1]$2126",
+      "fingerprint": "288983b7143c99fdc532b0f8f5cac17a130572d05f3e35973788d94e50ef4cf1"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$299_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$267_CMP0",
+      "fingerprint": "7eec3ebbbc08f6402591c08f522065b781993e3f7c772e1d62aa3938c43ece28"
+    },
+    {
+      "base": "$flatten\\immediate_generator.$procmux$1706_CMP1",
+      "new": "$flatten\\immediate_generator.$procmux$1674_CMP1",
+      "fingerprint": "17be46f9b75b51151b8e64a50e3daf38f282b951ff9e0d7f60127ded4393cd6b"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$294_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$262_CMP0",
+      "fingerprint": "223de247781bc4f8ad0f98b5b8e4c966270aad7b1db548837510ef6bd3744629"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$333_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$301_CMP0",
+      "fingerprint": "6a17e764f147d6339cc7e1ee91aa3e0b3862459c16cbbc551139e9dd7d1ae17e"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1835_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1782_CMP0",
+      "fingerprint": "d607902e77aa20642afa8ca4cd425351be6635b48d9bc5057e1cbef7f67c858f"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$memory$auto$proc_rom.cc:155:do_switch$137$rdmux[0][0][0]$2179",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$memory$auto$proc_rom.cc:155:do_switch$136$rdmux[0][0][0]$2120",
+      "fingerprint": "161eae12fe135e2c79ab12bfadacb57f60f98a9dce77bd0f19aabda339b3ef81"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2115",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2060",
+      "fingerprint": "1b1565f1fc23a844718e7f5ce5698dcef8470bd8353538719495eb025847d7e3"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$281_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$249_CMP0",
+      "fingerprint": "2793b44113ab05da80815039e24e72491e881ae78180525008cc49a20ba84a45"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2085",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2030",
+      "fingerprint": "7b26f9a073633f8f55c67ab6bab61365c0078d68adb9373e1b7aee3b583092b1"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1474_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1442_CMP0",
+      "fingerprint": "603dd1aed6815a70e47d1c94d824ce9eea6379f237d7d928cf2807677e2f53ea"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$335_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$303_CMP0",
+      "fingerprint": "06f17b9ddf02e2d4392c6f758b078439ec1a9be85d44435aac233b6f3e174575"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1770",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1717",
+      "fingerprint": "45aa334c3a28a328d3fecb09e287841e10f8157c24aceb0258fd14c9b63d50dc"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$310_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$278_CMP0",
+      "fingerprint": "284e6e3c7098e775bfda6dceab6492ee69273b94d56652f370c059ad170e8f41"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2160",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2105",
+      "fingerprint": "664c53d92db4e6490bf44969f71dee9c27e62ef1f66ad01d7f02d6ce70326c86"
+    },
+    {
+      "base": "$flatten\\immediate_generator.$procmux$1703_ANY",
+      "new": "$flatten\\immediate_generator.$procmux$1671_ANY",
+      "fingerprint": "dbe830650f6d43fb13c016f1f2f45cf6eee05df30d8496c2f3c8a0832d60132a"
+    },
+    {
+      "base": "$flatten\\data_memory_interface.$procmux$1713",
+      "new": "$flatten\\data_memory_interface.$procmux$1681",
+      "fingerprint": "87d7ae92953c7765e1d3883f1d7314a741cf16262b969ff4ac39c0987d3dab3e"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$ne$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:40$88",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$ne$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40$85",
+      "fingerprint": "952a4e8be360d206236e993d9253276126edda2c877e4a59709fefcfe363faed"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$283_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$251_CMP0",
+      "fingerprint": "f664b287ebeda846a978301b4d193599ebbd78eb80baf00c25dbb58cb6533895"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$331_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$299_CMP0",
+      "fingerprint": "5c331d9617ea9f18ee1a72c71d052c8885508c51279f86b7efa5925f6f5a6cd2"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$319_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$287_CMP0",
+      "fingerprint": "53014fbfa4b2d956ba44c0c0f8d0823c6f7c6643806e0ad8e5ab527e4c8002de"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1834_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1781_CMP0",
+      "fingerprint": "7b30e988c592fc4c9e728c06789df1c3acefd89c0fd975a5a05b58b0e0f1450f"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$285_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$253_CMP0",
+      "fingerprint": "c30631915f5b9e16a64d925be48b9b9e28df4d53787ea914d9697fcd3d4b457a"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2165",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2110",
+      "fingerprint": "8844357a3309bd113bd9f22dba101d52e13f7558b60753b0839a658671bf3db3"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$278_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$246_CMP0",
+      "fingerprint": "3e4eac671373b60d83dcc9c94b5cb84e4a51b13b6ecbae78de9752ef37fe1017"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1840_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1787_CMP0",
+      "fingerprint": "9e03706038bfbd2a72ec3515f0506fced6ea766f3e8b2781862f83979ec05198"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$1002_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$970_CMP0",
+      "fingerprint": "a0733d5cef35742773abddd9b5d204dd83c9c35536671a29899fa68b6e05a440"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$273_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$236_CMP0",
+      "fingerprint": "e4934e4f72b040804e4fbb9ab817e5fb178a85ab23126823c8daef426ae1bea4"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$322_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$290_CMP0",
+      "fingerprint": "8b6cddc62feef667981c8eeb86b2b2fe3a1d810872d7bf5171035ca6d4afa234"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1738_CMP0",
+      "new": "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1690_CMP0",
+      "fingerprint": "576a9001112e872c84ce9c1f783ed9a154aeeb47c0438a4ad4465ada150a88c0"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$904_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$872_CMP0",
+      "fingerprint": "21168232feebb77a8d36417bad2cbc5c275501adc031dbf6f56ab4628e68f161"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$auto$opt_reduce.cc:131:opt_pmux$2004",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$auto$opt_reduce.cc:131:opt_pmux$1949",
+      "fingerprint": "2822d7b4a87e580e5d407e20d7aa9c91ec650b9a5dfa4692c9e9e24561f5d7c5"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$275",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$243",
+      "fingerprint": "64f1767706c170e07637113aad9c33026a90ed5596bb1035b8bfab622a349083"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2025",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1970",
+      "fingerprint": "3dae74e896188b0ba36aec6ece7019b118b9acdcf89d7dfbfda3c6786c562f22"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$297_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$265_CMP0",
+      "fingerprint": "1b232a118a808c7b233a65169a7bb64369c6d7a9b2d9c9638a17e3179f945a76"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\alu.$procmux$1806",
+      "new": "$flatten\\singlecycle_datapath.\\alu.$procmux$1753",
+      "fingerprint": "b2855746e657030798c708d0cbd4fffa95a745d7f2965567d5a8c50a1bfb42d8"
+    },
+    {
+      "base": "$auto$opt_reduce.cc:131:opt_pmux$2207",
+      "new": "$auto$opt_reduce.cc:131:opt_pmux$2148",
+      "fingerprint": "251936b0697618a19e3b0743ab42f3c343bfe1bb17ff90af51ec743c97f0fb8b"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$484_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$452_CMP0",
+      "fingerprint": "9503a98fc20575c088bb358feaaff9c25d53ecbc316a8289e2a3f48f7f10dc3e"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$814_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$782_CMP0",
+      "fingerprint": "9518234274a005498f3a00b5a5dfb07c15f1ba99943998a4dea45d1d53b4b28d"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1955",
+      "fingerprint": "256d160d290b3738a4aad813be148bf0938685d9f48dd8326858962a7604e2f9"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$329_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$297_CMP0",
+      "fingerprint": "f40acda834abaee7737e142e4c6532cd7ce8ced266872fe975d74f0101f0c54e"
+    },
+    {
+      "base": "$flatten\\singlecycle_datapath.\\regfile.$procmux$334_CMP0",
+      "new": "$flatten\\singlecycle_datapath.\\regfile.$procmux$302_CMP0",
+      "fingerprint": "132214edfc1785051d75c93e0b5c89a8481fb60e2f858ef83bf43d771e4ce00b"
+    },
+    {
+      "base": "$flatten\\data_memory_interface.$shl$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:40$53",
+      "new": "$flatten\\data_memory_interface.$shl$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:40$50",
+      "fingerprint": "66abf421af5cb6d4b0a057042e0044e91285944cde5fde00a5fd7c0d6b7fa8b3"
+    },
+    {
+      "base": "$flatten\\singlecycle_ctlpath.\\alu_control.$memory$auto$proc_rom.cc:155:do_switch$137$rdmux[0][1][0]$2182",
+      "new": "$flatten\\singlecycle_ctlpath.\\alu_control.$memory$auto$proc_rom.cc:155:do_switch$136$rdmux[0][1][0]$2123",
+      "fingerprint": "e6c2dbc72de7af495a65f38cf36c4464cd7cdde355a0dfeecf8f594aaf730246"
+    }
+  ]
+}

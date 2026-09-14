@@ -1,33 +1,74 @@
-import networkx as nx
+from collections import deque
 
+
+def is_sequential(cell_type):
+
+    if not cell_type:
+        return False
+
+    t = cell_type.lower()
+
+    keywords = [
+        "dff",
+        "adff",
+        "sdff",
+        "dffe",
+        "dlatch",
+        "ff",
+    ]
+
+    return any(
+        k in t
+        for k in keywords
+    )
 
 
 def fanout_cone(
         graph,
-        roots
+        roots,
+        stop_at_sequential=False
 ):
 
+    visited = set()
 
-    result=set()
+    queue = deque()
 
+    for root in roots:
 
-    for r in roots:
+        if root in graph:
+            queue.append(root)
 
+    while queue:
 
-        if r not in graph:
+        node = queue.popleft()
 
+        if node in visited:
             continue
 
+        visited.add(node)
 
-        result.add(r)
+        node_type = graph.nodes[
+            node
+        ].get("type")
 
-
-        result.update(
-            nx.descendants(
-                graph,
-                r
+        if (
+            stop_at_sequential
+            and
+            node not in roots
+            and
+            is_sequential(
+                node_type
             )
-        )
+        ):
+            continue
 
+        for successor in graph.successors(
+            node
+        ):
 
-    return result
+            if successor not in visited:
+                queue.append(
+                    successor
+                )
+
+    return visited

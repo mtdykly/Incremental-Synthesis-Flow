@@ -1,0 +1,1992 @@
+{
+  "case": "eco-002",
+  "total_jobs": 121,
+  "jobs": [
+    {
+      "job_id": 0,
+      "base_node": "$auto$opt_dff.cc:320:make_patterns_logic$2211",
+      "new_node": "$auto$opt_dff.cc:320:make_patterns_logic$2152",
+      "base_scope": "<global>",
+      "base_type": "$reduce_bool",
+      "score": 90.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 1,
+      "base_node": "$auto$opt_reduce.cc:131:opt_pmux$2205",
+      "new_node": "$auto$opt_reduce.cc:131:opt_pmux$2146",
+      "base_scope": "<global>",
+      "base_type": "$reduce_or",
+      "score": 140.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 2,
+      "base_node": "$auto$opt_reduce.cc:131:opt_pmux$2205",
+      "new_node": "$auto$opt_reduce.cc:131:opt_pmux$2148",
+      "base_scope": "<global>",
+      "base_type": "$reduce_or",
+      "score": 55.0,
+      "reasons": [
+        "same_scope",
+        "same_type"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 3,
+      "base_node": "$auto$opt_reduce.cc:131:opt_pmux$2207",
+      "new_node": "$auto$opt_reduce.cc:131:opt_pmux$2148",
+      "base_scope": "<global>",
+      "base_type": "$reduce_or",
+      "score": 140.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 4,
+      "base_node": "$auto$opt_reduce.cc:131:opt_pmux$2207",
+      "new_node": "$auto$opt_reduce.cc:131:opt_pmux$2146",
+      "base_scope": "<global>",
+      "base_type": "$reduce_or",
+      "score": 55.0,
+      "reasons": [
+        "same_scope",
+        "same_type"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 5,
+      "base_node": "$auto$opt_share.cc:199:merge_operators$2200",
+      "new_node": "$auto$opt_share.cc:199:merge_operators$2141",
+      "base_scope": "<global>",
+      "base_type": "$neg",
+      "score": 130.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 6,
+      "base_node": "$auto$opt_share.cc:246:merge_operators$2198",
+      "new_node": "$auto$opt_share.cc:246:merge_operators$2139",
+      "base_scope": "<global>",
+      "base_type": "$pmux",
+      "score": 140.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 7,
+      "base_node": "$auto$opt_share.cc:246:merge_operators$2203",
+      "new_node": "$auto$opt_share.cc:246:merge_operators$2144",
+      "base_scope": "<global>",
+      "base_type": "$mux",
+      "score": 140.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 8,
+      "base_node": "$flatten\\immediate_generator.$procmux$1706_CMP0",
+      "new_node": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$237_CMP0",
+      "base_scope": "immediate_generator",
+      "base_type": "$eq",
+      "score": 90.0,
+      "reasons": [
+        "same_type",
+        "same_intrinsic",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 9,
+      "base_node": "$flatten\\immediate_generator.$procmux$1706_CMP0",
+      "new_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1800_CMP0",
+      "base_scope": "immediate_generator",
+      "base_type": "$eq",
+      "score": 25.0,
+      "reasons": [
+        "same_type"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 10,
+      "base_node": "$flatten\\immediate_generator.$procmux$1706_CMP0",
+      "new_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1801_CMP0",
+      "base_scope": "immediate_generator",
+      "base_type": "$eq",
+      "score": 25.0,
+      "reasons": [
+        "same_type"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 11,
+      "base_node": "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1727",
+      "new_node": "$auto$opt_share.cc:246:merge_operators$2144",
+      "base_scope": "singlecycle_ctlpath control_transfer",
+      "base_type": "$mux",
+      "score": 25.0,
+      "reasons": [
+        "same_type"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 12,
+      "base_node": "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1736_CMP0",
+      "new_node": "$flatten\\singlecycle_ctlpath.\\alu_control.$procmux$1697_CMP0",
+      "base_scope": "singlecycle_ctlpath control_transfer",
+      "base_type": "$eq",
+      "score": 90.0,
+      "reasons": [
+        "same_type",
+        "same_intrinsic",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 13,
+      "base_node": "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1736_CMP0",
+      "new_node": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$procmux$237_CMP0",
+      "base_scope": "singlecycle_ctlpath control_transfer",
+      "base_type": "$eq",
+      "score": 25.0,
+      "reasons": [
+        "same_type"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 14,
+      "base_node": "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1736_CMP0",
+      "new_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1800_CMP0",
+      "base_scope": "singlecycle_ctlpath control_transfer",
+      "base_type": "$eq",
+      "score": 25.0,
+      "reasons": [
+        "same_type"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 15,
+      "base_node": "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1740_CMP0",
+      "new_node": "$flatten\\singlecycle_ctlpath.\\control_transfer.$logic_not$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:21$44",
+      "base_scope": "singlecycle_ctlpath control_transfer",
+      "base_type": "$logic_not",
+      "score": 70.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_source_file"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 16,
+      "base_node": "$flatten\\singlecycle_ctlpath.\\control_transfer.$procmux$1744",
+      "new_node": "$auto$opt_share.cc:246:merge_operators$2144",
+      "base_scope": "singlecycle_ctlpath control_transfer",
+      "base_type": "$mux",
+      "score": 25.0,
+      "reasons": [
+        "same_type"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 17,
+      "base_node": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1994",
+      "new_node": "$auto$opt_reduce.cc:131:opt_pmux$2148",
+      "base_scope": "singlecycle_ctlpath singlecycle_control",
+      "base_type": "$reduce_or",
+      "score": 25.0,
+      "reasons": [
+        "same_type"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 18,
+      "base_node": "$flatten\\singlecycle_ctlpath.\\singlecycle_control.$auto$opt_reduce.cc:131:opt_pmux$1994",
+      "new_node": "$auto$opt_reduce.cc:131:opt_pmux$2146",
+      "base_scope": "singlecycle_ctlpath singlecycle_control",
+      "base_type": "$reduce_or",
+      "score": 25.0,
+      "reasons": [
+        "same_type"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 19,
+      "base_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1852_CMP0",
+      "new_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1800_CMP0",
+      "base_scope": "singlecycle_datapath mux_next_pc_select multiplexer",
+      "base_type": "$eq",
+      "score": 125.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 20,
+      "base_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1852_CMP0",
+      "new_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1801_CMP0",
+      "base_scope": "singlecycle_datapath mux_next_pc_select multiplexer",
+      "base_type": "$eq",
+      "score": 125.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 21,
+      "base_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1852_CMP0",
+      "new_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1799_CMP0",
+      "base_scope": "singlecycle_datapath mux_next_pc_select multiplexer",
+      "base_type": "$eq",
+      "score": 125.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 22,
+      "base_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1853_CMP0",
+      "new_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1800_CMP0",
+      "base_scope": "singlecycle_datapath mux_next_pc_select multiplexer",
+      "base_type": "$eq",
+      "score": 125.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 23,
+      "base_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1853_CMP0",
+      "new_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1801_CMP0",
+      "base_scope": "singlecycle_datapath mux_next_pc_select multiplexer",
+      "base_type": "$eq",
+      "score": 125.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 24,
+      "base_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1853_CMP0",
+      "new_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1799_CMP0",
+      "base_scope": "singlecycle_datapath mux_next_pc_select multiplexer",
+      "base_type": "$eq",
+      "score": 125.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 25,
+      "base_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1854_CMP0",
+      "new_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1800_CMP0",
+      "base_scope": "singlecycle_datapath mux_next_pc_select multiplexer",
+      "base_type": "$eq",
+      "score": 125.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 26,
+      "base_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1854_CMP0",
+      "new_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1801_CMP0",
+      "base_scope": "singlecycle_datapath mux_next_pc_select multiplexer",
+      "base_type": "$eq",
+      "score": 125.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 27,
+      "base_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1854_CMP0",
+      "new_node": "$flatten\\singlecycle_datapath.\\mux_next_pc_select.\\multiplexer.$procmux$1799_CMP0",
+      "base_scope": "singlecycle_datapath mux_next_pc_select multiplexer",
+      "base_type": "$eq",
+      "score": 125.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 28,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1955",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 29,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 30,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 31,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2015",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1960",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 32,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2015",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 33,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2015",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 34,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2025",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1970",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 35,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2025",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 36,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2025",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 37,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2030",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1975",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 38,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2030",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 39,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2030",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 40,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1980",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 41,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 42,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 43,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2040",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1985",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 44,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2040",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 45,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2040",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 46,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2045",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1990",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 47,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2045",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 48,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2045",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 49,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2050",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$1995",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 50,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2050",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 51,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2050",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 52,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2055",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2000",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 53,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2055",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 54,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2055",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 55,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2060",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2005",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 56,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2060",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 57,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2060",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 58,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2065",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 59,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2065",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 60,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2065",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2095",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 61,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2070",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2015",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 62,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2070",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 63,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2070",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 64,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2075",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2020",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 65,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2075",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 66,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2075",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 67,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2080",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2025",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 68,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2080",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 69,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2080",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 70,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2085",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2030",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 71,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2085",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 72,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2085",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 73,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2090",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 74,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2090",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 75,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2090",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2095",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 76,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2095",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2040",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 77,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2095",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 78,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2095",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 79,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2100",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2045",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 80,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2100",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 81,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2100",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 82,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2105",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2050",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 83,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2105",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 84,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2105",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 85,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2110",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2055",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 86,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2110",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 87,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2110",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 88,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2115",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2060",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 89,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2115",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 90,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2115",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 91,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2120",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2065",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 92,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2120",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 93,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2120",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 94,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2125",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2070",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 95,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2125",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 96,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2125",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 97,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2130",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2075",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 98,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2130",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 99,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2130",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 100,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2135",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2080",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 101,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2135",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 102,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2135",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 103,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2140",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2085",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 104,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2140",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 105,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2140",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 106,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2145",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2090",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 107,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2145",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 108,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2145",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 109,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2150",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2095",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 110,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2150",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 111,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2150",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 112,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2155",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2100",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 113,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2155",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 114,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2155",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 115,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2160",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2105",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 116,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2160",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 117,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2160",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 118,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2165",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2110",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 175.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 119,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2165",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2035",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    },
+    {
+      "job_id": 120,
+      "base_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2165",
+      "new_node": "$flatten\\singlecycle_datapath.\\regfile.$auto$ff.cc:337:slice$2010",
+      "base_scope": "singlecycle_datapath regfile",
+      "base_type": "$adffe",
+      "score": 165.0,
+      "reasons": [
+        "same_scope",
+        "same_type",
+        "same_intrinsic",
+        "same_source_location",
+        "same_topology_fingerprint",
+        "matched_neighbors"
+      ],
+      "status": "pending"
+    }
+  ]
+}
