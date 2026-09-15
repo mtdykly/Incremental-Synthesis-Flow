@@ -3,9 +3,10 @@
 set -euo pipefail
 
 
-CASE=$1
+CASE=${1:?Usage: run_equiv.sh <case>}
 
 ROOT=$(git rev-parse --show-toplevel)
+TOP=$(python3 "$ROOT/scripts/synthesis/parse_design_config.py" "$ROOT/benchmarks/cases/$CASE/design.yaml" | head -n 1)
 
 
 BASE_NETLIST="$ROOT/results/$CASE/base/design.v"
@@ -22,13 +23,13 @@ cat > "$EQ_SCRIPT" <<EOF
 # Base
 # =====================
 
-read_verilog $BASE_NETLIST
+read_verilog "$BASE_NETLIST"
 
-prep -top riscv_core
+prep -top $TOP
 
 flatten
 
-rename riscv_core base
+rename $TOP base
 
 design -stash gold
 
@@ -46,13 +47,13 @@ design -reset
 # New
 # =====================
 
-read_verilog $NEW_NETLIST
+read_verilog "$NEW_NETLIST"
 
-prep -top riscv_core
+prep -top $TOP
 
 flatten
 
-rename riscv_core new
+rename $TOP new
 
 design -stash gate
 
@@ -79,7 +80,7 @@ async2sync
 
 equiv_simple
 
-equiv_status
+equiv_status -assert
 
 EOF
 

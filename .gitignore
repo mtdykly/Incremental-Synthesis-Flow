@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+results/*/work/
+results/*/incremental/
+results/*/analysis/region_plan.json
+results/*/analysis/incremental_matches.json
+results/validation/
+results/*/base/design_flat.json
+results/*/new/design_flat.json
+benchmarks/source/

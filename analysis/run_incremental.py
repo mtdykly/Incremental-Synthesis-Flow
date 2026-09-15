@@ -5,6 +5,8 @@ import argparse
 import json
 import os
 import sys
+from pathlib import Path
+from yosys_runner import quote, identifier, run_yosys
 
 from canonical_matcher import canonical_match
 from netlist_graph import NetlistGraph
@@ -18,23 +20,24 @@ def _write_local_synthesis(path, input_json, output_json):
             "read_json {}\n"
             "hierarchy -top incremental_region\n"
             "proc\nopt\ntechmap\nopt_clean\n"
-            "write_json {}\n".format(input_json, output_json)
+            "check -assert\nwrite_json {}\n".format(quote(input_json), quote(output_json))
         )
 
 
 def _write_equivalence(path, candidate, reference, top):
+    top = identifier(top)
     with open(path, "w") as stream:
         stream.write(
             "read_json {}\n"
-            "prep -top {}\nrename {} candidate\ndesign -stash candidate\n"
+            "prep -top {}\nrename {} candidate\nrename -hide\ndesign -stash candidate\n"
             "design -reset\n"
             "read_json {}\n"
-            "prep -top {}\nrename {} reference\ndesign -stash reference\n"
+            "prep -top {}\nrename {} reference\nrename -hide\ndesign -stash reference\n"
             "design -copy-from candidate -as candidate candidate\n"
             "design -copy-from reference -as reference reference\n"
             "equiv_make candidate reference equiv\n"
-            "prep -top equiv\nasync2sync\nequiv_simple\nequiv_status -assert\n".format(
-                candidate, top, top, reference, top, top
+            "prep -top equiv\nasync2sync\nequiv_simple\nequiv_induct -seq 4\nequiv_status -assert\n".format(
+                quote(candidate), top, top, quote(reference), top, top
             )
         )
 
@@ -65,8 +68,26 @@ def plan_command(args):
     new_path = os.path.join(result_dir, "new", "design_flat.json")
     base = NetlistGraph(base_path, top=top)
     new = NetlistGraph(new_path, top=top)
+    from structure_check import check_module
+    check_module(base.module_data)
+    check_module(new.module_data)
     match = canonical_match(base, new, topology_rounds=args.topology_rounds)
+    if getattr(args, 'formal_results', None):
+        sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+        from formal.merge_matches import merge_matches
+        match = merge_matches(base, new, match, load_json(args.formal_results))
+    if getattr(args, 'formal', False):
+        sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+        from formal.run_matching import run_matching
+        from formal.merge_matches import merge_matches
+        proofs = run_matching(base, new, match, Path(incremental_dir) / 'matching',
+                              args.yosys, args.timeout)
+        match = merge_matches(base, new, match, proofs)
+    dump_json(match, os.path.join(analysis_dir, 'incremental_matches.json'))
     plan = plan_regions(base, new, match)
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    from formal.build_match_problem import design_digest
+    plan['design_digest'] = design_digest(base, new)
     plan.update({"case": args.case, "top": top})
 
     plan_path = os.path.join(analysis_dir, "region_plan.json")
@@ -77,16 +98,11 @@ def plan_command(args):
         print("The boundary is not closed; inspect diagnostics in the plan.")
         return 2
 
-    base_region = extract_region(
-        base, plan["base_cells"], plan["base_boundary"]
-    )
     new_region = extract_region(
         new, plan["new_cells"], plan["new_boundary"]
     )
-    base_region_path = os.path.join(incremental_dir, "base_region.json")
     new_region_path = os.path.join(incremental_dir, "new_region.json")
     synthesized_path = os.path.join(incremental_dir, "new_region_synth.json")
-    dump_json(base_region, base_region_path)
     dump_json(new_region, new_region_path)
     _write_local_synthesis(
         os.path.join(incremental_dir, "synthesize_region.ys"),
@@ -104,6 +120,11 @@ def stitch_command(args):
     plan = load_json(os.path.join(result_dir, "analysis", "region_plan.json"))
     base_path = os.path.join(result_dir, "base", "design_flat.json")
     reference_path = os.path.join(result_dir, "new", "design_flat.json")
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    from formal.build_match_problem import design_digest
+    if plan.get('design_digest') != design_digest(NetlistGraph(base_path, plan['top']),
+                                                 NetlistGraph(reference_path, plan['top'])):
+        raise ValueError('stale plan: input netlists changed; run plan again')
     replacement_path = args.replacement or os.path.join(
         result_dir, "incremental", "new_region_synth.json"
     )
@@ -112,10 +133,17 @@ def stitch_command(args):
     stitched = stitch_region(load_json(base_path), plan, load_json(replacement_path))
     dump_json(stitched, output_path)
     equiv_path = os.path.join(output_dir, "verify_stitched.ys")
-    _write_equivalence(equiv_path, output_path, reference_path, plan["top"])
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    from formal.verify_transition import write_transition_verification
+    write_transition_verification(equiv_path, stitched, load_json(reference_path),
+                                  plan['top'], plan['retained_pairs'])
     print(f"Stitched netlist: {output_path}")
-    print(f"Mandatory verification: yosys -s {equiv_path}")
-    return 0
+    outcome = run_yosys(equiv_path, os.path.join(output_dir, 'verify_stitched.log'),
+                        getattr(args, 'yosys', 'yosys'), getattr(args, 'timeout', 120))
+    outcome['verified'] = outcome['status'] == 'passed'
+    dump_json(outcome, os.path.join(output_dir, 'verification.json'))
+    print(f"Verification: {outcome['status']}")
+    return 0 if outcome['verified'] else 3
 
 
 def main(argv=None):
@@ -125,10 +153,16 @@ def main(argv=None):
     plan_parser = subparsers.add_parser("plan", help="match and extract a region")
     plan_parser.add_argument("case")
     plan_parser.add_argument("--topology-rounds", type=int, default=2)
+    plan_parser.add_argument('--formal', action='store_true')
+    plan_parser.add_argument('--formal-results', help='import results for these exact input netlists')
+    plan_parser.add_argument('--yosys', default='yosys')
+    plan_parser.add_argument('--timeout', type=int, default=120)
     plan_parser.set_defaults(func=plan_command)
     stitch_parser = subparsers.add_parser("stitch", help="stitch synthesized region")
     stitch_parser.add_argument("case")
     stitch_parser.add_argument("--replacement")
+    stitch_parser.add_argument('--yosys', default='yosys')
+    stitch_parser.add_argument('--timeout', type=int, default=120)
     stitch_parser.set_defaults(func=stitch_command)
     args = parser.parse_args(argv)
     return args.func(args)

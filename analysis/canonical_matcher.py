@@ -361,7 +361,7 @@ def _candidate_score(
     return score, reasons
 
 
-def canonical_match(
+def _candidate_match(
         base,
         new,
         topology_rounds=2,
@@ -723,3 +723,76 @@ def canonical_match(
         "new_records":
             new_records,
     }
+
+
+def canonical_match(base, new, topology_rounds=2, top_candidates=3):
+    """Keep candidate identity separate from permission to retain cell wiring."""
+    from connection_diff import same_inputs, connection_diff
+    from state_matcher import state_candidates, state_compatible
+    from region import is_hard_boundary
+
+    result = _candidate_match(base, new, topology_rounds, top_candidates)
+    pairs = state_candidates(base, new)
+    pairs += [(x['base'], x['new']) for x in result['matches']]
+    # A persistent name is useful even when the operation changed. It only
+    # establishes a reconnectable output identity, never reuse permission.
+    pairs += [(b, b) for b in sorted(set(base.cells) & set(new.cells))]
+    mapping = {}
+    used = set()
+    for b, n in pairs:
+        if b not in mapping and n not in used:
+            bo = [(p, i) for p, i, _ in base.cell_output_bits(b)]
+            no = [(p, i) for p, i, _ in new.cell_output_bits(n)]
+            if bo == no:
+                mapping[b] = n
+                used.add(n)
+    # Trace candidate identities back from corresponding sink pins. This also
+    # covers anonymous logic feeding renamed register enable/reset pins. Only
+    # unique proposals are kept; all still undergo the input check below.
+    while True:
+        proposals = set()
+        bit_pairs = [(base.output_bits[label], bit) for label, bit in new.output_bits.items()
+                     if label in base.output_bits]
+        for b, n in sorted(mapping.items()):
+            for p, i, bit in new.cell_input_bits(n):
+                old = base.cells[b]['connections'].get(p, [])
+                if i < len(old):
+                    bit_pairs.append((old[i], bit))
+        for bb, nb in bit_pairs:
+            if not isinstance(bb, int) or not isinstance(nb, int):
+                continue
+            bd, nd = base.bit_driver.get(str(bb)), new.bit_driver.get(str(nb))
+            if bd and nd and bd[1:] == nd[1:] and bd[0] not in mapping and nd[0] not in used:
+                bo = [(p, i) for p, i, _ in base.cell_output_bits(bd[0])]
+                no = [(p, i) for p, i, _ in new.cell_output_bits(nd[0])]
+                if bo == no:
+                    proposals.add((bd[0], nd[0]))
+        unique = [(b, n) for b, n in sorted(proposals)
+                  if sum(x == b for x, _ in proposals) == 1
+                  and sum(y == n for _, y in proposals) == 1]
+        if not unique:
+            break
+        for b, n in unique:
+            mapping[b] = n
+            used.add(n)
+    accepted = []
+    for b, n in sorted(mapping.items()):
+        hard = is_hard_boundary(base.cells[b]['type'])
+        valid = (state_compatible(base, new, b, n, mapping) if hard
+                 else same_inputs(base, new, b, n, mapping))
+        if valid:
+            accepted.append({'base': b, 'new': n,
+                             'method': 'state_identity' if hard else 'pin_checked',
+                             'reuse': True})
+    result['correspondences'] = [{'base': b, 'new': n} for b, n in sorted(mapping.items())]
+    result['matches'] = accepted
+    result['base_unmatched'] = sorted(set(base.cells) - {x['base'] for x in accepted})
+    result['new_unmatched'] = sorted(set(new.cells) - {x['new'] for x in accepted})
+    result['connection_changes'] = connection_diff(base, new, mapping)
+    # Include rejected anchors in formal work; the old implementation hid them.
+    result['formal_candidates'] = [
+        {'base': b, 'candidates': [{'new': n, 'score': 0, 'reasons': ['unproven']}
+          for n in sorted(result['new_unmatched'], key=lambda n: (mapping.get(b) != n, n))
+          if mapping.get(b) == n or base.cells[b]['type'] == new.cells[n]['type']][:top_candidates]}
+        for b in result['base_unmatched'] if not is_hard_boundary(base.cells[b]['type'])]
+    return result

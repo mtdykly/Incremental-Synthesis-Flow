@@ -58,66 +58,106 @@ def _module_max_bit(module):
     values = []
     for port in module.get("ports", {}).values():
         values.extend(bit for bit in port.get("bits", []) if isinstance(bit, int))
+    for net in module.get('netnames', {}).values():
+        values.extend(bit for bit in net.get('bits', []) if isinstance(bit, int))
     for cell in module.get("cells", {}).values():
         for bits in cell.get("connections", {}).values():
             values.extend(bit for bit in bits if isinstance(bit, int))
     return max(values, default=1)
 
 
-def stitch_region(base_data, plan, replacement_data, module_name="incremental_region"):
-    """Replace base-region cells with a (possibly optimized) extracted module.
-
-    Boundary port names are deliberately stable across local synthesis.  They
-    are mapped to the old base cut nets; all replacement-internal bit IDs are
-    freshly allocated to avoid collisions.
-    """
-
-    if not plan.get("stitchable"):
-        raise ValueError("region plan is not stitchable")
-
+def stitch_region(base_data, plan, replacement_data, module_name='incremental_region'):
+    from structure_check import check_module
+    if plan.get('schema_version') != 2:
+        raise ValueError('obsolete region plan; run plan again')
+    if not plan.get('stitchable'):
+        raise ValueError('region plan is not stitchable')
     result = copy.deepcopy(base_data)
-    top_name = plan.get("top")
-    if top_name not in result["modules"]:
-        top_name = next(iter(result["modules"]))
-    top = result["modules"][top_name]
-    replacement = replacement_data["modules"][module_name]
-
-    for cell in plan["base_cells"]:
-        top.get("cells", {}).pop(cell, None)
-
-    _, base_ports = _boundary_maps(plan["base_boundary"])
-    port_to_base_bit = {port: item["bit"] for port, item in base_ports.items()}
-    replacement_port_bits = {
-        str(data["bits"][0]): port_to_base_bit[name]
-        for name, data in replacement.get("ports", {}).items()
-    }
-
+    top = result['modules'][plan['top']]
+    top['cells'] = {n: c for n, c in top['cells'].items() if c['type'] != '$scopeinfo'}
+    replacement = replacement_data['modules'][module_name]
+    _, expected = _boundary_maps(plan['new_boundary'])
+    ports = replacement.get('ports', {})
+    if set(ports) != set(expected):
+        raise ValueError('replacement port names/completeness mismatch')
+    for name, data in ports.items():
+        direction = 'input' if name.startswith('region_in') else 'output'
+        if data.get('direction') != direction or len(data.get('bits', [])) != 1:
+            raise ValueError(f'invalid replacement port {name}')
     next_bit = _module_max_bit(top) + 1
-    internal_map = {}
-
+    remapped = {}
+    for i, item in enumerate(plan['base_boundary']['inputs']):
+        bit = ports[f'region_in_{i:04d}']['bits'][0]
+        if isinstance(bit, str) or (bit in remapped and remapped[bit] != item['bit']):
+            raise ValueError('replacement aliases distinct inputs')
+        remapped[bit] = item['bit']
+    # Use a deleted, undriven Base bit when possible; otherwise allocate fresh.
+    retained_drivers = set()
+    for name, cell in top['cells'].items():
+        if name not in plan['base_cells']:
+            for p, bits in cell.get('connections', {}).items():
+                if cell.get('port_directions', {}).get(p) == 'output':
+                    retained_drivers.update(bits)
+    retained_drivers.update(b for p in top['ports'].values() if p['direction'] == 'input' for b in p['bits'])
+    claimed = set(remapped.values()) | retained_drivers
+    for i, item in enumerate(plan['base_boundary']['outputs']):
+        bit = ports[f'region_out_{i:04d}']['bits'][0]
+        old = item['bit']
+        if isinstance(bit, int) and bit not in remapped and isinstance(old, int) and old not in claimed:
+            remapped[bit] = old
+            claimed.add(old)
     def remap(bit):
         nonlocal next_bit
         if isinstance(bit, str):
             return bit
-        key = str(bit)
-        if key in replacement_port_bits:
-            return replacement_port_bits[key]
-        if key not in internal_map:
-            internal_map[key] = next_bit
+        if bit not in remapped:
+            remapped[bit] = next_bit
             next_bit += 1
-        return internal_map[key]
-
-    for index, (name, source_cell) in enumerate(sorted(replacement.get("cells", {}).items())):
-        cell = copy.deepcopy(source_cell)
-        cell["connections"] = {
-            port: [remap(bit) for bit in bits]
-            for port, bits in cell.get("connections", {}).items()
-        }
-        new_name = f"$incremental${index}${name}"
-        while new_name in top["cells"]:
-            new_name = "$" + new_name
-        top["cells"][new_name] = cell
-
+        return remapped[bit]
+    for name in plan['base_cells']:
+        del top['cells'][name]
+    alias_targets = {}
+    for item in plan['reconnect']:
+        sink = item['sink']
+        bits = (top['ports'][sink[1]]['bits'] if sink[0] == 'port'
+                else top['cells'][sink[1]]['connections'][sink[2]])
+        i = sink[-1]
+        old = bits[i]
+        value = remap(ports[item['region_port']]['bits'][0]) if 'region_port' in item else item['base_bit']
+        bits[i] = value
+        alias_targets.setdefault(old, set()).add(value)
+    for index, (name, data) in enumerate(sorted(replacement.get('cells', {}).items())):
+        cell = copy.deepcopy(data)
+        cell['connections'] = {p: [remap(b) for b in bits] for p, bits in cell['connections'].items()}
+        name = f'$incremental${index}${name}'
+        while name in top['cells']:
+            name = '$' + name
+        top['cells'][name] = cell
+    # Old aliases can split. Drop ambiguous/deleted internal names instead of
+    # assigning a false meaning; keep unambiguous aliases and exact port names.
+    active = {b for c in top['cells'].values() for bits in c['connections'].values() for b in bits}
+    active.update(b for p in top['ports'].values() for b in p['bits'])
+    nets = {}
+    for name, data in top.get('netnames', {}).items():
+        data = copy.deepcopy(data)
+        updated = []
+        for bit in data['bits']:
+            targets = alias_targets.get(bit, set())
+            if bit not in retained_drivers and len(targets) == 1:
+                bit = next(iter(targets))
+            if (len(targets) > 1 and bit not in retained_drivers) or (isinstance(bit, int) and bit not in active):
+                break
+            updated.append(bit)
+        else:
+            data['bits'] = updated
+            nets[name] = data
+    for name, port in top['ports'].items():
+        data = copy.deepcopy(top.get('netnames', {}).get(name, {}))
+        data.update(hide_name=0, bits=port['bits'][:])
+        data.setdefault('attributes', {})
+        nets[name] = data
+    top['netnames'] = nets
+    check_module(top)
     return result
 
 

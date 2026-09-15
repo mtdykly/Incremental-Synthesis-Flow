@@ -66,6 +66,7 @@ class NetlistGraph:
         self.primary_inputs = {}
 
         self.primary_outputs = {}
+        self.output_aliases = defaultdict(list)
 
         # top-level label -> bit.  The reverse maps are useful when a
         # subgraph is turned into a temporary module.
@@ -124,19 +125,19 @@ class NetlistGraph:
             ):
 
                 # 字符串表示 0/1/x/z 常量
-                if isinstance(bit, str):
-                    continue
-
                 bit_key = str(bit)
 
                 label = f"{port_name}[{index}]"
 
                 if direction in ("input", "inout"):
+                    if isinstance(bit, str) or bit_key in self.primary_inputs:
+                        raise ValueError('constant or aliased primary input is unsupported')
                     self.primary_inputs[bit_key] = label
                     self.input_bits[label] = bit
 
                 if direction in ("output", "inout"):
                     self.primary_outputs[bit_key] = label
+                    self.output_aliases[bit_key].append(label)
                     self.output_bits[label] = bit
 
 
@@ -200,6 +201,9 @@ class NetlistGraph:
                     bit_key = str(bit)
 
                     if direction in ("output", "inout"):
+
+                        if bit_key in self.bit_driver or bit_key in self.primary_inputs:
+                            raise ValueError(f'multiple drivers for bit {bit}')
 
                         if bit_key not in self.bit_driver:
 
