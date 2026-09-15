@@ -1,7 +1,48 @@
 import json
 from collections import defaultdict
 
-import networkx as nx
+
+class _NodeView:
+    def __init__(self, graph):
+        self._graph = graph
+
+    def __iter__(self):
+        return iter(self._graph._nodes)
+
+    def __getitem__(self, node):
+        return self._graph._nodes[node]
+
+
+class DirectedGraph:
+    """Small dependency-free directed graph for the operations used here."""
+
+    def __init__(self):
+        self._nodes = {}
+        self._successors = defaultdict(dict)
+        self._predecessors = defaultdict(dict)
+        self.nodes = _NodeView(self)
+
+    def __contains__(self, node):
+        return node in self._nodes
+
+    def add_node(self, node, **attributes):
+        self._nodes[node] = attributes
+
+    def add_edge(self, source, target, **attributes):
+        self._successors[source][target] = attributes
+        self._predecessors[target][source] = attributes
+
+    def successors(self, node):
+        return iter(self._successors[node])
+
+    def predecessors(self, node):
+        return iter(self._predecessors[node])
+
+    def number_of_nodes(self):
+        return len(self._nodes)
+
+    def number_of_edges(self):
+        return sum(len(targets) for targets in self._successors.values())
 
 
 class NetlistGraph:
@@ -11,7 +52,7 @@ class NetlistGraph:
         self.json_file = json_file
         self.top = top
 
-        self.graph = nx.DiGraph()
+        self.graph = DirectedGraph()
 
         self.cells = {}
 
@@ -25,6 +66,11 @@ class NetlistGraph:
         self.primary_inputs = {}
 
         self.primary_outputs = {}
+
+        # top-level label -> bit.  The reverse maps are useful when a
+        # subgraph is turned into a temporary module.
+        self.input_bits = {}
+        self.output_bits = {}
 
         self.raw_data = None
         self.module_data = None
@@ -87,9 +133,11 @@ class NetlistGraph:
 
                 if direction in ("input", "inout"):
                     self.primary_inputs[bit_key] = label
+                    self.input_bits[label] = bit
 
                 if direction in ("output", "inout"):
                     self.primary_outputs[bit_key] = label
+                    self.output_bits[label] = bit
 
 
     def _add_cells(self):
@@ -205,3 +253,29 @@ class NetlistGraph:
 
     def edge_count(self):
         return self.graph.number_of_edges()
+
+
+    def cell_input_bits(self, cell_name):
+        """Yield (port, index, bit) for every input pin of *cell_name*."""
+
+        cell = self.cells[cell_name]
+        directions = cell.get("port_directions", {})
+
+        for port, bits in cell.get("connections", {}).items():
+            if directions.get(port) not in ("input", "inout"):
+                continue
+            for index, bit in enumerate(bits):
+                yield port, index, bit
+
+
+    def cell_output_bits(self, cell_name):
+        """Yield (port, index, bit) for every output pin of *cell_name*."""
+
+        cell = self.cells[cell_name]
+        directions = cell.get("port_directions", {})
+
+        for port, bits in cell.get("connections", {}).items():
+            if directions.get(port) not in ("output", "inout"):
+                continue
+            for index, bit in enumerate(bits):
+                yield port, index, bit
