@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "returncode": 0,
-  "seconds": 0.32080238312482834,
+  "seconds": 0.5766352713108063,
   "log": "/workspace/Incremental-Synthesis-Flow/results/eco-002/base/frontend.log",
   "command": [
     "yosys",
