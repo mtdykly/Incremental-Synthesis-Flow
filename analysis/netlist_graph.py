@@ -64,7 +64,6 @@ class NetlistGraph:
 
         # bit -> top-level port label
         self.primary_inputs = {}
-
         self.primary_outputs = {}
         self.output_aliases = defaultdict(list)
 

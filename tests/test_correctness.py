@@ -203,3 +203,58 @@ def test_real_yosys_match_synthesize_stitch_prove(tmp_path, nd):
     candidate.write_text(json.dumps(stitched))
     _write_equivalence(tmp_path / 'equiv.ys', candidate, tmp_path / 'new.json', 'top')
     assert run_yosys(tmp_path / 'equiv.ys', tmp_path / 'equiv.log', YOSYS)['status'] == 'passed'
+
+
+@pytest.mark.parametrize('prefix,hidden', [('$auto$enable$', 0), ('internal', 1)])
+def test_shifted_enable_names_follow_state_pins(tmp_path, prefix, hidden):
+    def regfile(offset, bit_offset):
+        data = design({}, {'y': 4 + bit_offset, 'z': 5 + bit_offset})
+        mod = data['modules']['top']
+        for i in range(2):
+            q, en = 4 + i + bit_offset, 6 + i + bit_offset
+            ff = copy.deepcopy(register()['modules']['top']['cells']['ff'])
+            ff['type'] = '$adffe'
+            ff['parameters']['EN_POLARITY'] = '1'
+            ff['port_directions']['EN'] = 'input'
+            ff['connections'].update(Q=[q], EN=[en])
+            mod['cells'][f'slice${offset + i}'] = ff
+            driver = cell(a=2 + i, y=en)
+            driver.update(hide_name=hidden, attributes={})
+            mod['cells'][f'{prefix}{offset + i}'] = driver
+            mod['netnames'][f'register[{i}]'] = {'hide_name': 0, 'bits': [q]}
+        return data
+
+    b, n = graphs(tmp_path, regfile(1, 0), regfile(0, 100))
+    match = canonical_match(b, n)
+    mapping = {m['base']: m['new'] for m in match['correspondences']}
+    for i in range(2):
+        assert mapping[f'{prefix}{1 + i}'] == f'{prefix}{i}'
+    assert len(match['matches']) == 4
+    assert plan_regions(b, n, match)['stitchable']
+
+
+@pytest.mark.parametrize('base_hidden,new_hidden,prefix,expected', [
+    (0, 0, 'named', True), (1, 0, 'named', False),
+    (0, 1, 'named', False), (0, 0, '$auto$logic$', False),
+])
+def test_name_only_identity_requires_stable_names(tmp_path, base_hidden, new_hidden, prefix, expected):
+    # Unconnected, structurally ambiguous cells leave only the name fallback.
+    bd = design({f'{prefix}{i}': cell(y=4 + i) for i in range(2)}, {'y': 2})
+    nd = copy.deepcopy(bd)
+    for data, hidden in [(bd, base_hidden), (nd, new_hidden)]:
+        for c in data['modules']['top']['cells'].values():
+            c.update(hide_name=hidden, attributes={})
+    b, n = graphs(tmp_path, bd, nd)
+    assert bool(canonical_match(b, n)['correspondences']) == expected
+
+
+def test_changed_enable_input_is_rejected(tmp_path):
+    bd, nd = register(), register('renamed')
+    for data, name, en in [(bd, 'ff', 2), (nd, 'renamed', 3)]:
+        ff = data['modules']['top']['cells'][name]
+        ff['type'] = '$adffe'
+        ff['parameters']['EN_POLARITY'] = '1'
+        ff['port_directions']['EN'] = 'input'
+        ff['connections']['EN'] = [en]
+    b, n = graphs(tmp_path, bd, nd)
+    assert not plan_regions(b, n, canonical_match(b, n))['stitchable']

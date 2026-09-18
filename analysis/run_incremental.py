@@ -150,6 +150,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", default=".", help="repository root")
     subparsers = parser.add_subparsers(dest="command", required=True)
+    
     plan_parser = subparsers.add_parser("plan", help="match and extract a region")
     plan_parser.add_argument("case")
     plan_parser.add_argument("--topology-rounds", type=int, default=2)
@@ -158,6 +159,7 @@ def main(argv=None):
     plan_parser.add_argument('--yosys', default='yosys')
     plan_parser.add_argument('--timeout', type=int, default=120)
     plan_parser.set_defaults(func=plan_command)
+
     stitch_parser = subparsers.add_parser("stitch", help="stitch synthesized region")
     stitch_parser.add_argument("case")
     stitch_parser.add_argument("--replacement")

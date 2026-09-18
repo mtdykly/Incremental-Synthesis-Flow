@@ -22,16 +22,23 @@ def generate(root, case, version, yosys='yosys', timeout=120, mapped=False, libe
                     for pat in cfg.get('exclude_patterns', []))})
     if not files:
         raise ValueError(f'no RTL sources in {work}; checkout the case first')
-    includes = ['-I' + quote(work / d) for d in cfg.get('include_dirs', [])]
-    lines = ['read_verilog -sv ' + ' '.join(includes + [quote(p) for p in files]),
-             'hierarchy -check -top ' + identifier(cfg['top']), 'proc', 'flatten',
-             'opt', 'memory', 'opt_clean', 'check -assert',
-             'write_json ' + quote(out / 'frontend_flat.json'),
-             'write_rtlil ' + quote(out / 'frontend_flat.rtlil'),
-             'write_json ' + quote(out / 'design_flat.json'),
-             'write_json ' + quote(out / 'design.json'),
-             'write_rtlil ' + quote(out / 'design.rtlil'),
-             'write_verilog ' + quote(out / 'design.v')]
+    includes = [
+        '-I' + str((work / d).resolve())
+        for d in cfg.get('include_dirs', [])
+    ]
+    lines = [
+        'read_verilog -sv ' + ' '.join(includes + [quote(p) for p in files]),
+        'hierarchy -check -top ' + identifier(cfg['top']),
+        'proc',
+        'flatten',
+        'opt',
+        'memory',
+        'opt_clean',
+        'check -assert',
+        'write_json ' + quote(out / 'design_flat.json'),
+        'write_rtlil ' + quote(out / 'design_flat.rtlil'),
+        'write_verilog ' + quote(out / 'design_flat.v'),
+    ]
     if mapped:
         lines += ['techmap', 'opt']
         if liberty:
@@ -59,9 +66,28 @@ def main():
     p.add_argument('--mapped', action='store_true')
     p.add_argument('--liberty', type=Path)
     a = p.parse_args()
-    return 0 if generate(a.root.resolve(), a.case, a.version, a.yosys, a.timeout,
-                         a.mapped, a.liberty)['status'] == 'passed' else 1
+    result = generate(
+        a.root.resolve(),
+        a.case,
+        a.version,
+        a.yosys,
+        a.timeout,
+        a.mapped,
+        a.liberty
+    )
 
+    out = a.root.resolve() / 'results' / a.case / a.version
+
+    print(f"Frontend status: {result['status']}")
+    print(f"Output directory: {out}")
+    print(f"Yosys log: {out / 'frontend.log'}")
+
+    if result['status'] == 'passed':
+        print(f"Generated: {out / 'design_flat.json'}")
+        return 0
+
+    print("Frontend generation failed; inspect frontend.log")
+    return 1
 
 if __name__ == '__main__':
     sys.exit(main())

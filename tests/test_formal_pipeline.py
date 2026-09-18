@@ -90,9 +90,9 @@ def test_reproducible_frontend_mapping_and_boundaries(tmp_path):
     result = generate(tmp_path, 'tiny', 'base', YOSYS, mapped=True)
     assert result['status'] == 'passed'
     out = tmp_path / 'results/tiny/base'
-    for name in ['frontend_flat.json', 'frontend_flat.rtlil', 'design_flat.json', 'mapped.json', 'mapped.v']:
+    for name in ['design_flat.json', 'design_flat.rtlil', 'design.v', 'mapped.json', 'mapped.v']:
         assert (out / name).is_file()
-    report = discover(__import__('netlist_graph').NetlistGraph(out / 'frontend_flat.json', 'top'),
+    report = discover(__import__('netlist_graph').NetlistGraph(out / 'design_flat.json', 'top'),
                       __import__('netlist_graph').NetlistGraph(out / 'mapped.json', 'top'),
                       tmp_path / 'boundaries', YOSYS)
     assert any(b['name'] == 't' and b['status'] == 'proven' for b in report['boundaries'])

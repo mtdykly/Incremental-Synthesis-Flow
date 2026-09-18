@@ -725,6 +725,11 @@ def _candidate_match(
     }
 
 
+def stable_named_cell(graph, name):
+    """Generated names may collide after Yosys renumbers unrelated cells."""
+    return not graph.cells[name].get('hide_name', 0) and not name.startswith('$auto$')
+
+
 def canonical_match(base, new, topology_rounds=2, top_candidates=3):
     """Keep candidate identity separate from permission to retain cell wiring."""
     from connection_diff import same_inputs, connection_diff
@@ -736,7 +741,8 @@ def canonical_match(base, new, topology_rounds=2, top_candidates=3):
     pairs += [(x['base'], x['new']) for x in result['matches']]
     # A persistent name is useful even when the operation changed. It only
     # establishes a reconnectable output identity, never reuse permission.
-    pairs += [(b, b) for b in sorted(set(base.cells) & set(new.cells))]
+    pairs += [(b, b) for b in sorted(set(base.cells) & set(new.cells))
+              if stable_named_cell(base, b) and stable_named_cell(new, b)]
     mapping = {}
     used = set()
     for b, n in pairs:

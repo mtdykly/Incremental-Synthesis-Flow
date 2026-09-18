@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "returncode": 0,
+  "seconds": 0.2873456235975027,
+  "log": "/workspace/Incremental-Synthesis-Flow/results/eco-002/new/frontend.log",
+  "command": [
+    "yosys",
+    "-s",
+    "/workspace/Incremental-Synthesis-Flow/results/eco-002/new/frontend.ys"
+  ],
+  "mapping": "none",
+  "sources": [
+    "core/common/adder.sv",
+    "core/common/alu.sv",
+    "core/common/alu_control.sv",
+    "core/common/config.sv",
+    "core/common/constants.sv",
+    "core/common/control_transfer.sv",
+    "core/common/data_memory_interface.sv",
+    "core/common/immediate_generator.sv",
+    "core/common/instruction_decoder.sv",
+    "core/common/multiplexer.sv",
+    "core/common/multiplexer2.sv",
+    "core/common/multiplexer4.sv",
+    "core/common/multiplexer8.sv",
+    "core/common/regfile.sv",
+    "core/common/register.sv",
+    "core/singlecycle/riscv_core.sv",
+    "core/singlecycle/singlecycle_control.sv",
+    "core/singlecycle/singlecycle_ctlpath.sv",
+    "core/singlecycle/singlecycle_datapath.sv",
+    "core/singlecycle/toplevel.sv"
+  ]
+}

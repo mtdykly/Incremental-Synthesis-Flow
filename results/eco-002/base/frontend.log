@@ -1,0 +1,1046 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.67+24 (git sha1 0e82bbefe, Release, Clang /usr/bin/clang++ 18.1.8)
+
+-- Executing script file `/workspace/Incremental-Synthesis-Flow/results/eco-002/base/frontend.ys' --
+
+1. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/adder.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/adder.sv' to AST representation.
+Generating RTLIL representation for module `\adder'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv' to AST representation.
+Generating RTLIL representation for module `\alu'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv' to AST representation.
+Generating RTLIL representation for module `\alu_control'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/config.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/config.sv' to AST representation.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/constants.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/constants.sv' to AST representation.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/control_transfer.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/control_transfer.sv' to AST representation.
+Generating RTLIL representation for module `\control_transfer'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv' to AST representation.
+Generating RTLIL representation for module `\data_memory_interface'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/immediate_generator.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/immediate_generator.sv' to AST representation.
+Generating RTLIL representation for module `\immediate_generator'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/instruction_decoder.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/instruction_decoder.sv' to AST representation.
+Generating RTLIL representation for module `\instruction_decoder'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv' to AST representation.
+Generating RTLIL representation for module `\multiplexer'.
+Warning: Replacing memory \input_array with list of registers. See /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer2.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer2.sv' to AST representation.
+Generating RTLIL representation for module `\multiplexer2'.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer4.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer4.sv' to AST representation.
+Generating RTLIL representation for module `\multiplexer4'.
+Successfully finished Verilog frontend.
+
+13. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer8.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer8.sv' to AST representation.
+Generating RTLIL representation for module `\multiplexer8'.
+Successfully finished Verilog frontend.
+
+14. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv' to AST representation.
+Generating RTLIL representation for module `\regfile'.
+Warning: Replacing memory \register with list of registers. See /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:38, /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:29
+Successfully finished Verilog frontend.
+
+15. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/register.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/register.sv' to AST representation.
+Generating RTLIL representation for module `\register'.
+Successfully finished Verilog frontend.
+
+16. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/riscv_core.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/riscv_core.sv' to AST representation.
+Generating RTLIL representation for module `\riscv_core'.
+Successfully finished Verilog frontend.
+
+17. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_control.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_control.sv' to AST representation.
+Generating RTLIL representation for module `\singlecycle_control'.
+Successfully finished Verilog frontend.
+
+18. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_ctlpath.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_ctlpath.sv' to AST representation.
+Generating RTLIL representation for module `\singlecycle_ctlpath'.
+Successfully finished Verilog frontend.
+
+19. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_datapath.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_datapath.sv' to AST representation.
+Generating RTLIL representation for module `\singlecycle_datapath'.
+Successfully finished Verilog frontend.
+
+20. Executing Verilog-2005 frontend: /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/toplevel.sv
+Parsing SystemVerilog input from `/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/toplevel.sv' to AST representation.
+Generating RTLIL representation for module `\toplevel'.
+Successfully finished Verilog frontend.
+
+21. Executing HIERARCHY pass (managing design hierarchy).
+
+21.1. Analyzing design hierarchy..
+Top module:  \riscv_core
+Used module:     \data_memory_interface
+Used module:     \singlecycle_ctlpath
+Used module:         \alu_control
+Used module:         \control_transfer
+Used module:         \singlecycle_control
+Used module:     \immediate_generator
+Used module:     \instruction_decoder
+Used module:     \singlecycle_datapath
+Used module:         \regfile
+Used module:         \register
+Used module:         \multiplexer8
+Used module:             \multiplexer
+Used module:         \multiplexer2
+Used module:         \multiplexer4
+Used module:         \alu
+Used module:         \adder
+Parameter \WIDTH = 32
+Parameter \CHANNELS = 2
+
+21.2. Executing AST frontend in derive mode using pre-parsed AST for module `\multiplexer'.
+Parameter \WIDTH = 32
+Parameter \CHANNELS = 2
+Generating RTLIL representation for module `$paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer'.
+Warning: Replacing memory \input_array with list of registers. See /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24
+Parameter \WIDTH = 32
+Parameter \CHANNELS = 4
+
+21.3. Executing AST frontend in derive mode using pre-parsed AST for module `\multiplexer'.
+Parameter \WIDTH = 32
+Parameter \CHANNELS = 4
+Generating RTLIL representation for module `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer'.
+Warning: Replacing memory \input_array with list of registers. See /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24
+Parameter \WIDTH = 32
+Parameter \CHANNELS = 8
+
+21.4. Executing AST frontend in derive mode using pre-parsed AST for module `\multiplexer'.
+Parameter \WIDTH = 32
+Parameter \CHANNELS = 8
+Generating RTLIL representation for module `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer'.
+Warning: Replacing memory \input_array with list of registers. See /workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24
+Parameter \WIDTH = 32
+Parameter \INITIAL = 4194304
+
+21.5. Executing AST frontend in derive mode using pre-parsed AST for module `\register'.
+Parameter \WIDTH = 32
+Parameter \INITIAL = 4194304
+Generating RTLIL representation for module `$paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register'.
+Parameter \WIDTH = 32
+
+21.6. Executing AST frontend in derive mode using pre-parsed AST for module `\multiplexer8'.
+Parameter \WIDTH = 32
+Generating RTLIL representation for module `$paramod\multiplexer8\WIDTH=s32'00000000000000000000000000100000'.
+Parameter \WIDTH = 32
+
+21.7. Executing AST frontend in derive mode using pre-parsed AST for module `\multiplexer2'.
+Parameter \WIDTH = 32
+Generating RTLIL representation for module `$paramod\multiplexer2\WIDTH=s32'00000000000000000000000000100000'.
+Parameter \WIDTH = 32
+Found cached RTLIL representation for module `$paramod\multiplexer2\WIDTH=s32'00000000000000000000000000100000'.
+Parameter \WIDTH = 32
+
+21.8. Executing AST frontend in derive mode using pre-parsed AST for module `\multiplexer4'.
+Parameter \WIDTH = 32
+Generating RTLIL representation for module `$paramod\multiplexer4\WIDTH=s32'00000000000000000000000000100000'.
+Parameter \WIDTH = 32
+
+21.9. Executing AST frontend in derive mode using pre-parsed AST for module `\adder'.
+Parameter \WIDTH = 32
+Generating RTLIL representation for module `$paramod\adder\WIDTH=s32'00000000000000000000000000100000'.
+Parameter \WIDTH = 32
+Found cached RTLIL representation for module `$paramod\adder\WIDTH=s32'00000000000000000000000000100000'.
+
+21.10. Analyzing design hierarchy..
+Top module:  \riscv_core
+Used module:     \data_memory_interface
+Used module:     \singlecycle_ctlpath
+Used module:         \alu_control
+Used module:         \control_transfer
+Used module:         \singlecycle_control
+Used module:     \immediate_generator
+Used module:     \instruction_decoder
+Used module:     \singlecycle_datapath
+Used module:         \regfile
+Used module:         $paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register
+Used module:         $paramod\multiplexer8\WIDTH=s32'00000000000000000000000000100000
+Used module:             \multiplexer
+Used module:         $paramod\multiplexer2\WIDTH=s32'00000000000000000000000000100000
+Used module:         $paramod\multiplexer4\WIDTH=s32'00000000000000000000000000100000
+Used module:         \alu
+Used module:         $paramod\adder\WIDTH=s32'00000000000000000000000000100000
+Parameter \WIDTH = 32
+Parameter \CHANNELS = 8
+Found cached RTLIL representation for module `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer'.
+Parameter \WIDTH = 32
+Parameter \CHANNELS = 2
+Found cached RTLIL representation for module `$paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer'.
+Parameter \WIDTH = 32
+Parameter \CHANNELS = 4
+Found cached RTLIL representation for module `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer'.
+
+21.11. Analyzing design hierarchy..
+Top module:  \riscv_core
+Used module:     \data_memory_interface
+Used module:     \singlecycle_ctlpath
+Used module:         \alu_control
+Used module:         \control_transfer
+Used module:         \singlecycle_control
+Used module:     \immediate_generator
+Used module:     \instruction_decoder
+Used module:     \singlecycle_datapath
+Used module:         \regfile
+Used module:         $paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register
+Used module:         $paramod\multiplexer8\WIDTH=s32'00000000000000000000000000100000
+Used module:             $paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer
+Used module:         $paramod\multiplexer2\WIDTH=s32'00000000000000000000000000100000
+Used module:             $paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer
+Used module:         $paramod\multiplexer4\WIDTH=s32'00000000000000000000000000100000
+Used module:             $paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer
+Used module:         \alu
+Used module:         $paramod\adder\WIDTH=s32'00000000000000000000000000100000
+
+21.12. Analyzing design hierarchy..
+Top module:  \riscv_core
+Used module:     \data_memory_interface
+Used module:     \singlecycle_ctlpath
+Used module:         \alu_control
+Used module:         \control_transfer
+Used module:         \singlecycle_control
+Used module:     \immediate_generator
+Used module:     \instruction_decoder
+Used module:     \singlecycle_datapath
+Used module:         \regfile
+Used module:         $paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register
+Used module:         $paramod\multiplexer8\WIDTH=s32'00000000000000000000000000100000
+Used module:             $paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer
+Used module:         $paramod\multiplexer2\WIDTH=s32'00000000000000000000000000100000
+Used module:             $paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer
+Used module:         $paramod\multiplexer4\WIDTH=s32'00000000000000000000000000100000
+Used module:             $paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer
+Used module:         \alu
+Used module:         $paramod\adder\WIDTH=s32'00000000000000000000000000100000
+Removing unused module `\toplevel'.
+Removing unused module `\register'.
+Removing unused module `\multiplexer8'.
+Removing unused module `\multiplexer4'.
+Removing unused module `\multiplexer2'.
+Removing unused module `\multiplexer'.
+Removing unused module `\adder'.
+Removed 7 unused modules.
+
+22. Executing PROC pass (convert processes to netlists).
+
+22.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+22.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed 1 dead cases from process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$104 in module $paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.
+Marked 1 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$104 in module $paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.
+Marked 1 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_control.sv:24$102 in module singlecycle_control.
+Removed 1 dead cases from process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:33$96 in module regfile.
+Marked 1 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:33$96 in module regfile.
+Removed 1 dead cases from process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:32$93 in module regfile.
+Marked 1 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:32$93 in module regfile.
+Marked 5 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75 in module regfile.
+Marked 1 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/register.sv:23$129 in module $paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register.
+Removed 1 dead cases from process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$118 in module $paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.
+Marked 1 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$118 in module $paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.
+Marked 1 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/immediate_generator.sv:22$62 in module immediate_generator.
+Marked 1 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:51$57 in module data_memory_interface.
+Marked 1 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:35$50 in module data_memory_interface.
+Marked 4 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/control_transfer.sv:19$41 in module control_transfer.
+Removed 1 dead cases from process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:79$40 in module alu_control.
+Marked 1 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:79$40 in module alu_control.
+Marked 1 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:67$39 in module alu_control.
+Marked 1 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:60$38 in module alu_control.
+Removed 1 dead cases from process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:47$37 in module alu_control.
+Marked 1 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:47$37 in module alu_control.
+Marked 1 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:42$34 in module alu_control.
+Marked 2 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:35$33 in module alu_control.
+Marked 1 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:25$32 in module alu_control.
+Marked 7 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:25$3 in module alu.
+Removed 1 dead cases from process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$110 in module $paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.
+Marked 1 switch rules as full_case in process $proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$110 in module $paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.
+Removed a total of 7 dead cases.
+
+22.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 85 assignments to connections.
+
+22.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:27$99'.
+  Set init value: \i = 32
+  Set init value: \register[0] = 0
+  Set init value: \register[1] = 0
+  Set init value: \register[2] = 0
+  Set init value: \register[3] = 0
+  Set init value: \register[4] = 0
+  Set init value: \register[5] = 0
+  Set init value: \register[6] = 0
+  Set init value: \register[7] = 0
+  Set init value: \register[8] = 0
+  Set init value: \register[9] = 0
+  Set init value: \register[10] = 0
+  Set init value: \register[11] = 0
+  Set init value: \register[12] = 0
+  Set init value: \register[13] = 0
+  Set init value: \register[14] = 0
+  Set init value: \register[15] = 0
+  Set init value: \register[16] = 0
+  Set init value: \register[17] = 0
+  Set init value: \register[18] = 0
+  Set init value: \register[19] = 0
+  Set init value: \register[20] = 0
+  Set init value: \register[21] = 0
+  Set init value: \register[22] = 0
+  Set init value: \register[23] = 0
+  Set init value: \register[24] = 0
+  Set init value: \register[25] = 0
+  Set init value: \register[26] = 0
+  Set init value: \register[27] = 0
+  Set init value: \register[28] = 0
+  Set init value: \register[29] = 0
+  Set init value: \register[30] = 0
+  Set init value: \register[31] = 0
+Found init rule in `$paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/register.sv:21$130'.
+  Set init value: \value = 4194304
+
+22.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \reset in `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+Found async reset \reset in `$paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/register.sv:23$129'.
+
+22.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 2 switches.
+<suppressed ~31 debug messages>
+
+22.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$108'.
+Creating decoders for process `$paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$107'.
+Creating decoders for process `$paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$104'.
+     1/1: $1$mem2reg_rd$\input_array$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$103_DATA[31:0]$106
+Creating decoders for process `\singlecycle_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_control.sv:24$102'.
+     1/11: $1\reg_writeback_select[2:0]
+     2/11: $1\data_mem_read_enable[0:0]
+     3/11: $1\alu_op_type[2:0]
+     4/11: $1\alu_operand_b_select[0:0]
+     5/11: $1\alu_operand_a_select[0:0]
+     6/11: $1\regfile_write_enable[0:0]
+     7/11: $1\data_mem_write_enable[0:0]
+     8/11: $1\pc_write_enable[0:0]
+     9/11: $1\jalr_enable[0:0]
+    10/11: $1\jal_enable[0:0]
+    11/11: $1\branch_enable[0:0]
+Creating decoders for process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:27$99'.
+Creating decoders for process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:33$96'.
+     1/1: $1$mem2reg_rd$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:33$72_DATA[31:0]$98
+Creating decoders for process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:32$93'.
+     1/1: $1$mem2reg_rd$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:32$71_DATA[31:0]$95
+Creating decoders for process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+     1/45: $3$mem2reg_wr$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:40$73_ADDR[4:0]$89
+     2/45: $3$mem2reg_wr$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:40$73_DATA[31:0]$90
+     3/45: $3$mem2reg_wr$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:41$74_DATA[31:0]$92
+     4/45: $3$mem2reg_wr$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:41$74_ADDR[4:0]$91
+     5/45: $2$mem2reg_wr$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:41$74_DATA[31:0]$87
+     6/45: $2$mem2reg_wr$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:41$74_ADDR[4:0]$86
+     7/45: $2$mem2reg_wr$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:40$73_DATA[31:0]$85
+     8/45: $2$mem2reg_wr$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:40$73_ADDR[4:0]$84
+     9/45: $1$mem2reg_wr$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:41$74_DATA[31:0]$83
+    10/45: $1$mem2reg_wr$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:41$74_ADDR[4:0]$82
+    11/45: $1$mem2reg_wr$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:40$73_DATA[31:0]$81
+    12/45: $1$mem2reg_wr$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:40$73_ADDR[4:0]$80
+    13/45: $1\i[31:0]
+    14/45: $0\register[31][31:0]
+    15/45: $0\register[30][31:0]
+    16/45: $0\register[29][31:0]
+    17/45: $0\register[28][31:0]
+    18/45: $0\register[27][31:0]
+    19/45: $0\register[26][31:0]
+    20/45: $0\register[25][31:0]
+    21/45: $0\register[24][31:0]
+    22/45: $0\register[23][31:0]
+    23/45: $0\register[22][31:0]
+    24/45: $0\register[21][31:0]
+    25/45: $0\register[20][31:0]
+    26/45: $0\register[19][31:0]
+    27/45: $0\register[18][31:0]
+    28/45: $0\register[17][31:0]
+    29/45: $0\register[16][31:0]
+    30/45: $0\register[15][31:0]
+    31/45: $0\register[14][31:0]
+    32/45: $0\register[13][31:0]
+    33/45: $0\register[12][31:0]
+    34/45: $0\register[11][31:0]
+    35/45: $0\register[10][31:0]
+    36/45: $0\register[9][31:0]
+    37/45: $0\register[8][31:0]
+    38/45: $0\register[7][31:0]
+    39/45: $0\register[6][31:0]
+    40/45: $0\register[5][31:0]
+    41/45: $0\register[4][31:0]
+    42/45: $0\register[3][31:0]
+    43/45: $0\register[2][31:0]
+    44/45: $0\register[1][31:0]
+    45/45: $0\register[0][31:0]
+Creating decoders for process `$paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/register.sv:21$130'.
+Creating decoders for process `$paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/register.sv:23$129'.
+     1/1: $0\value[31:0]
+Creating decoders for process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$128'.
+Creating decoders for process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$127'.
+Creating decoders for process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$126'.
+Creating decoders for process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$125'.
+Creating decoders for process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$124'.
+Creating decoders for process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$123'.
+Creating decoders for process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$122'.
+Creating decoders for process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$121'.
+Creating decoders for process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$118'.
+     1/1: $1$mem2reg_rd$\input_array$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$117_DATA[31:0]$120
+Creating decoders for process `\immediate_generator.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/immediate_generator.sv:22$62'.
+     1/1: $1\immediate[31:0]
+Creating decoders for process `\data_memory_interface.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:51$57'.
+     1/1: $1\sign_fix[31:0]
+Creating decoders for process `\data_memory_interface.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:46$54'.
+Creating decoders for process `\data_memory_interface.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:35$50'.
+     1/1: $1\bus_byte_enable[3:0]
+Creating decoders for process `\control_transfer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/control_transfer.sv:19$41'.
+     1/4: $4\next_pc_select[1:0]
+     2/4: $3\next_pc_select[1:0]
+     3/4: $2\next_pc_select[1:0]
+     4/4: $1\next_pc_select[1:0]
+Creating decoders for process `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:79$40'.
+     1/1: $1\m_extension_funct[4:0]
+Creating decoders for process `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:67$39'.
+     1/1: $1\branch_funct[4:0]
+Creating decoders for process `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:60$38'.
+     1/1: $1\secondary_funct[4:0]
+Creating decoders for process `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:47$37'.
+     1/1: $1\default_funct[4:0]
+Creating decoders for process `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:42$34'.
+     1/1: $1\op_imm_funct[4:0]
+Creating decoders for process `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:35$33'.
+     1/2: $2\op_funct[4:0]
+     2/2: $1\op_funct[4:0]
+Creating decoders for process `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:25$32'.
+     1/1: $1\alu_function[4:0]
+Creating decoders for process `\alu.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:75$28'.
+Creating decoders for process `\alu.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:25$3'.
+     1/7: $7\result[31:0]
+     2/7: $6\result[31:0]
+     3/7: $5\result[31:0]
+     4/7: $4\result[31:0]
+     5/7: $3\result[31:0]
+     6/7: $2\result[31:0]
+     7/7: $1\result[31:0]
+Creating decoders for process `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$116'.
+Creating decoders for process `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$115'.
+Creating decoders for process `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$114'.
+Creating decoders for process `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$113'.
+Creating decoders for process `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$110'.
+     1/1: $1$mem2reg_rd$\input_array$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$109_DATA[31:0]$112
+
+22.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.\input_array[0]' from process `$paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$108'.
+No latch inferred for signal `$paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.\input_array[1]' from process `$paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$107'.
+No latch inferred for signal `$paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.$mem2reg_rd$\input_array$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$103_DATA' from process `$paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$104'.
+No latch inferred for signal `\singlecycle_control.\alu_op_type' from process `\singlecycle_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_control.sv:24$102'.
+No latch inferred for signal `\singlecycle_control.\branch_enable' from process `\singlecycle_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_control.sv:24$102'.
+No latch inferred for signal `\singlecycle_control.\jal_enable' from process `\singlecycle_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_control.sv:24$102'.
+No latch inferred for signal `\singlecycle_control.\jalr_enable' from process `\singlecycle_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_control.sv:24$102'.
+No latch inferred for signal `\singlecycle_control.\pc_write_enable' from process `\singlecycle_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_control.sv:24$102'.
+No latch inferred for signal `\singlecycle_control.\regfile_write_enable' from process `\singlecycle_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_control.sv:24$102'.
+No latch inferred for signal `\singlecycle_control.\alu_operand_a_select' from process `\singlecycle_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_control.sv:24$102'.
+No latch inferred for signal `\singlecycle_control.\alu_operand_b_select' from process `\singlecycle_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_control.sv:24$102'.
+No latch inferred for signal `\singlecycle_control.\reg_writeback_select' from process `\singlecycle_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_control.sv:24$102'.
+No latch inferred for signal `\singlecycle_control.\data_mem_read_enable' from process `\singlecycle_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_control.sv:24$102'.
+No latch inferred for signal `\singlecycle_control.\data_mem_write_enable' from process `\singlecycle_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_control.sv:24$102'.
+No latch inferred for signal `\regfile.$mem2reg_rd$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:33$72_DATA' from process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:33$96'.
+No latch inferred for signal `\regfile.$mem2reg_rd$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:32$71_DATA' from process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:32$93'.
+No latch inferred for signal `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.\input_array[0]' from process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$128'.
+No latch inferred for signal `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.\input_array[1]' from process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$127'.
+No latch inferred for signal `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.\input_array[2]' from process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$126'.
+No latch inferred for signal `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.\input_array[3]' from process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$125'.
+No latch inferred for signal `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.\input_array[4]' from process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$124'.
+No latch inferred for signal `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.\input_array[5]' from process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$123'.
+No latch inferred for signal `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.\input_array[6]' from process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$122'.
+No latch inferred for signal `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.\input_array[7]' from process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$121'.
+No latch inferred for signal `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$mem2reg_rd$\input_array$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$117_DATA' from process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$118'.
+No latch inferred for signal `\immediate_generator.\immediate' from process `\immediate_generator.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/immediate_generator.sv:22$62'.
+No latch inferred for signal `\data_memory_interface.\sign_fix' from process `\data_memory_interface.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:51$57'.
+No latch inferred for signal `\data_memory_interface.\position_fix' from process `\data_memory_interface.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:46$54'.
+No latch inferred for signal `\data_memory_interface.\bus_byte_enable' from process `\data_memory_interface.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:35$50'.
+No latch inferred for signal `\control_transfer.\next_pc_select' from process `\control_transfer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/control_transfer.sv:19$41'.
+No latch inferred for signal `\alu_control.\m_extension_funct' from process `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:79$40'.
+No latch inferred for signal `\alu_control.\branch_funct' from process `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:67$39'.
+No latch inferred for signal `\alu_control.\secondary_funct' from process `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:60$38'.
+No latch inferred for signal `\alu_control.\default_funct' from process `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:47$37'.
+No latch inferred for signal `\alu_control.\op_imm_funct' from process `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:42$34'.
+No latch inferred for signal `\alu_control.\op_funct' from process `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:35$33'.
+No latch inferred for signal `\alu_control.\alu_function' from process `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:25$32'.
+No latch inferred for signal `\alu.\signed_multiplication' from process `\alu.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:75$28'.
+No latch inferred for signal `\alu.\unsigned_multiplication' from process `\alu.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:75$28'.
+No latch inferred for signal `\alu.\signed_unsigned_multiplication' from process `\alu.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:75$28'.
+No latch inferred for signal `\alu.\result' from process `\alu.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:25$3'.
+No latch inferred for signal `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.\input_array[0]' from process `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$116'.
+No latch inferred for signal `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.\input_array[1]' from process `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$115'.
+No latch inferred for signal `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.\input_array[2]' from process `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$114'.
+No latch inferred for signal `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.\input_array[3]' from process `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$113'.
+No latch inferred for signal `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.$mem2reg_rd$\input_array$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$109_DATA' from process `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$110'.
+
+22.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\regfile.\i' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1858' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[0]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1861' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[1]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1864' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[2]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1867' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[3]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1870' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[4]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1873' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[5]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1876' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[6]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1879' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[7]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1882' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[8]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1885' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[9]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1888' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[10]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1891' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[11]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1894' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[12]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1897' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[13]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1900' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[14]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1903' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[15]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1906' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[16]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1909' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[17]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1912' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[18]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1915' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[19]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1918' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[20]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1921' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[21]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1924' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[22]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1927' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[23]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1930' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[24]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1933' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[25]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1936' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[26]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1939' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[27]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1942' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[28]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1945' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[29]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1948' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[30]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1951' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.\register[31]' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1954' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.$mem2reg_wr$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:40$73_ADDR' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1957' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.$mem2reg_wr$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:40$73_DATA' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1960' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.$mem2reg_wr$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:41$74_ADDR' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1963' with positive edge clock and positive level reset.
+Creating register for signal `\regfile.$mem2reg_wr$\register$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:41$74_DATA' using process `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+  created $adff cell `$procdff$1966' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register.\value' using process `$paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/register.sv:23$129'.
+  created $adff cell `$procdff$1969' with positive edge clock and positive level reset.
+
+22.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+22.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `$paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$108'.
+Removing empty process `$paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$107'.
+Found and cleaned up 1 empty switch in `$paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$104'.
+Removing empty process `$paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$104'.
+Found and cleaned up 1 empty switch in `\singlecycle_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_control.sv:24$102'.
+Removing empty process `singlecycle_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/singlecycle/singlecycle_control.sv:24$102'.
+Removing empty process `regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:27$99'.
+Found and cleaned up 1 empty switch in `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:33$96'.
+Removing empty process `regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:33$96'.
+Found and cleaned up 1 empty switch in `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:32$93'.
+Removing empty process `regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:32$93'.
+Found and cleaned up 4 empty switches in `\regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+Removing empty process `regfile.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/regfile.sv:35$75'.
+Removing empty process `$paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/register.sv:21$130'.
+Found and cleaned up 1 empty switch in `$paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/register.sv:23$129'.
+Removing empty process `$paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/register.sv:23$129'.
+Removing empty process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$128'.
+Removing empty process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$127'.
+Removing empty process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$126'.
+Removing empty process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$125'.
+Removing empty process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$124'.
+Removing empty process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$123'.
+Removing empty process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$122'.
+Removing empty process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$121'.
+Found and cleaned up 1 empty switch in `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$118'.
+Removing empty process `$paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$118'.
+Found and cleaned up 1 empty switch in `\immediate_generator.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/immediate_generator.sv:22$62'.
+Removing empty process `immediate_generator.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/immediate_generator.sv:22$62'.
+Found and cleaned up 1 empty switch in `\data_memory_interface.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:51$57'.
+Removing empty process `data_memory_interface.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:51$57'.
+Removing empty process `data_memory_interface.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:46$54'.
+Found and cleaned up 1 empty switch in `\data_memory_interface.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:35$50'.
+Removing empty process `data_memory_interface.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/data_memory_interface.sv:35$50'.
+Found and cleaned up 4 empty switches in `\control_transfer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/control_transfer.sv:19$41'.
+Removing empty process `control_transfer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/control_transfer.sv:19$41'.
+Found and cleaned up 1 empty switch in `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:79$40'.
+Removing empty process `alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:79$40'.
+Found and cleaned up 1 empty switch in `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:67$39'.
+Removing empty process `alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:67$39'.
+Found and cleaned up 1 empty switch in `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:60$38'.
+Removing empty process `alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:60$38'.
+Found and cleaned up 1 empty switch in `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:47$37'.
+Removing empty process `alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:47$37'.
+Found and cleaned up 1 empty switch in `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:42$34'.
+Removing empty process `alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:42$34'.
+Found and cleaned up 2 empty switches in `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:35$33'.
+Removing empty process `alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:35$33'.
+Found and cleaned up 1 empty switch in `\alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:25$32'.
+Removing empty process `alu_control.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu_control.sv:25$32'.
+Removing empty process `alu.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:75$28'.
+Found and cleaned up 7 empty switches in `\alu.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:25$3'.
+Removing empty process `alu.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/alu.sv:25$3'.
+Removing empty process `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$116'.
+Removing empty process `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$115'.
+Removing empty process `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$114'.
+Removing empty process `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:24$113'.
+Found and cleaned up 1 empty switch in `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$110'.
+Removing empty process `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$110'.
+Cleaned up 33 empty switches.
+
+22.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\adder\WIDTH=s32'00000000000000000000000000100000.
+Optimizing module singlecycle_datapath.
+Optimizing module singlecycle_ctlpath.
+Optimizing module singlecycle_control.
+Optimizing module riscv_core.
+Optimizing module $paramod\multiplexer4\WIDTH=s32'00000000000000000000000000100000.
+Optimizing module regfile.
+<suppressed ~42 debug messages>
+Optimizing module $paramod\multiplexer2\WIDTH=s32'00000000000000000000000000100000.
+Optimizing module $paramod\multiplexer8\WIDTH=s32'00000000000000000000000000100000.
+Optimizing module $paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register.
+<suppressed ~1 debug messages>
+Optimizing module $paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.
+<suppressed ~1 debug messages>
+Optimizing module instruction_decoder.
+Optimizing module immediate_generator.
+Optimizing module data_memory_interface.
+<suppressed ~2 debug messages>
+Optimizing module control_transfer.
+<suppressed ~1 debug messages>
+Optimizing module alu_control.
+<suppressed ~3 debug messages>
+Optimizing module alu.
+<suppressed ~5 debug messages>
+Optimizing module $paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.
+<suppressed ~1 debug messages>
+
+23. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.
+Deleting now unused module $paramod\adder\WIDTH=s32'00000000000000000000000000100000.
+Deleting now unused module singlecycle_datapath.
+Deleting now unused module singlecycle_ctlpath.
+Deleting now unused module singlecycle_control.
+Deleting now unused module $paramod\multiplexer4\WIDTH=s32'00000000000000000000000000100000.
+Deleting now unused module regfile.
+Deleting now unused module $paramod\multiplexer2\WIDTH=s32'00000000000000000000000000100000.
+Deleting now unused module $paramod\multiplexer8\WIDTH=s32'00000000000000000000000000100000.
+Deleting now unused module $paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register.
+Deleting now unused module $paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.
+Deleting now unused module instruction_decoder.
+Deleting now unused module immediate_generator.
+Deleting now unused module data_memory_interface.
+Deleting now unused module control_transfer.
+Deleting now unused module alu_control.
+Deleting now unused module alu.
+Deleting now unused module $paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.
+<suppressed ~20 debug messages>
+
+24. Executing OPT pass (performing simple optimizations).
+
+24.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_core.
+<suppressed ~4 debug messages>
+
+24.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_core'.
+Computing hashes of 616 cells of `\riscv_core'.
+Finding duplicate cells in `\riscv_core'.
+Computing hashes of 449 cells of `\riscv_core'.
+Finding duplicate cells in `\riscv_core'.
+Computing hashes of 448 cells of `\riscv_core'.
+Finding duplicate cells in `\riscv_core'.
+<suppressed ~504 debug messages>
+Removed a total of 168 cells.
+
+24.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \riscv_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $flatten\singlecycle_ctlpath.\alu_control.$procmux$1767.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1829.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1820.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1818.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1808.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1800.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1793.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1791.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1783.
+    dead port 2/2 on $mux $flatten\singlecycle_ctlpath.\control_transfer.$procmux$1741.
+    dead port 1/2 on $mux $flatten\singlecycle_ctlpath.\control_transfer.$procmux$1730.
+    dead port 1/2 on $mux $flatten\singlecycle_ctlpath.\control_transfer.$procmux$1724.
+    dead port 1/2 on $mux $flatten\singlecycle_ctlpath.\control_transfer.$procmux$1721.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$375.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$375.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$372.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$372.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$369.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$369.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$366.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$366.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$363.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$363.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$361.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$361.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$357.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$357.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$355.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$355.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$351.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$351.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$349.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$349.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$345.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$345.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$343.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$343.
+Removed 37 multiplexer ports.
+<suppressed ~305 debug messages>
+
+24.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \riscv_core.
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$168: { $auto$opt_reduce.cc:137:opt_pmux$1993 $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$267_CMP $auto$opt_reduce.cc:137:opt_pmux$1991 $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$269_CMP $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$272_CMP }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$204: { $auto$opt_reduce.cc:137:opt_pmux$1997 $auto$opt_reduce.cc:137:opt_pmux$1995 }
+    New ctrl vector for $pmux cell $flatten\singlecycle_datapath.\alu.$procmux$1832: { $flatten\singlecycle_datapath.\alu.$procmux$1833_CMP $flatten\singlecycle_datapath.\alu.$procmux$1834_CMP $flatten\singlecycle_datapath.\alu.$procmux$1835_CMP $flatten\singlecycle_datapath.\alu.$procmux$1836_CMP $auto$opt_reduce.cc:137:opt_pmux$1999 $flatten\singlecycle_datapath.\alu.$procmux$1839_CMP $flatten\singlecycle_datapath.\alu.$procmux$1840_CMP $flatten\singlecycle_datapath.\alu.$procmux$1841_CMP $flatten\singlecycle_datapath.\alu.$procmux$1842_CMP $flatten\singlecycle_datapath.\alu.$procmux$1843_CMP $flatten\singlecycle_datapath.\alu.$procmux$1844_CMP $flatten\singlecycle_datapath.\alu.$procmux$1845_CMP $flatten\singlecycle_datapath.\alu.$procmux$1846_CMP $flatten\singlecycle_datapath.\alu.$procmux$1847_CMP $flatten\singlecycle_datapath.\alu.$procmux$1848_CMP $flatten\singlecycle_datapath.\alu.$procmux$1849_CMP $flatten\singlecycle_datapath.\alu.$procmux$1850_CMP }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$216: { $auto$opt_reduce.cc:137:opt_pmux$2001 $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$270_CMP }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$264: { $auto$opt_reduce.cc:137:opt_pmux$2003 $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$267_CMP }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$180: { $auto$opt_reduce.cc:137:opt_pmux$2007 $auto$opt_reduce.cc:137:opt_pmux$2005 }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$228: $auto$opt_reduce.cc:137:opt_pmux$2009
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$156: { $auto$opt_reduce.cc:137:opt_pmux$2011 $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$274_CMP }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$192: { $auto$opt_reduce.cc:137:opt_pmux$2015 $auto$opt_reduce.cc:137:opt_pmux$2013 }
+    New ctrl vector for $pmux cell $flatten\singlecycle_datapath.\mux_reg_writeback.\multiplexer.$procmux$1691: { $auto$opt_reduce.cc:137:opt_pmux$2017 $flatten\singlecycle_datapath.\mux_reg_writeback.\multiplexer.$procmux$1696_CMP $flatten\singlecycle_datapath.\mux_reg_writeback.\multiplexer.$procmux$1697_CMP $flatten\singlecycle_datapath.\mux_reg_writeback.\multiplexer.$procmux$1698_CMP $flatten\singlecycle_datapath.\mux_reg_writeback.\multiplexer.$procmux$1699_CMP }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$252: { $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$265_CMP $auto$opt_reduce.cc:137:opt_pmux$2019 }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$144: { $auto$opt_reduce.cc:137:opt_pmux$2023 $auto$opt_reduce.cc:137:opt_pmux$2021 $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$268_CMP $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$274_CMP }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\alu_control.$procmux$1748: { $auto$opt_reduce.cc:137:opt_pmux$2029 $auto$opt_reduce.cc:137:opt_pmux$2027 $auto$opt_reduce.cc:137:opt_pmux$2025 }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$240: { $auto$opt_reduce.cc:137:opt_pmux$2031 $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$266_CMP }
+  Optimizing cells in module \riscv_core.
+Performed a total of 14 changes.
+
+24.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_core'.
+Computing hashes of 444 cells of `\riscv_core'.
+Finding duplicate cells in `\riscv_core'.
+Computing hashes of 440 cells of `\riscv_core'.
+Finding duplicate cells in `\riscv_core'.
+<suppressed ~12 debug messages>
+Removed a total of 4 cells.
+
+24.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1912 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$733_Y, Q = \singlecycle_datapath.regfile.register[17]).
+Handling D = Q on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($adff) from module riscv_core (removing D path).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1954 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$383_Y, Q = \singlecycle_datapath.regfile.register[31]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1861 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1685_Y, Q = \singlecycle_datapath.regfile.register[0]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1915 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$695_Y, Q = \singlecycle_datapath.regfile.register[18]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1864 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1613_Y, Q = \singlecycle_datapath.regfile.register[1]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1942 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$443_Y, Q = \singlecycle_datapath.regfile.register[27]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1867 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1543_Y, Q = \singlecycle_datapath.regfile.register[2]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1918 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$659_Y, Q = \singlecycle_datapath.regfile.register[19]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1870 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1475_Y, Q = \singlecycle_datapath.regfile.register[3]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1873 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1409_Y, Q = \singlecycle_datapath.regfile.register[4]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1921 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$625_Y, Q = \singlecycle_datapath.regfile.register[20]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1876 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1345_Y, Q = \singlecycle_datapath.regfile.register[5]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1945 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$425_Y, Q = \singlecycle_datapath.regfile.register[28]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1879 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1283_Y, Q = \singlecycle_datapath.regfile.register[6]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1924 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$593_Y, Q = \singlecycle_datapath.regfile.register[21]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1882 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1223_Y, Q = \singlecycle_datapath.regfile.register[7]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1885 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1165_Y, Q = \singlecycle_datapath.regfile.register[8]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1927 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$563_Y, Q = \singlecycle_datapath.regfile.register[22]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1888 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1109_Y, Q = \singlecycle_datapath.regfile.register[9]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1948 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$409_Y, Q = \singlecycle_datapath.regfile.register[29]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1891 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1055_Y, Q = \singlecycle_datapath.regfile.register[10]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1930 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$535_Y, Q = \singlecycle_datapath.regfile.register[23]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1894 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1003_Y, Q = \singlecycle_datapath.regfile.register[11]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1897 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$953_Y, Q = \singlecycle_datapath.regfile.register[12]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1933 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$509_Y, Q = \singlecycle_datapath.regfile.register[24]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1900 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$905_Y, Q = \singlecycle_datapath.regfile.register[13]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1951 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$395_Y, Q = \singlecycle_datapath.regfile.register[30]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1903 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$859_Y, Q = \singlecycle_datapath.regfile.register[14]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1936 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$485_Y, Q = \singlecycle_datapath.regfile.register[25]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1906 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$815_Y, Q = \singlecycle_datapath.regfile.register[15]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1909 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$773_Y, Q = \singlecycle_datapath.regfile.register[16]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1939 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$463_Y, Q = \singlecycle_datapath.regfile.register[26]).
+Adding EN signal on $flatten\singlecycle_datapath.\program_counter.$procdff$1969 ($adff) from module riscv_core (D = \singlecycle_datapath.program_counter.next, Q = \singlecycle_datapath.program_counter.value).
+Setting constant 0-bit at position 0 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 1 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 2 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 3 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 4 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 1-bit at position 5 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 6 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 7 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 8 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 9 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 10 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 11 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 12 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 13 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 14 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 15 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 16 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 17 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 18 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 19 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 20 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 21 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 22 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 23 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 24 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 25 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 26 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 27 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 28 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 29 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 30 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 0-bit at position 31 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 1-bit at position 0 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 1 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 2 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 3 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 4 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 5 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 6 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 7 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 8 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 9 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 10 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 11 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 12 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 13 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 14 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 15 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 16 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 17 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 18 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 19 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 20 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 21 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 22 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 23 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 24 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 25 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 26 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 27 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 28 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 29 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 30 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 31 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
+Setting constant 1-bit at position 0 on $flatten\singlecycle_datapath.\regfile.$procdff$1963 ($adff) from module riscv_core.
+Setting constant 1-bit at position 1 on $flatten\singlecycle_datapath.\regfile.$procdff$1963 ($adff) from module riscv_core.
+Setting constant 1-bit at position 2 on $flatten\singlecycle_datapath.\regfile.$procdff$1963 ($adff) from module riscv_core.
+Setting constant 1-bit at position 3 on $flatten\singlecycle_datapath.\regfile.$procdff$1963 ($adff) from module riscv_core.
+Setting constant 1-bit at position 4 on $flatten\singlecycle_datapath.\regfile.$procdff$1963 ($adff) from module riscv_core.
+
+24.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_core..
+Removed 33 unused cells and 591 unused wires.
+<suppressed ~34 debug messages>
+
+24.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_core.
+<suppressed ~32 debug messages>
+
+24.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+24.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \riscv_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~259 debug messages>
+
+24.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \riscv_core.
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\control_transfer.$procmux$1734: { $auto$opt_reduce.cc:137:opt_pmux$2196 $auto$opt_reduce.cc:137:opt_pmux$2194 }
+  Optimizing cells in module \riscv_core.
+Performed a total of 1 changes.
+
+24.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_core'.
+Computing hashes of 438 cells of `\riscv_core'.
+Finding duplicate cells in `\riscv_core'.
+Removed a total of 0 cells.
+
+24.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+24.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_core..
+Removed 0 unused cells and 32 unused wires.
+<suppressed ~1 debug messages>
+
+24.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_core.
+
+24.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+24.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \riscv_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~255 debug messages>
+
+24.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \riscv_core.
+Performed a total of 0 changes.
+
+24.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\riscv_core'.
+Computing hashes of 438 cells of `\riscv_core'.
+Finding duplicate cells in `\riscv_core'.
+Removed a total of 0 cells.
+
+24.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+24.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_core..
+
+24.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module riscv_core.
+
+24.23. Finished fast OPT passes. (There is nothing left to do.)
+
+25. Executing MEMORY pass.
+
+25.1. Executing OPT_MEM pass (optimize memories).
+riscv_core.$flatten\singlecycle_ctlpath.\alu_control.$auto$proc_rom.cc:155:do_switch$137: removing const-0 lane 4
+Performed a total of 1 transformations.
+
+25.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+25.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+25.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+25.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+Checking read port `$flatten\singlecycle_ctlpath.\alu_control.$auto$proc_rom.cc:155:do_switch$137'[0] in module `\riscv_core': no output FF found.
+Checking read port `$flatten\singlecycle_ctlpath.\alu_control.$auto$proc_rom.cc:155:do_switch$133'[0] in module `\riscv_core': no output FF found.
+Checking read port address `$flatten\singlecycle_ctlpath.\alu_control.$auto$proc_rom.cc:155:do_switch$137'[0] in module `\riscv_core': no address FF found.
+Checking read port address `$flatten\singlecycle_ctlpath.\alu_control.$auto$proc_rom.cc:155:do_switch$133'[0] in module `\riscv_core': no address FF found.
+
+25.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_core..
+
+25.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+25.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+25.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_core..
+
+25.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+25.11. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+Mapping memory $flatten\singlecycle_ctlpath.\alu_control.$auto$proc_rom.cc:155:do_switch$137 in module \riscv_core:
+  created 8 $dff cells and 0 static cells of width 4.
+  read interface: 0 $dff and 7 $mux cells.
+  write interface: 0 write mux blocks.
+Mapping memory $flatten\singlecycle_ctlpath.\alu_control.$auto$proc_rom.cc:155:do_switch$133 in module \riscv_core:
+  created 8 $dff cells and 0 static cells of width 5.
+  read interface: 0 $dff and 7 $mux cells.
+  write interface: 0 write mux blocks.
+
+26. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \riscv_core..
+Removed 0 unused cells and 16 unused wires.
+<suppressed ~1 debug messages>
+
+27. Executing CHECK pass (checking for obvious problems).
+Checking module riscv_core...
+Found and reported 0 problems.
+
+28. Executing JSON backend.
+
+29. Executing RTLIL backend.
+Output filename: /workspace/Incremental-Synthesis-Flow/results/eco-002/base/design_flat.rtlil
+
+30. Executing Verilog backend.
+
+30.1. Executing BMUXMAP pass.
+
+30.2. Executing DEMUXMAP pass.
+Dumping module `\riscv_core'.
+
+Warnings: 2 unique messages, 5 total
+End of script. Logfile hash: 7930d61fc8, time: 0.27s, user: 0.27s, system: 0.01s, MEM: 27.85 MB peak
+Yosys 0.67+24 (git sha1 0e82bbefe, Release, Clang /usr/bin/clang++ 18.1.8)
+Time spent: 18% 6x opt_clean (0 sec), 14% 3x opt_dff (0 sec), ...
