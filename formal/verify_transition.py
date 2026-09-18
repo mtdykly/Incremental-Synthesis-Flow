@@ -2,6 +2,8 @@
 
 This is a one-step inductive proof with an explicit unchanged state mapping,
 not bounded simulation and not a guess based on internal wire names.
+Reference x bits are don't-cares: the candidate must preserve every defined
+reference result. Initialization and state-cell semantics remain exact checks.
 """
 import copy
 import json
@@ -62,7 +64,8 @@ def build_transition_problem(candidate, reference, top, pairs):
             for mod, cell in zip(modules, (bc, nc)):
                 mod['netnames'][f'__proof_{i}_{pin}'] = {
                     'hide_name': 0, 'bits': cell['connections'][pin][:], 'attributes': {}}
-    return {'modules': dict(zip(('gold', 'gate'), modules))}
+    # Undef refinement is directional: New is gold, stitched is gate.
+    return {'modules': {'gold': modules[1], 'gate': modules[0]}}
 
 
 def write_transition_verification(path, candidate, reference, top, pairs):
@@ -70,7 +73,10 @@ def write_transition_verification(path, candidate, reference, top, pairs):
     problem = build_transition_problem(candidate, reference, top, pairs)
     data = path.with_suffix('.json')
     data.write_text(json.dumps(problem))
+    # Do not synthesize the proof with opt -full: mux/reduce rewrites can
+    # change x propagation, even with -keepdc. Fold expressions conservatively
+    # and merge identical cells to keep shared arithmetic cones tractable.
     path.write_text(f'read_json {quote(data)}\n'
                     'equiv_make gold gate equiv\n'
-                    'hierarchy -top equiv\nopt -full\ncheck -assert\n'
-                    'equiv_simple\nequiv_status -assert\n')
+                    'hierarchy -top equiv\nopt_expr -keepdc\nopt_merge\nopt_clean\ncheck -assert\n'
+                    'equiv_simple -undef\nequiv_status -assert\n')

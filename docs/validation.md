@@ -79,3 +79,26 @@ gitlink 保存，因此没有把这些运行表述为从原 RTL 完整重建。�
 当前尚未启用 mapped gate 增量拼接。Base 前后对应工具可证明共同命名的
 组合锥；涉及状态边界或缺少功能模型的 Liberty 单元时保留未知。未提供
 标准单元面积、功耗或加速比结论。
+
+
+## eco-002 的 undef 验证修复（2026-09-18）
+
+`Stitchable: True` 后出现的 `Verification: unknown` 来自最终证明，局部
+综合本身已成功。旧脚本的 1464 个等价点中有 1 个未证明，位于
+`next_pc_select == 2'b01` 的译码逻辑。`take_branch` 的默认值为 `1'bx`。
+单独对综合前后区域执行带 gold-X 通配的 miter 可以通过。
+
+通过缩减为 3 个 mux cell 加一个下游译码器的案例确认：证明中的
+`opt -full` 会改变该 mux 网络的 X 传播，即使增加 `-keepdc` 也会误报。
+最终证明改用 `opt_expr -keepdc; opt_merge; opt_clean`，只做保守常量
+折叠、相同 cell 合并和清理，保留全部输出、状态输入与内部等价点的义务。
+
+同时明确方向：New 为 gold，stitched 为 gate，使用 `equiv_simple -undef`。
+参考输出为确定的 0/1 时，候选必须一致；参考输出为 X 时允许候选具体化。
+这是有方向的 refinement，不是四态完全相等。初始化与寄存器语义仍须
+精确匹配，不使用 `setundef -zero`，也不假定只执行合法指令。
+语义依据见 [Yosys EQY 的 X 传播说明](https://yosyshq.readthedocs.io/projects/eqy/en/latest/xprop.html)。
+`verification.json` 记录 `proof_kind` 和 `undef_policy`。
+
+回归覆盖参考 X 的合法具体化、反向引入 X 的拒绝、确定值错误的拒绝，
+以及实际局部综合后与下游译码器组合的案例。

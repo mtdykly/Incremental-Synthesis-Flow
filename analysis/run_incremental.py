@@ -140,7 +140,9 @@ def stitch_command(args):
     print(f"Stitched netlist: {output_path}")
     outcome = run_yosys(equiv_path, os.path.join(output_dir, 'verify_stitched.log'),
                         getattr(args, 'yosys', 'yosys'), getattr(args, 'timeout', 120))
-    outcome['verified'] = outcome['status'] == 'passed'
+    outcome.update(verified=outcome['status'] == 'passed',
+                   proof_kind='transition_refinement',
+                   undef_policy='reference_x_is_dont_care')
     dump_json(outcome, os.path.join(output_dir, 'verification.json'))
     print(f"Verification: {outcome['status']}")
     return 0 if outcome['verified'] else 3
