@@ -11,7 +11,7 @@ def is_hard_boundary(cell_type):
     return is_sequential(value) or any(x in value for x in MEMORY_MARKERS)
 
 
-def plan_regions(base, new, match_result):
+def plan_regions(base, new, match_result, base_region=None, new_region=None):
     """Close paired regions using explicit external sink pins.
 
     Inputs need only exist in the retained Base implementation. They need not
@@ -19,7 +19,13 @@ def plan_regions(base, new, match_result):
     from New, so cell-free wiring ECOs and split/merged aliases are represented.
     """
     from connection_diff import source
-    mapping = {x['base']: x['new'] for x in match_result['matches']}
+    requested_base, requested_new = set(base_region or []), set(new_region or [])
+    if requested_base - set(base.cells) or requested_new - set(new.cells):
+        raise ValueError('requested region contains unknown cells')
+    # Selecting either endpoint invalidates reuse of the entire pair. Anything
+    # without a checked match is still absorbed, even if RTL provenance missed it.
+    mapping = {x['base']: x['new'] for x in match_result['matches']
+               if x['base'] not in requested_base and x['new'] not in requested_new}
     reverse = {n: b for b, n in mapping.items()}
     br = set(base.cells) - set(mapping)
     nr = set(new.cells) - set(reverse)
@@ -98,6 +104,7 @@ def plan_regions(base, new, match_result):
             'base_boundary': {'inputs': bi, 'outputs': bo},
             'new_boundary': {'inputs': ni, 'outputs': outputs},
             'reconnect': reconnect, 'retained_pairs': mapping,
+            'requested_region': {'base': sorted(requested_base), 'new': sorted(requested_new)},
             'connection_changes': match_result.get('connection_changes', []),
             'unsupported_changed_state_cells': unsupported,
             'unresolved_boundary_pins': errors,

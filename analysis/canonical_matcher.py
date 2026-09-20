@@ -738,7 +738,7 @@ def canonical_match(base, new, topology_rounds=2, top_candidates=3):
 
     result = _candidate_match(base, new, topology_rounds, top_candidates)
     pairs = state_candidates(base, new)
-    pairs += [(x['base'], x['new']) for x in result['matches']]
+    structural_pairs = [(x['base'], x['new']) for x in result['matches']]
     # A persistent name is useful even when the operation changed. It only
     # establishes a reconnectable output identity, never reuse permission.
     pairs += [(b, b) for b in sorted(set(base.cells) & set(new.cells))
@@ -755,6 +755,7 @@ def canonical_match(base, new, topology_rounds=2, top_candidates=3):
     # Trace candidate identities back from corresponding sink pins. This also
     # covers anonymous logic feeding renamed register enable/reset pins. Only
     # unique proposals are kept; all still undergo the input check below.
+    structural_fallback_used = False
     while True:
         proposals = set()
         bit_pairs = [(base.output_bits[label], bit) for label, bit in new.output_bits.items()
@@ -777,7 +778,20 @@ def canonical_match(base, new, topology_rounds=2, top_candidates=3):
                   if sum(x == b for x, _ in proposals) == 1
                   and sum(y == n for _, y in proposals) == 1]
         if not unique:
-            break
+            if structural_fallback_used:
+                break
+            # State/top pin identities outrank ambiguous source/topology hints.
+            # flatten -scopename can put generated decode cells in the same
+            # bucket; consuming them first can steal another register's driver.
+            structural_fallback_used = True
+            for b, n in structural_pairs:
+                if b not in mapping and n not in used:
+                    bo = [(p, i) for p, i, _ in base.cell_output_bits(b)]
+                    no = [(p, i) for p, i, _ in new.cell_output_bits(n)]
+                    if bo == no:
+                        mapping[b] = n
+                        used.add(n)
+            continue
         for b, n in unique:
             mapping[b] = n
             used.add(n)

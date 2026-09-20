@@ -117,291 +117,542 @@ module riscv_core(clock, reset, bus_address, bus_read_data, bus_write_data, bus_
   wire _081_;
   wire _082_;
   wire _083_;
+  (* scopename = "data_memory_interface" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:53.37-53.70" *)
   wire _084_;
+  (* scopename = "data_memory_interface" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:54.37-54.71" *)
   wire _085_;
+  (* scopename = "data_memory_interface" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:53.37-53.52" *)
   wire _086_;
+  (* scopename = "data_memory_interface" *)
   wire _087_;
+  (* scopename = "data_memory_interface" *)
   wire _088_;
+  (* scopename = "data_memory_interface" *)
   wire _089_;
+  (* scopename = "data_memory_interface" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:38.39-38.62" *)
   wire [3:0] _090_;
+  (* scopename = "data_memory_interface" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:39.39-39.62" *)
   wire [3:0] _091_;
+  (* scopename = "data_memory_interface" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:40.39-40.62" *)
   wire [3:0] _092_;
+  (* scopename = "immediate_generator" *)
   wire _093_;
+  (* scopename = "immediate_generator" *)
   wire [1:0] _094_;
+  (* scopename = "immediate_generator" *)
   wire _095_;
+  (* scopename = "immediate_generator" *)
   wire _096_;
+  (* scopename = "immediate_generator" *)
   wire [1:0] _097_;
+  (* scopename = "immediate_generator" *)
   wire _098_;
+  (* scopename = "immediate_generator" *)
   wire [3:0] _099_;
+  (* scopename = "immediate_generator" *)
   wire _100_;
+  (* scopename = "singlecycle_ctlpath alu_control" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:35.16-35.16" *)
   wire [4:0] _101_;
+  (* scopename = "singlecycle_ctlpath alu_control" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:43.13-43.56" *)
   wire _102_;
+  (* scopename = "singlecycle_ctlpath alu_control" *)
   wire _103_;
+  (* scopename = "singlecycle_ctlpath alu_control" *)
   wire _104_;
+  (* scopename = "singlecycle_ctlpath alu_control" *)
   wire _105_;
+  (* scopename = "singlecycle_ctlpath alu_control" *)
   wire _106_;
+  (* scopename = "singlecycle_ctlpath alu_control" *)
   wire _107_;
+  (* scopename = "singlecycle_ctlpath alu_control" *)
   wire _108_;
+  (* scopename = "singlecycle_ctlpath alu_control" *)
   wire _109_;
+  (* scopename = "singlecycle_ctlpath alu_control" *)
   wire _110_;
+  (* scopename = "singlecycle_ctlpath alu_control" *)
   wire _111_;
+  (* scopename = "singlecycle_ctlpath alu_control" *)
   wire _112_;
+  (* scopename = "singlecycle_ctlpath alu_control" *)
   wire _113_;
+  (* scopename = "singlecycle_ctlpath control_transfer" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:18.36-18.54" *)
   wire _114_;
+  (* scopename = "singlecycle_ctlpath singlecycle_control" *)
   wire _115_;
+  (* scopename = "singlecycle_ctlpath singlecycle_control" *)
   wire _116_;
+  (* scopename = "singlecycle_ctlpath singlecycle_control" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:25.42-25.69" *)
   wire [1:0] _117_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:25.16-25.16" *)
   wire [31:0] _118_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:25.16-25.16" *)
   wire [31:0] _119_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:25.16-25.16" *)
   wire [31:0] _120_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:25.16-25.16" *)
   wire [31:0] _121_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:25.16-25.16" *)
   wire [31:0] _122_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:25.16-25.16" *)
   wire [31:0] _123_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:29.34-29.58" *)
   wire signed [31:0] _124_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:38.34-38.58" *)
   wire signed [31:0] _125_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:50.30-50.51" *)
   wire signed [31:0] _126_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:55.30-55.73" *)
   wire [31:0] _127_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:45.21-45.39" *)
   wire _128_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:47.27-47.52" *)
   wire _129_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:47.58-47.76" *)
   wire _130_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:47.26-47.77" *)
   wire _131_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:34.42-34.63" *)
   wire _132_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:35.41-35.84" *)
   wire _133_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:62.30-62.51" *)
   wire signed [31:0] _134_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:67.30-67.73" *)
   wire [31:0] _135_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:37.35-37.59" *)
   wire signed [31:0] _136_;
+  (* scopename = "singlecycle_datapath alu" *)
   wire _137_;
+  (* scopename = "singlecycle_datapath alu" *)
   wire _138_;
+  (* scopename = "singlecycle_datapath alu" *)
   wire _139_;
+  (* scopename = "singlecycle_datapath alu" *)
   wire _140_;
+  (* scopename = "singlecycle_datapath alu" *)
   wire _141_;
+  (* scopename = "singlecycle_datapath alu" *)
   wire _142_;
+  (* scopename = "singlecycle_datapath alu" *)
   wire _143_;
+  (* scopename = "singlecycle_datapath alu" *)
   wire _144_;
+  (* scopename = "singlecycle_datapath alu" *)
   wire _145_;
+  (* scopename = "singlecycle_datapath alu" *)
   wire _146_;
+  (* scopename = "singlecycle_datapath alu" *)
   wire _147_;
+  (* scopename = "singlecycle_datapath alu" *)
   wire _148_;
+  (* scopename = "singlecycle_datapath alu" *)
   wire _149_;
+  (* scopename = "singlecycle_datapath alu" *)
   wire _150_;
+  (* scopename = "singlecycle_datapath alu" *)
   wire _151_;
+  (* scopename = "singlecycle_datapath alu" *)
   wire _152_;
+  (* scopename = "singlecycle_datapath alu" *)
   wire _153_;
+  (* scopename = "singlecycle_datapath alu" *)
   wire _154_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:31.34-31.63" *)
   wire signed [31:0] _155_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:32.34-32.63" *)
   wire signed [31:0] _156_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:33.34-33.63" *)
   wire signed [31:0] _157_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:30.34-30.58" *)
   wire signed [31:0] _158_;
+  (* scopename = "singlecycle_datapath alu" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:36.34-36.58" *)
   wire signed [31:0] _159_;
+  (* scopename = "singlecycle_datapath mux_next_pc_select multiplexer" *)
   wire _160_;
+  (* scopename = "singlecycle_datapath mux_next_pc_select multiplexer" *)
   wire _161_;
+  (* scopename = "singlecycle_datapath mux_next_pc_select multiplexer" *)
   wire _162_;
+  (* scopename = "singlecycle_datapath mux_next_pc_select multiplexer" *)
   wire _163_;
+  (* scopename = "singlecycle_datapath mux_operand_a multiplexer" *)
   wire _164_;
+  (* scopename = "singlecycle_datapath mux_operand_b multiplexer" *)
   wire _165_;
+  (* scopename = "singlecycle_datapath mux_reg_writeback multiplexer" *)
   wire _166_;
+  (* scopename = "singlecycle_datapath mux_reg_writeback multiplexer" *)
   wire _167_;
+  (* scopename = "singlecycle_datapath mux_reg_writeback multiplexer" *)
   wire _168_;
+  (* scopename = "singlecycle_datapath mux_reg_writeback multiplexer" *)
   wire _169_;
+  (* scopename = "singlecycle_datapath mux_reg_writeback multiplexer" *)
   wire _170_;
+  (* scopename = "singlecycle_datapath mux_reg_writeback multiplexer" *)
   wire _171_;
+  (* scopename = "singlecycle_datapath mux_reg_writeback multiplexer" *)
   wire _172_;
+  (* scopename = "singlecycle_datapath mux_reg_writeback multiplexer" *)
   wire _173_;
+  (* scopename = "singlecycle_datapath regfile" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35" *)
   wire _174_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _175_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _176_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _177_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _178_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _179_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _180_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _181_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _182_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _183_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _184_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _185_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _186_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _187_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _188_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _189_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _190_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _191_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _192_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _193_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _194_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _195_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _196_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _197_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _198_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _199_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _200_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _201_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _202_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _203_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _204_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _205_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _206_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _207_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _208_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _209_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _210_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _211_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _212_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _213_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _214_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _215_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _216_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _217_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _218_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _219_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _220_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _221_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _222_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _223_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _224_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _225_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _226_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _227_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _228_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _229_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _230_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _231_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _232_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _233_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _234_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _235_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _236_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _237_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _238_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _239_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _240_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _241_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _242_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _243_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _244_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _245_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _246_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _247_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _248_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _249_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _250_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _251_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _252_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _253_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _254_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _255_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _256_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _257_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _258_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _259_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _260_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _261_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _262_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _263_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _264_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _265_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _266_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _267_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _268_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _269_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire _270_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _271_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _272_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _273_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _274_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _275_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _276_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _277_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _278_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _279_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _280_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _281_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _282_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _283_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _284_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _285_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _286_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _287_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _288_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _289_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _290_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _291_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _292_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _293_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _294_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _295_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _296_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _297_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _298_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _299_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _300_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _301_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _302_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _303_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _304_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _305_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _306_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _307_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _308_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _309_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _310_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _311_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _312_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _313_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _314_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _315_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _316_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _317_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _318_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _319_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _320_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _321_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _322_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _323_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _324_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _325_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _326_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _327_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _328_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _329_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _330_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _331_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _332_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _333_;
+  (* scopename = "singlecycle_datapath regfile" *)
   wire [31:0] _334_;
   wire [4:0] _335_;
   wire [4:0] _336_;
@@ -1067,170 +1318,203 @@ module riscv_core(clock, reset, bus_address, bus_read_data, bus_write_data, bus_
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/riscv_core.sv:43.11-43.23" *)
   wire write_enable;
   (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[17]  <= 32'd0;
-    else if (_032_) \singlecycle_datapath.regfile.register[17]  <= _315_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[31]  <= 32'd0;
-    else if (_033_) \singlecycle_datapath.regfile.register[31]  <= _273_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[0]  <= 32'd0;
-    else if (_034_) \singlecycle_datapath.regfile.register[0]  <= _206_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[18]  <= 32'd0;
-    else if (_035_) \singlecycle_datapath.regfile.register[18]  <= _312_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[1]  <= 32'd0;
-    else if (_036_) \singlecycle_datapath.regfile.register[1]  <= _203_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[27]  <= 32'd0;
-    else if (_037_) \singlecycle_datapath.regfile.register[27]  <= _285_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[2]  <= 32'd0;
-    else if (_038_) \singlecycle_datapath.regfile.register[2]  <= _200_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[19]  <= 32'd0;
-    else if (_039_) \singlecycle_datapath.regfile.register[19]  <= _309_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[3]  <= 32'd0;
-    else if (_040_) \singlecycle_datapath.regfile.register[3]  <= _197_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[4]  <= 32'd0;
-    else if (_041_) \singlecycle_datapath.regfile.register[4]  <= _194_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[20]  <= 32'd0;
-    else if (_042_) \singlecycle_datapath.regfile.register[20]  <= _306_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[5]  <= 32'd0;
-    else if (_043_) \singlecycle_datapath.regfile.register[5]  <= _191_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[28]  <= 32'd0;
-    else if (_044_) \singlecycle_datapath.regfile.register[28]  <= _282_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[6]  <= 32'd0;
-    else if (_045_) \singlecycle_datapath.regfile.register[6]  <= _188_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[21]  <= 32'd0;
-    else if (_046_) \singlecycle_datapath.regfile.register[21]  <= _303_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[7]  <= 32'd0;
-    else if (_047_) \singlecycle_datapath.regfile.register[7]  <= _185_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[8]  <= 32'd0;
-    else if (_048_) \singlecycle_datapath.regfile.register[8]  <= _182_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[22]  <= 32'd0;
-    else if (_049_) \singlecycle_datapath.regfile.register[22]  <= _300_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[9]  <= 32'd0;
-    else if (_050_) \singlecycle_datapath.regfile.register[9]  <= _179_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[29]  <= 32'd0;
-    else if (_051_) \singlecycle_datapath.regfile.register[29]  <= _279_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[10]  <= 32'd0;
-    else if (_052_) \singlecycle_datapath.regfile.register[10]  <= _176_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[23]  <= 32'd0;
-    else if (_053_) \singlecycle_datapath.regfile.register[23]  <= _297_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[11]  <= 32'd0;
-    else if (_054_) \singlecycle_datapath.regfile.register[11]  <= _333_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[12]  <= 32'd0;
-    else if (_055_) \singlecycle_datapath.regfile.register[12]  <= _330_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[24]  <= 32'd0;
-    else if (_056_) \singlecycle_datapath.regfile.register[24]  <= _294_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[13]  <= 32'd0;
-    else if (_057_) \singlecycle_datapath.regfile.register[13]  <= _327_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[30]  <= 32'd0;
-    else if (_058_) \singlecycle_datapath.regfile.register[30]  <= _276_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[14]  <= 32'd0;
-    else if (_059_) \singlecycle_datapath.regfile.register[14]  <= _324_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[25]  <= 32'd0;
-    else if (_060_) \singlecycle_datapath.regfile.register[25]  <= _291_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[15]  <= 32'd0;
-    else if (_061_) \singlecycle_datapath.regfile.register[15]  <= _321_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[16]  <= 32'd0;
-    else if (_062_) \singlecycle_datapath.regfile.register[16]  <= _318_;
-  (* \always_ff  = 32'd1 *)
-  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
-  always @(posedge clock, posedge reset)
-    if (reset) \singlecycle_datapath.regfile.register[26]  <= 32'd0;
-    else if (_063_) \singlecycle_datapath.regfile.register[26]  <= _288_;
-  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath program_counter" *)
   (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/register.sv:23.4-25.45" *)
   always @(posedge clock, posedge reset)
     if (reset) \singlecycle_datapath.program_counter.value  <= 32'd4194304;
     else if (pc_write_enable) \singlecycle_datapath.program_counter.value  <= \singlecycle_datapath.program_counter.next ;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[31]  <= 32'd0;
+    else if (_032_) \singlecycle_datapath.regfile.register[31]  <= _273_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[30]  <= 32'd0;
+    else if (_033_) \singlecycle_datapath.regfile.register[30]  <= _276_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[29]  <= 32'd0;
+    else if (_034_) \singlecycle_datapath.regfile.register[29]  <= _279_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[28]  <= 32'd0;
+    else if (_035_) \singlecycle_datapath.regfile.register[28]  <= _282_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[27]  <= 32'd0;
+    else if (_036_) \singlecycle_datapath.regfile.register[27]  <= _285_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[26]  <= 32'd0;
+    else if (_037_) \singlecycle_datapath.regfile.register[26]  <= _288_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[25]  <= 32'd0;
+    else if (_038_) \singlecycle_datapath.regfile.register[25]  <= _291_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[24]  <= 32'd0;
+    else if (_039_) \singlecycle_datapath.regfile.register[24]  <= _294_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[23]  <= 32'd0;
+    else if (_040_) \singlecycle_datapath.regfile.register[23]  <= _297_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[22]  <= 32'd0;
+    else if (_041_) \singlecycle_datapath.regfile.register[22]  <= _300_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[21]  <= 32'd0;
+    else if (_042_) \singlecycle_datapath.regfile.register[21]  <= _303_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[20]  <= 32'd0;
+    else if (_043_) \singlecycle_datapath.regfile.register[20]  <= _306_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[19]  <= 32'd0;
+    else if (_044_) \singlecycle_datapath.regfile.register[19]  <= _309_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[18]  <= 32'd0;
+    else if (_045_) \singlecycle_datapath.regfile.register[18]  <= _312_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[17]  <= 32'd0;
+    else if (_046_) \singlecycle_datapath.regfile.register[17]  <= _315_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[16]  <= 32'd0;
+    else if (_047_) \singlecycle_datapath.regfile.register[16]  <= _318_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[15]  <= 32'd0;
+    else if (_048_) \singlecycle_datapath.regfile.register[15]  <= _321_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[14]  <= 32'd0;
+    else if (_049_) \singlecycle_datapath.regfile.register[14]  <= _324_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[13]  <= 32'd0;
+    else if (_050_) \singlecycle_datapath.regfile.register[13]  <= _327_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[12]  <= 32'd0;
+    else if (_051_) \singlecycle_datapath.regfile.register[12]  <= _330_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[11]  <= 32'd0;
+    else if (_052_) \singlecycle_datapath.regfile.register[11]  <= _333_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[10]  <= 32'd0;
+    else if (_053_) \singlecycle_datapath.regfile.register[10]  <= _176_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[9]  <= 32'd0;
+    else if (_054_) \singlecycle_datapath.regfile.register[9]  <= _179_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[8]  <= 32'd0;
+    else if (_055_) \singlecycle_datapath.regfile.register[8]  <= _182_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[7]  <= 32'd0;
+    else if (_056_) \singlecycle_datapath.regfile.register[7]  <= _185_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[6]  <= 32'd0;
+    else if (_057_) \singlecycle_datapath.regfile.register[6]  <= _188_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[5]  <= 32'd0;
+    else if (_058_) \singlecycle_datapath.regfile.register[5]  <= _191_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[4]  <= 32'd0;
+    else if (_059_) \singlecycle_datapath.regfile.register[4]  <= _194_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[3]  <= 32'd0;
+    else if (_060_) \singlecycle_datapath.regfile.register[3]  <= _197_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[2]  <= 32'd0;
+    else if (_061_) \singlecycle_datapath.regfile.register[2]  <= _200_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[1]  <= 32'd0;
+    else if (_062_) \singlecycle_datapath.regfile.register[1]  <= _203_;
+  (* \always_ff  = 32'd1 *)
+  (* scopename = "singlecycle_datapath regfile" *)
+  (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:35.5-41.67" *)
+  always @(posedge clock, posedge reset)
+    if (reset) \singlecycle_datapath.regfile.register[0]  <= 32'd0;
+    else if (_063_) \singlecycle_datapath.regfile.register[0]  <= _206_;
   assign _032_ = & { regfile_write_enable, _000_ };
   assign _033_ = & { regfile_write_enable, _001_ };
   assign _034_ = & { regfile_write_enable, _002_ };
@@ -1263,34 +1547,35 @@ module riscv_core(clock, reset, bus_address, bus_read_data, bus_write_data, bus_
   assign _061_ = & { regfile_write_enable, _029_ };
   assign _062_ = & { regfile_write_enable, _030_ };
   assign _063_ = & { regfile_write_enable, _031_ };
-  assign _064_ = | { _142_, _141_ };
-  assign _065_ = | { _116_, _115_, _094_[1], _096_, _097_[1], _099_[3:2], _099_[0] };
-  assign _066_ = | { _093_, _094_[0] };
-  assign _067_ = | { _116_, _115_, _093_, _094_, _096_, _097_[1], _099_[3:2] };
-  assign _068_ = | { _166_, _167_, _168_, _169_ };
-  assign _069_ = | { _116_, _115_, _093_, _094_, _096_, _099_[3:2], _099_[0] };
-  assign _070_ = | { _116_, _115_, _094_[0], _096_, _097_[1], _099_[2] };
-  assign _071_ = | { _093_, _099_[3] };
-  assign _072_ = | { _116_, _115_, _094_[1], _096_ };
-  assign _073_ = | { _093_, _094_[0], _097_[1], _099_[3:2], _099_[0] };
-  assign _074_ = | { _107_, _106_, _104_ };
-  assign _075_ = | { _108_, _105_, _103_ };
-  assign _076_ = | { _116_, _094_[1] };
-  assign _077_ = | { _093_, _094_[0], _097_[1], _099_[3], _099_[0] };
-  assign _078_ = | { _116_, _096_, _097_[1] };
-  assign _079_ = | { _115_, _093_, _094_, _099_[3:2], _099_[0] };
-  assign _080_ = | { _116_, _115_, _093_, _094_, _096_, _097_[1], _099_[3:2], _099_[0] };
-  assign _081_ = | { _108_, _107_ };
-  assign _082_ = | { _106_, _105_ };
-  assign _083_ = | { _104_, _103_ };
-  assign _084_ = _086_ & (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:53.37-53.70" *) \data_memory_interface.position_fix [7];
-  assign _085_ = _086_ & (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:54.37-54.71" *) \data_memory_interface.position_fix [15];
-  assign _086_ = ~ (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:53.37-53.52" *) inst[14];
+  assign _064_ = | { _094_[1], _116_ };
+  assign _065_ = | { _099_[3], _099_[0], _097_[1], _094_[0], _093_ };
+  assign _066_ = | { _099_[3:2], _099_[0], _096_, _094_, _093_, _115_, _116_ };
+  assign _067_ = | { _097_[1], _096_, _116_ };
+  assign _068_ = | { _099_[3:2], _099_[0], _094_, _093_, _115_ };
+  assign _069_ = | { _107_, _108_ };
+  assign _070_ = | { _105_, _106_ };
+  assign _071_ = | { _103_, _104_ };
+  assign _072_ = | { _096_, _094_[1], _115_, _116_ };
+  assign _073_ = | { _099_[3:2], _099_[0], _097_[1], _094_[0], _093_ };
+  assign _074_ = | { _099_[3:2], _099_[0], _097_[1], _096_, _094_, _093_, _115_, _116_ };
+  assign _075_ = | { _099_[2], _097_[1], _096_, _094_[0], _115_, _116_ };
+  assign _076_ = | { _099_[3], _093_ };
+  assign _077_ = | { _099_[3:2], _099_[0], _097_[1], _096_, _094_[1], _115_, _116_ };
+  assign _078_ = | { _094_[0], _093_ };
+  assign _079_ = | { _099_[3:2], _097_[1], _096_, _094_, _093_, _115_, _116_ };
+  assign _080_ = | { _169_, _168_, _167_, _166_ };
+  assign _081_ = | { _104_, _106_, _107_ };
+  assign _082_ = | { _103_, _105_, _108_ };
+  assign _083_ = | { _141_, _142_ };
+  assign _084_ = _086_ & (* scopename = "data_memory_interface" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:53.37-53.70" *) \data_memory_interface.position_fix [7];
+  assign _085_ = _086_ & (* scopename = "data_memory_interface" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:54.37-54.71" *) \data_memory_interface.position_fix [15];
+  assign _086_ = ~ (* scopename = "data_memory_interface" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:54.37-54.52" *) inst[14];
   function [31:0] _435_;
     input [31:0] a;
     input [95:0] b;
     input [2:0] s;
     (* full_case = 32'd1 *)
+    (* scopename = "data_memory_interface" *)
     (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:54.95-54.95|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:52.8-57.15" *)
     (* parallel_case *)
     casez (s)
@@ -1305,38 +1590,40 @@ module riscv_core(clock, reset, bus_address, bus_read_data, bus_write_data, bus_
     endcase
   endfunction
   assign \data_memory_interface.read_data  = _435_(32'hxxxxxxxx, { _084_, _084_, _084_, _084_, _084_, _084_, _084_, _084_, _084_, _084_, _084_, _084_, _084_, _084_, _084_, _084_, _084_, _084_, _084_, _084_, _084_, _084_, _084_, _084_, \data_memory_interface.position_fix [7:0], _085_, _085_, _085_, _085_, _085_, _085_, _085_, _085_, _085_, _085_, _085_, _085_, _085_, _085_, _085_, _085_, \data_memory_interface.position_fix [15:0], \data_memory_interface.position_fix  }, { _089_, _088_, _087_ });
-  assign _087_ = inst[13:12] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:54.95-54.95|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:52.8-57.15" *) 2'h2;
-  assign _088_ = inst[13:12] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:53.93-53.93|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:52.8-57.15" *) 2'h1;
-  assign _089_ = ! (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:52.31-52.31|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:52.8-57.15" *) inst[13:12];
-  function [3:0] _439_;
+  function [3:0] _436_;
     input [3:0] a;
     input [11:0] b;
     input [2:0] s;
     (* full_case = 32'd1 *)
+    (* scopename = "data_memory_interface" *)
     (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:39.63-39.63|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:37.8-42.15" *)
     (* parallel_case *)
     casez (s)
       3'b??1:
-        _439_ = b[3:0];
+        _436_ = b[3:0];
       3'b?1?:
-        _439_ = b[7:4];
+        _436_ = b[7:4];
       3'b1??:
-        _439_ = b[11:8];
+        _436_ = b[11:8];
       default:
-        _439_ = a;
+        _436_ = a;
     endcase
   endfunction
-  assign bus_byte_enable = _439_(4'h0, { _090_, _091_, _092_ }, { _089_, _088_, _087_ });
-  assign bus_write_data = \data_memory_interface.write_data  << (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:32.31-32.61" *) { 27'h0000000, \data_memory_interface.address [1:0], 3'h0 };
-  assign _090_ = 4'h1 << (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:38.39-38.62" *) \data_memory_interface.address [1:0];
-  assign _091_ = 4'h3 << (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:39.39-39.62" *) \data_memory_interface.address [1:0];
-  assign _092_ = 4'hf << (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:40.39-40.62" *) \data_memory_interface.address [1:0];
-  assign \data_memory_interface.position_fix  = bus_read_data >> (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:47.23-47.56" *) { 27'h0000000, \data_memory_interface.address [1:0], 3'h0 };
+  assign bus_byte_enable = _436_(4'h0, { _090_, _091_, _092_ }, { _089_, _088_, _087_ });
+  assign _087_ = inst[13:12] == (* full_case = 32'd1 *) (* scopename = "data_memory_interface" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:39.63-39.63|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:37.8-42.15" *) 2'h2;
+  assign _088_ = inst[13:12] == (* full_case = 32'd1 *) (* scopename = "data_memory_interface" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:38.63-38.63|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:37.8-42.15" *) 2'h1;
+  assign _089_ = ! (* full_case = 32'd1 *) (* scopename = "data_memory_interface" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:37.31-37.31|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:37.8-42.15" *) inst[13:12];
+  assign bus_write_data = \data_memory_interface.write_data  << (* scopename = "data_memory_interface" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:32.31-32.61" *) { 27'h0000000, \data_memory_interface.address [1:0], 3'h0 };
+  assign _090_ = 4'h1 << (* scopename = "data_memory_interface" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:38.39-38.62" *) \data_memory_interface.address [1:0];
+  assign _091_ = 4'h3 << (* scopename = "data_memory_interface" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:39.39-39.62" *) \data_memory_interface.address [1:0];
+  assign _092_ = 4'hf << (* scopename = "data_memory_interface" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:40.39-40.62" *) \data_memory_interface.address [1:0];
+  assign \data_memory_interface.position_fix  = bus_read_data >> (* scopename = "data_memory_interface" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/data_memory_interface.sv:47.23-47.56" *) { 27'h0000000, \data_memory_interface.address [1:0], 3'h0 };
   function [31:0] _445_;
     input [31:0] a;
     input [159:0] b;
     input [4:0] s;
     (* full_case = 32'd1 *)
+    (* scopename = "immediate_generator" *)
     (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:37.80-37.80|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.9-41.16" *)
     (* parallel_case *)
     casez (s)
@@ -1355,362 +1642,376 @@ module riscv_core(clock, reset, bus_address, bus_read_data, bus_write_data, bus_
     endcase
   endfunction
   assign \singlecycle_datapath.adder_pc_plus_immediate.operand_b  = _445_(32'd0, { inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31:20], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31:25], inst[11:7], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[7], inst[30:25], inst[11:8], 1'h0, inst[31:12], 12'h000, inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[31], inst[19:12], inst[20], inst[30:21], 1'h0 }, { _100_, _098_, _096_, _095_, _093_ });
-  assign _095_ = | (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:34.88-34.88|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.9-41.16" *) _094_;
-  assign _098_ = | (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:29.74-29.74|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.9-41.16" *) _097_;
-  assign _097_[0] = inst[6:0] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:29.74-29.74|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.9-41.16" *) 7'h27;
-  assign _100_ = | (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.25-24.25|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.9-41.16" *) _099_;
-  assign _099_[1] = inst[6:0] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.25-24.25|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.9-41.16" *) 7'h07;
-  assign _102_ = inst[30] && (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:43.13-43.56" *) _088_;
-  function [4:0] _452_;
+  assign _093_ = inst[6:0] == (* full_case = 32'd1 *) (* scopename = "immediate_generator" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:37.80-37.80|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.9-41.16" *) 7'h6f;
+  assign _095_ = | (* full_case = 32'd1 *) (* scopename = "immediate_generator" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:34.88-34.88|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.9-41.16" *) _094_;
+  assign _094_[0] = inst[6:0] == (* full_case = 32'd1 *) (* scopename = "immediate_generator" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:34.88-34.88|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.9-41.16" *) 7'h17;
+  assign _094_[1] = inst[6:0] == (* full_case = 32'd1 *) (* scopename = "immediate_generator" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:34.88-34.88|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.9-41.16" *) 7'h37;
+  assign _096_ = inst[6:0] == (* full_case = 32'd1 *) (* scopename = "immediate_generator" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:32.73-32.73|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.9-41.16" *) 7'h63;
+  assign _098_ = | (* full_case = 32'd1 *) (* scopename = "immediate_generator" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:29.74-29.74|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.9-41.16" *) _097_;
+  assign _097_[0] = inst[6:0] == (* full_case = 32'd1 *) (* scopename = "immediate_generator" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:29.74-29.74|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.9-41.16" *) 7'h27;
+  assign _097_[1] = inst[6:0] == (* full_case = 32'd1 *) (* scopename = "immediate_generator" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:29.74-29.74|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.9-41.16" *) 7'h23;
+  assign _100_ = | (* full_case = 32'd1 *) (* scopename = "immediate_generator" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.25-24.25|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.9-41.16" *) _099_;
+  assign _099_[0] = inst[6:0] == (* full_case = 32'd1 *) (* scopename = "immediate_generator" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.25-24.25|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.9-41.16" *) 7'h03;
+  assign _099_[1] = inst[6:0] == (* full_case = 32'd1 *) (* scopename = "immediate_generator" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.25-24.25|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.9-41.16" *) 7'h07;
+  assign _099_[2] = inst[6:0] == (* full_case = 32'd1 *) (* scopename = "immediate_generator" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.25-24.25|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/immediate_generator.sv:24.9-41.16" *) 7'h13;
+  assign _102_ = inst[30] && (* scopename = "singlecycle_ctlpath alu_control" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:43.13-43.56" *) _088_;
+  function [4:0] _459_;
     input [4:0] a;
     input [14:0] b;
     input [2:0] s;
     (* full_case = 32'd1 *)
+    (* scopename = "singlecycle_ctlpath alu_control" *)
     (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:73.45-73.45|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:68.9-76.16" *)
     (* parallel_case *)
     casez (s)
       3'b??1:
-        _452_ = b[4:0];
+        _459_ = b[4:0];
       3'b?1?:
-        _452_ = b[9:5];
+        _459_ = b[9:5];
       3'b1??:
-        _452_ = b[14:10];
+        _459_ = b[14:10];
       default:
-        _452_ = a;
+        _459_ = a;
     endcase
   endfunction
-  assign \singlecycle_ctlpath.alu_control.branch_funct  = _452_(5'hxx, 15'h1cc2, { _083_, _082_, _081_ });
-  function [4:0] _453_;
+  assign \singlecycle_ctlpath.alu_control.branch_funct  = _459_(5'hxx, 15'h1cc2, { _071_, _070_, _069_ });
+  function [4:0] _460_;
     input [4:0] a;
     input [9:0] b;
     input [1:0] s;
     (* full_case = 32'd1 *)
+    (* scopename = "singlecycle_ctlpath alu_control" *)
     (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:62.51-62.51|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:61.9-65.16" *)
     (* parallel_case *)
     casez (s)
       2'b?1:
-        _453_ = b[4:0];
+        _460_ = b[4:0];
       2'b1?:
-        _453_ = b[9:5];
+        _460_ = b[9:5];
       default:
-        _453_ = a;
+        _460_ = a;
     endcase
   endfunction
-  assign \singlecycle_ctlpath.alu_control.secondary_funct  = _453_(5'hxx, 10'h045, { _108_, _105_ });
-  assign \singlecycle_ctlpath.alu_control.op_imm_funct  = _102_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:43.13-43.56|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:43.9-45.46" *) \singlecycle_ctlpath.alu_control.secondary_funct  : { 1'h0, \singlecycle_ctlpath.alu_control.default_funct [3:0] };
-  assign _101_ = inst[25] ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:38.17-38.31|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:38.14-40.58" *) \singlecycle_ctlpath.alu_control.m_extension_funct  : { 1'h0, \singlecycle_ctlpath.alu_control.default_funct [3:0] };
-  assign \singlecycle_ctlpath.alu_control.op_funct  = inst[30] ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:36.13-36.27|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:36.9-40.58" *) \singlecycle_ctlpath.alu_control.secondary_funct  : _101_;
-  function [4:0] _457_;
+  assign \singlecycle_ctlpath.alu_control.secondary_funct  = _460_(5'hxx, 10'h045, { _108_, _105_ });
+  assign \singlecycle_ctlpath.alu_control.op_imm_funct  = _102_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_ctlpath alu_control" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:43.13-43.56|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:43.9-45.46" *) \singlecycle_ctlpath.alu_control.secondary_funct  : { 1'h0, \singlecycle_ctlpath.alu_control.default_funct [3:0] };
+  assign _101_ = inst[25] ? (* full_case = 32'd1 *) (* scopename = "singlecycle_ctlpath alu_control" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:38.17-38.31|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:38.14-40.58" *) \singlecycle_ctlpath.alu_control.m_extension_funct  : { 1'h0, \singlecycle_ctlpath.alu_control.default_funct [3:0] };
+  assign \singlecycle_ctlpath.alu_control.op_funct  = inst[30] ? (* full_case = 32'd1 *) (* scopename = "singlecycle_ctlpath alu_control" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:36.13-36.27|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:36.9-40.58" *) \singlecycle_ctlpath.alu_control.secondary_funct  : _101_;
+  function [4:0] _464_;
     input [4:0] a;
     input [24:0] b;
     input [4:0] s;
     (* full_case = 32'd1 *)
+    (* scopename = "singlecycle_ctlpath alu_control" *)
     (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:30.56-30.56|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:26.9-33.16" *)
     (* parallel_case *)
     casez (s)
       5'b????1:
-        _457_ = b[4:0];
+        _464_ = b[4:0];
       5'b???1?:
-        _457_ = b[9:5];
+        _464_ = b[9:5];
       5'b??1??:
-        _457_ = b[14:10];
+        _464_ = b[14:10];
       5'b?1???:
-        _457_ = b[19:15];
+        _464_ = b[19:15];
       5'b1????:
-        _457_ = b[24:20];
-      default:
-        _457_ = a;
-    endcase
-  endfunction
-  assign \singlecycle_datapath.alu.alu_function  = _457_(5'hxx, { 10'h001, \singlecycle_ctlpath.alu_control.op_funct , \singlecycle_ctlpath.alu_control.op_imm_funct , \singlecycle_ctlpath.alu_control.branch_funct  }, { _113_, _112_, _111_, _110_, _109_ });
-  assign _109_ = \singlecycle_ctlpath.alu_control.alu_op_type  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:30.56-30.56|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:26.9-33.16" *) 3'h4;
-  assign _110_ = \singlecycle_ctlpath.alu_control.alu_op_type  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:29.56-29.56|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:26.9-33.16" *) 3'h3;
-  assign _111_ = \singlecycle_ctlpath.alu_control.alu_op_type  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:28.55-28.55|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:26.9-33.16" *) 3'h2;
-  assign _112_ = \singlecycle_ctlpath.alu_control.alu_op_type  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:27.54-27.54|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:26.9-33.16" *) 3'h1;
-  assign _113_ = ! (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:26.27-26.27|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:26.9-33.16" *) \singlecycle_ctlpath.alu_control.alu_op_type ;
-  assign _114_ = ! (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:18.36-18.54" *) \singlecycle_ctlpath.control_transfer.result_equal_zero ;
-  function [0:0] _464_;
-    input [0:0] a;
-    input [1:0] b;
-    input [1:0] s;
-    (* full_case = 32'd1 *)
-    (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:21.54-21.54|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:16.9-24.16" *)
-    (* parallel_case *)
-    casez (s)
-      2'b?1:
-        _464_ = b[0:0];
-      2'b1?:
-        _464_ = b[1:1];
+        _464_ = b[24:20];
       default:
         _464_ = a;
     endcase
   endfunction
-  assign \singlecycle_ctlpath.singlecycle_control.take_branch  = _464_(1'hx, { \singlecycle_ctlpath.control_transfer.result_equal_zero , _114_ }, { _075_, _074_ });
-  assign _103_ = inst[14:12] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:21.54-21.54|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:16.9-24.16" *) 3'h7;
-  assign _104_ = inst[14:12] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:20.54-20.54|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:16.9-24.16" *) 3'h6;
-  assign _105_ = inst[14:12] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:19.55-19.55|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:16.9-24.16" *) 3'h5;
-  assign _106_ = inst[14:12] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:18.55-18.55|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:16.9-24.16" *) 3'h4;
-  assign _107_ = inst[14:12] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:17.54-17.54|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:16.9-24.16" *) 3'h1;
-  assign _108_ = ! (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:16.27-16.27|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:16.9-24.16" *) inst[14:12];
-  function [2:0] _471_;
-    input [2:0] a;
-    input [11:0] b;
-    input [3:0] s;
+  assign \singlecycle_datapath.alu.alu_function  = _464_(5'hxx, { 10'h001, \singlecycle_ctlpath.alu_control.op_funct , \singlecycle_ctlpath.alu_control.op_imm_funct , \singlecycle_ctlpath.alu_control.branch_funct  }, { _113_, _112_, _111_, _110_, _109_ });
+  assign _109_ = \singlecycle_ctlpath.alu_control.alu_op_type  == (* full_case = 32'd1 *) (* scopename = "singlecycle_ctlpath alu_control" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:30.56-30.56|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:26.9-33.16" *) 3'h4;
+  assign _110_ = \singlecycle_ctlpath.alu_control.alu_op_type  == (* full_case = 32'd1 *) (* scopename = "singlecycle_ctlpath alu_control" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:29.56-29.56|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:26.9-33.16" *) 3'h3;
+  assign _111_ = \singlecycle_ctlpath.alu_control.alu_op_type  == (* full_case = 32'd1 *) (* scopename = "singlecycle_ctlpath alu_control" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:28.55-28.55|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:26.9-33.16" *) 3'h2;
+  assign _112_ = \singlecycle_ctlpath.alu_control.alu_op_type  == (* full_case = 32'd1 *) (* scopename = "singlecycle_ctlpath alu_control" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:27.54-27.54|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:26.9-33.16" *) 3'h1;
+  assign _113_ = ! (* full_case = 32'd1 *) (* scopename = "singlecycle_ctlpath alu_control" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:26.27-26.27|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu_control.sv:26.9-33.16" *) \singlecycle_ctlpath.alu_control.alu_op_type ;
+  assign _114_ = ! (* scopename = "singlecycle_ctlpath control_transfer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:18.36-18.54" *) \singlecycle_ctlpath.control_transfer.result_equal_zero ;
+  function [0:0] _471_;
+    input [0:0] a;
+    input [1:0] b;
+    input [1:0] s;
     (* full_case = 32'd1 *)
-    (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:151.16-151.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *)
+    (* scopename = "singlecycle_ctlpath control_transfer" *)
+    (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:21.54-21.54|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:16.9-24.16" *)
     (* parallel_case *)
     casez (s)
-      4'b???1:
-        _471_ = b[2:0];
-      4'b??1?:
-        _471_ = b[5:3];
-      4'b?1??:
-        _471_ = b[8:6];
-      4'b1???:
-        _471_ = b[11:9];
+      2'b?1:
+        _471_ = b[0:0];
+      2'b1?:
+        _471_ = b[1:1];
       default:
         _471_ = a;
     endcase
   endfunction
-  assign reg_writeback_select = _471_(3'hx, 12'h419, { _071_, _070_, _094_[1], _099_[0] });
-  function [0:0] _472_;
+  assign \singlecycle_ctlpath.singlecycle_control.take_branch  = _471_(1'hx, { \singlecycle_ctlpath.control_transfer.result_equal_zero , _114_ }, { _082_, _081_ });
+  assign _103_ = inst[14:12] == (* full_case = 32'd1 *) (* scopename = "singlecycle_ctlpath control_transfer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:21.54-21.54|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:16.9-24.16" *) 3'h7;
+  assign _104_ = inst[14:12] == (* full_case = 32'd1 *) (* scopename = "singlecycle_ctlpath control_transfer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:20.54-20.54|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:16.9-24.16" *) 3'h6;
+  assign _105_ = inst[14:12] == (* full_case = 32'd1 *) (* scopename = "singlecycle_ctlpath control_transfer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:19.55-19.55|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:16.9-24.16" *) 3'h5;
+  assign _106_ = inst[14:12] == (* full_case = 32'd1 *) (* scopename = "singlecycle_ctlpath control_transfer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:18.55-18.55|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:16.9-24.16" *) 3'h4;
+  assign _107_ = inst[14:12] == (* full_case = 32'd1 *) (* scopename = "singlecycle_ctlpath control_transfer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:17.54-17.54|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:16.9-24.16" *) 3'h1;
+  assign _108_ = ! (* full_case = 32'd1 *) (* scopename = "singlecycle_ctlpath control_transfer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:16.27-16.27|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/control_transfer.sv:16.9-24.16" *) inst[14:12];
+  function [2:0] _478_;
+    input [2:0] a;
+    input [11:0] b;
+    input [3:0] s;
+    (* full_case = 32'd1 *)
+    (* scopename = "singlecycle_ctlpath singlecycle_control" *)
+    (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:151.16-151.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *)
+    (* parallel_case *)
+    casez (s)
+      4'b???1:
+        _478_ = b[2:0];
+      4'b??1?:
+        _478_ = b[5:3];
+      4'b?1??:
+        _478_ = b[8:6];
+      4'b1???:
+        _478_ = b[11:9];
+      default:
+        _478_ = a;
+    endcase
+  endfunction
+  assign reg_writeback_select = _478_(3'hx, 12'h419, { _076_, _075_, _094_[1], _099_[0] });
+  assign _099_[3] = inst[6:0] == (* full_case = 32'd1 *) (* scopename = "singlecycle_ctlpath singlecycle_control" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:142.16-142.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *) 7'h67;
+  assign _115_ = inst[6:0] == (* full_case = 32'd1 *) (* scopename = "singlecycle_ctlpath singlecycle_control" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:93.16-93.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *) 7'h33;
+  assign _116_ = inst[6:0] == (* full_case = 32'd1 *) (* scopename = "singlecycle_ctlpath singlecycle_control" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:50.16-50.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *) 7'h0f;
+  function [0:0] _482_;
     input [0:0] a;
     input [1:0] b;
     input [1:0] s;
     (* full_case = 32'd1 *)
+    (* scopename = "singlecycle_ctlpath singlecycle_control" *)
     (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:151.16-151.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *)
     (* parallel_case *)
     casez (s)
       2'b?1:
-        _472_ = b[0:0];
+        _482_ = b[0:0];
       2'b1?:
-        _472_ = b[1:1];
+        _482_ = b[1:1];
       default:
-        _472_ = a;
+        _482_ = a;
     endcase
   endfunction
-  assign bus_read_enable = _472_(1'hx, 2'h1, { _067_, _099_[0] });
-  function [2:0] _473_;
+  assign bus_read_enable = _482_(1'hx, 2'h1, { _079_, _099_[0] });
+  function [2:0] _483_;
     input [2:0] a;
     input [14:0] b;
     input [4:0] s;
     (* full_case = 32'd1 *)
+    (* scopename = "singlecycle_ctlpath singlecycle_control" *)
     (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:151.16-151.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *)
     (* parallel_case *)
     casez (s)
       5'b????1:
-        _473_ = b[2:0];
+        _483_ = b[2:0];
       5'b???1?:
-        _473_ = b[5:3];
+        _483_ = b[5:3];
       5'b??1??:
-        _473_ = b[8:6];
+        _483_ = b[8:6];
       5'b?1???:
-        _473_ = b[11:9];
+        _483_ = b[11:9];
       5'b1????:
-        _473_ = b[14:12];
+        _483_ = b[14:12];
       default:
-        _473_ = a;
+        _483_ = a;
     endcase
   endfunction
-  assign \singlecycle_ctlpath.alu_control.alu_op_type  = _473_(3'hx, 15'h1813, { _077_, _096_, _076_, _115_, _099_[2] });
-  function [0:0] _474_;
+  assign \singlecycle_ctlpath.alu_control.alu_op_type  = _483_(3'hx, 15'h1813, { _065_, _096_, _064_, _115_, _099_[2] });
+  function [0:0] _484_;
     input [0:0] a;
     input [1:0] b;
     input [1:0] s;
     (* full_case = 32'd1 *)
+    (* scopename = "singlecycle_ctlpath singlecycle_control" *)
     (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:151.16-151.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *)
     (* parallel_case *)
     casez (s)
       2'b?1:
-        _474_ = b[0:0];
+        _484_ = b[0:0];
       2'b1?:
-        _474_ = b[1:1];
+        _484_ = b[1:1];
       default:
-        _474_ = a;
+        _484_ = a;
     endcase
   endfunction
-  assign \singlecycle_datapath.mux_operand_b.multiplexer.sel  = _474_(1'hx, 2'h2, { _073_, _072_ });
-  function [0:0] _475_;
+  assign \singlecycle_datapath.mux_operand_b.multiplexer.sel  = _484_(1'hx, 2'h2, { _073_, _072_ });
+  function [0:0] _485_;
     input [0:0] a;
     input [1:0] b;
     input [1:0] s;
     (* full_case = 32'd1 *)
+    (* scopename = "singlecycle_ctlpath singlecycle_control" *)
     (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:151.16-151.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *)
     (* parallel_case *)
     casez (s)
       2'b?1:
-        _475_ = b[0:0];
+        _485_ = b[0:0];
       2'b1?:
-        _475_ = b[1:1];
+        _485_ = b[1:1];
       default:
-        _475_ = a;
+        _485_ = a;
     endcase
   endfunction
-  assign \singlecycle_datapath.mux_operand_a.multiplexer.sel  = _475_(1'hx, 2'h2, { _066_, _065_ });
-  function [0:0] _476_;
+  assign \singlecycle_datapath.mux_operand_a.multiplexer.sel  = _485_(1'hx, 2'h2, { _078_, _077_ });
+  function [0:0] _486_;
     input [0:0] a;
     input [1:0] b;
     input [1:0] s;
     (* full_case = 32'd1 *)
+    (* scopename = "singlecycle_ctlpath singlecycle_control" *)
     (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:151.16-151.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *)
     (* parallel_case *)
     casez (s)
       2'b?1:
-        _476_ = b[0:0];
+        _486_ = b[0:0];
       2'b1?:
-        _476_ = b[1:1];
-      default:
-        _476_ = a;
-    endcase
-  endfunction
-  assign regfile_write_enable = _476_(1'hx, 2'h2, { _079_, _078_ });
-  function [0:0] _477_;
-    input [0:0] a;
-    input [1:0] b;
-    input [1:0] s;
-    (* full_case = 32'd1 *)
-    (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:151.16-151.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *)
-    (* parallel_case *)
-    casez (s)
-      2'b?1:
-        _477_ = b[0:0];
-      2'b1?:
-        _477_ = b[1:1];
-      default:
-        _477_ = a;
-    endcase
-  endfunction
-  assign bus_write_enable = _477_(1'hx, 2'h1, { _069_, _097_[1] });
-  assign pc_write_enable = _080_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:151.16-151.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *) 1'h1 : 1'hx;
-  assign _094_[1] = inst[6:0] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:114.16-114.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *) 7'h37;
-  assign _115_ = inst[6:0] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:93.16-93.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *) 7'h33;
-  assign _097_[1] = inst[6:0] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:85.16-85.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *) 7'h23;
-  assign _094_[0] = inst[6:0] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:76.16-76.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *) 7'h17;
-  assign _099_[2] = inst[6:0] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:67.16-67.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *) 7'h13;
-  assign _116_ = inst[6:0] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:50.16-50.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *) 7'h0f;
-  assign _099_[0] = inst[6:0] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.27-41.27|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *) 7'h03;
-  function [1:0] _486_;
-    input [1:0] a;
-    input [5:0] b;
-    input [2:0] s;
-    (* full_case = 32'd1 *)
-    (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:26.50-26.50|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:24.9-29.16" *)
-    (* parallel_case *)
-    casez (s)
-      3'b??1:
-        _486_ = b[1:0];
-      3'b?1?:
-        _486_ = b[3:2];
-      3'b1??:
-        _486_ = b[5:4];
+        _486_ = b[1:1];
       default:
         _486_ = a;
     endcase
   endfunction
-  assign next_pc_select = _486_(2'h0, { _117_, 4'h9 }, { _096_, _099_[3], _093_ });
-  assign _093_ = inst[6:0] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:26.50-26.50|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:24.9-29.16" *) 7'h6f;
-  assign _099_[3] = inst[6:0] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:25.70-25.70|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:24.9-29.16" *) 7'h67;
-  assign _096_ = inst[6:0] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:24.27-24.27|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:24.9-29.16" *) 7'h63;
-  assign _117_ = \singlecycle_ctlpath.singlecycle_control.take_branch  ? (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:25.42-25.69" *) 2'h1 : 2'h0;
-  assign \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0]  = 32'd4 + (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/adder.sv:17.21-17.42" *) \singlecycle_datapath.program_counter.value ;
-  assign \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[1]  = \singlecycle_datapath.program_counter.value  + (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/adder.sv:17.21-17.42" *) \singlecycle_datapath.adder_pc_plus_immediate.operand_b ;
-  assign _124_ = $signed(\singlecycle_datapath.alu.operand_a ) + (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:29.34-29.58" *) $signed(\singlecycle_datapath.alu.operand_b );
-  assign _125_ = $signed(\singlecycle_datapath.alu.operand_a ) & (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:38.34-38.58" *) $signed(\singlecycle_datapath.alu.operand_b );
-  assign _126_ = $signed(\singlecycle_datapath.alu.operand_a ) / (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:50.30-50.51" *) $signed(\singlecycle_datapath.alu.operand_b );
-  assign _127_ = \singlecycle_datapath.alu.operand_a  / (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:55.30-55.73" *) \singlecycle_datapath.alu.operand_b ;
-  assign \singlecycle_ctlpath.control_transfer.result_equal_zero  = ! (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:23.33-23.48" *) { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0] };
-  assign _129_ = \singlecycle_datapath.alu.operand_a  == (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:59.27-59.52" *) 32'd2147483648;
-  assign _130_ = \singlecycle_datapath.alu.operand_b  == (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:59.58-59.76" *) 32'd1;
-  assign _128_ = ! (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:64.21-64.39" *) \singlecycle_datapath.alu.operand_b ;
-  assign _131_ = _129_ && (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:59.26-59.77" *) _130_;
-  assign _132_ = $signed(\singlecycle_datapath.alu.operand_a ) < (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:34.42-34.63" *) $signed(\singlecycle_datapath.alu.operand_b );
-  assign _133_ = \singlecycle_datapath.alu.operand_a  < (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:35.41-35.84" *) \singlecycle_datapath.alu.operand_b ;
-  assign _134_ = $signed(\singlecycle_datapath.alu.operand_a ) % (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:62.30-62.51" *) $signed(\singlecycle_datapath.alu.operand_b );
-  assign _135_ = \singlecycle_datapath.alu.operand_a  % (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:67.30-67.73" *) \singlecycle_datapath.alu.operand_b ;
-  assign \singlecycle_datapath.alu.signed_multiplication  = $signed(\singlecycle_datapath.alu.operand_a ) * (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:76.39-76.60" *) $signed(\singlecycle_datapath.alu.operand_b );
-  assign \singlecycle_datapath.alu.signed_unsigned_multiplication  = { 32'h00000000, \singlecycle_datapath.alu.operand_a  } * (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:78.46-78.87" *) { 32'h00000000, \singlecycle_datapath.alu.operand_b  };
-  assign _136_ = $signed(\singlecycle_datapath.alu.operand_a ) | (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:37.35-37.59" *) $signed(\singlecycle_datapath.alu.operand_b );
-  assign _123_ = _128_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:64.21-64.39|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:64.17-67.74" *) \singlecycle_datapath.alu.operand_a  : _135_;
-  assign _122_ = _131_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:59.26-59.77|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:59.22-62.52" *) 32'd0 : _134_;
-  assign _121_ = _128_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:57.21-57.39|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:57.17-62.52" *) \singlecycle_datapath.alu.operand_a  : _122_;
-  assign _120_ = _128_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:52.21-52.39|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:52.17-55.74" *) 32'd1 : _127_;
-  assign _119_ = _131_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:47.26-47.77|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:47.22-50.52" *) 32'd2147483648 : _126_;
-  assign _118_ = _128_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:45.21-45.39|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:45.17-50.52" *) 32'd1 : _119_;
-  function [31:0] _515_;
+  assign regfile_write_enable = _486_(1'hx, 2'h2, { _068_, _067_ });
+  function [0:0] _487_;
+    input [0:0] a;
+    input [1:0] b;
+    input [1:0] s;
+    (* full_case = 32'd1 *)
+    (* scopename = "singlecycle_ctlpath singlecycle_control" *)
+    (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:151.16-151.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *)
+    (* parallel_case *)
+    casez (s)
+      2'b?1:
+        _487_ = b[0:0];
+      2'b1?:
+        _487_ = b[1:1];
+      default:
+        _487_ = a;
+    endcase
+  endfunction
+  assign bus_write_enable = _487_(1'hx, 2'h1, { _066_, _097_[1] });
+  assign pc_write_enable = _074_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_ctlpath singlecycle_control" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:151.16-151.16|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:41.9-185.16" *) 1'h1 : 1'hx;
+  function [1:0] _489_;
+    input [1:0] a;
+    input [5:0] b;
+    input [2:0] s;
+    (* full_case = 32'd1 *)
+    (* scopename = "singlecycle_ctlpath singlecycle_control" *)
+    (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:26.50-26.50|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:24.9-29.16" *)
+    (* parallel_case *)
+    casez (s)
+      3'b??1:
+        _489_ = b[1:0];
+      3'b?1?:
+        _489_ = b[3:2];
+      3'b1??:
+        _489_ = b[5:4];
+      default:
+        _489_ = a;
+    endcase
+  endfunction
+  assign next_pc_select = _489_(2'h0, { _117_, 4'h9 }, { _096_, _099_[3], _093_ });
+  assign _117_ = \singlecycle_ctlpath.singlecycle_control.take_branch  ? (* scopename = "singlecycle_ctlpath singlecycle_control" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/singlecycle/singlecycle_control.sv:25.42-25.69" *) 2'h1 : 2'h0;
+  assign \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0]  = 32'd4 + (* scopename = "singlecycle_datapath adder_pc_plus_4" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/adder.sv:17.21-17.42" *) \singlecycle_datapath.program_counter.value ;
+  assign \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[1]  = \singlecycle_datapath.program_counter.value  + (* scopename = "singlecycle_datapath adder_pc_plus_immediate" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/adder.sv:17.21-17.42" *) \singlecycle_datapath.adder_pc_plus_immediate.operand_b ;
+  assign _124_ = $signed(\singlecycle_datapath.alu.operand_a ) + (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:29.34-29.58" *) $signed(\singlecycle_datapath.alu.operand_b );
+  assign _125_ = $signed(\singlecycle_datapath.alu.operand_a ) & (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:38.34-38.58" *) $signed(\singlecycle_datapath.alu.operand_b );
+  assign _126_ = $signed(\singlecycle_datapath.alu.operand_a ) / (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:50.30-50.51" *) $signed(\singlecycle_datapath.alu.operand_b );
+  assign _127_ = \singlecycle_datapath.alu.operand_a  / (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:55.30-55.73" *) \singlecycle_datapath.alu.operand_b ;
+  assign \singlecycle_ctlpath.control_transfer.result_equal_zero  = ! (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:23.33-23.48" *) { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0] };
+  assign _128_ = ! (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:45.21-45.39" *) \singlecycle_datapath.alu.operand_b ;
+  assign _129_ = \singlecycle_datapath.alu.operand_a  == (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:47.27-47.52" *) 32'd2147483648;
+  assign _130_ = \singlecycle_datapath.alu.operand_b  == (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:47.58-47.76" *) 32'd1;
+  assign _131_ = _129_ && (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:47.26-47.77" *) _130_;
+  assign _132_ = $signed(\singlecycle_datapath.alu.operand_a ) < (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:34.42-34.63" *) $signed(\singlecycle_datapath.alu.operand_b );
+  assign _133_ = \singlecycle_datapath.alu.operand_a  < (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:35.41-35.84" *) \singlecycle_datapath.alu.operand_b ;
+  assign _134_ = $signed(\singlecycle_datapath.alu.operand_a ) % (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:62.30-62.51" *) $signed(\singlecycle_datapath.alu.operand_b );
+  assign _135_ = \singlecycle_datapath.alu.operand_a  % (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:67.30-67.73" *) \singlecycle_datapath.alu.operand_b ;
+  assign \singlecycle_datapath.alu.signed_multiplication  = $signed(\singlecycle_datapath.alu.operand_a ) * (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:76.39-76.60" *) $signed(\singlecycle_datapath.alu.operand_b );
+  assign \singlecycle_datapath.alu.signed_unsigned_multiplication  = { 32'h00000000, \singlecycle_datapath.alu.operand_a  } * (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:77.39-77.82" *) { 32'h00000000, \singlecycle_datapath.alu.operand_b  };
+  assign _136_ = $signed(\singlecycle_datapath.alu.operand_a ) | (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:37.35-37.59" *) $signed(\singlecycle_datapath.alu.operand_b );
+  assign _123_ = _128_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:64.21-64.39|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:64.17-67.74" *) \singlecycle_datapath.alu.operand_a  : _135_;
+  assign _137_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:62.52-62.52|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h12;
+  assign _122_ = _131_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:59.26-59.77|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:59.22-62.52" *) 32'd0 : _134_;
+  assign _138_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:55.74-55.74|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h11;
+  assign _121_ = _128_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:57.21-57.39|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:57.17-62.52" *) \singlecycle_datapath.alu.operand_a  : _122_;
+  assign _120_ = _128_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:52.21-52.39|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:52.17-55.74" *) 32'd1 : _127_;
+  assign _139_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:50.52-50.52|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h10;
+  assign _119_ = _131_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:47.26-47.77|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:47.22-50.52" *) 32'd2147483648 : _126_;
+  assign _140_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:43.63-43.63|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h0f;
+  assign _118_ = _128_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:45.21-45.39|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:45.17-50.52" *) 32'd1 : _119_;
+  function [31:0] _519_;
     input [31:0] a;
     input [543:0] b;
     input [16:0] s;
     (* full_case = 32'd1 *)
+    (* scopename = "singlecycle_datapath alu" *)
     (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:62.52-62.52|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *)
     (* parallel_case *)
     casez (s)
       17'b????????????????1:
-        _515_ = b[31:0];
+        _519_ = b[31:0];
       17'b???????????????1?:
-        _515_ = b[63:32];
+        _519_ = b[63:32];
       17'b??????????????1??:
-        _515_ = b[95:64];
+        _519_ = b[95:64];
       17'b?????????????1???:
-        _515_ = b[127:96];
+        _519_ = b[127:96];
       17'b????????????1????:
-        _515_ = b[159:128];
+        _519_ = b[159:128];
       17'b???????????1?????:
-        _515_ = b[191:160];
+        _519_ = b[191:160];
       17'b??????????1??????:
-        _515_ = b[223:192];
+        _519_ = b[223:192];
       17'b?????????1???????:
-        _515_ = b[255:224];
+        _519_ = b[255:224];
       17'b????????1????????:
-        _515_ = b[287:256];
+        _519_ = b[287:256];
       17'b???????1?????????:
-        _515_ = b[319:288];
+        _519_ = b[319:288];
       17'b??????1??????????:
-        _515_ = b[351:320];
+        _519_ = b[351:320];
       17'b?????1???????????:
-        _515_ = b[383:352];
+        _519_ = b[383:352];
       17'b????1????????????:
-        _515_ = b[415:384];
+        _519_ = b[415:384];
       17'b???1?????????????:
-        _515_ = b[447:416];
+        _519_ = b[447:416];
       17'b??1??????????????:
-        _515_ = b[479:448];
+        _519_ = b[479:448];
       17'b?1???????????????:
-        _515_ = b[511:480];
+        _519_ = b[511:480];
       17'b1????????????????:
-        _515_ = b[543:512];
+        _519_ = b[543:512];
       default:
-        _515_ = a;
+        _519_ = a;
     endcase
   endfunction
-  assign { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0] } = _515_(32'd0, { _123_, _121_, _120_, _118_, \singlecycle_datapath.alu.signed_unsigned_multiplication [63:32], \singlecycle_datapath.alu.signed_multiplication , _125_, _136_, _159_, 31'h00000000, _133_, 31'h00000000, _132_, _157_, _156_, _155_, _158_, _124_ }, { _137_, _138_, _139_, _140_, _064_, _143_, _144_, _145_, _146_, _147_, _148_, _149_, _150_, _151_, _152_, _153_, _154_ });
-  assign _137_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:62.52-62.52|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h12;
-  assign _138_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:55.74-55.74|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h11;
-  assign _139_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:50.52-50.52|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h10;
-  assign _140_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:43.63-43.63|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h0f;
-  assign _141_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:42.73-42.73|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h0e;
-  assign _142_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:41.62-41.62|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h0d;
-  assign _143_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:40.62-40.62|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h0c;
-  assign _144_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:38.59-38.59|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h0b;
-  assign _145_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:37.60-37.60|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h0a;
-  assign _146_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:36.59-36.59|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h09;
-  assign _147_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:35.86-35.86|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h08;
-  assign _148_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:34.65-34.65|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h07;
-  assign _149_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:33.64-33.64|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h06;
-  assign _150_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:32.64-32.64|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h05;
-  assign _151_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:31.64-31.64|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h04;
-  assign _152_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:30.59-30.59|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h03;
-  assign _153_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:29.59-29.59|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h02;
-  assign _154_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:28.39-28.39|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h01;
-  assign _155_ = $signed(\singlecycle_datapath.alu.operand_a ) << (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:31.34-31.63" *) \singlecycle_datapath.alu.operand_b [4:0];
-  assign _156_ = $signed(\singlecycle_datapath.alu.operand_a ) >> (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:32.34-32.63" *) \singlecycle_datapath.alu.operand_b [4:0];
-  assign _157_ = $signed(\singlecycle_datapath.alu.operand_a ) >>> (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:33.34-33.63" *) \singlecycle_datapath.alu.operand_b [4:0];
-  assign _158_ = $signed(\singlecycle_datapath.alu.operand_a ) - (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:30.34-30.58" *) $signed(\singlecycle_datapath.alu.operand_b );
-  assign _159_ = $signed(\singlecycle_datapath.alu.operand_a ) ^ (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:36.34-36.58" *) $signed(\singlecycle_datapath.alu.operand_b );
+  assign { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0] } = _519_(32'd0, { _123_, _121_, _120_, _118_, \singlecycle_datapath.alu.signed_unsigned_multiplication [63:32], \singlecycle_datapath.alu.signed_multiplication , _125_, _136_, _159_, 31'h00000000, _133_, 31'h00000000, _132_, _157_, _156_, _155_, _158_, _124_ }, { _137_, _138_, _139_, _140_, _083_, _143_, _144_, _145_, _146_, _147_, _148_, _149_, _150_, _151_, _152_, _153_, _154_ });
+  assign _141_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:42.73-42.73|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h0e;
+  assign _142_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:41.62-41.62|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h0d;
+  assign _143_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:40.62-40.62|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h0c;
+  assign _144_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:38.59-38.59|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h0b;
+  assign _145_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:37.60-37.60|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h0a;
+  assign _146_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:36.59-36.59|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h09;
+  assign _147_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:35.86-35.86|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h08;
+  assign _148_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:34.65-34.65|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h07;
+  assign _149_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:33.64-33.64|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h06;
+  assign _150_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:32.64-32.64|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h05;
+  assign _151_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:31.64-31.64|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h04;
+  assign _152_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:30.59-30.59|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h03;
+  assign _153_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:29.59-29.59|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h02;
+  assign _154_ = \singlecycle_datapath.alu.alu_function  == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:28.39-28.39|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:27.9-71.16" *) 5'h01;
+  assign _155_ = $signed(\singlecycle_datapath.alu.operand_a ) << (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:31.34-31.63" *) \singlecycle_datapath.alu.operand_b [4:0];
+  assign _156_ = $signed(\singlecycle_datapath.alu.operand_a ) >> (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:32.34-32.63" *) \singlecycle_datapath.alu.operand_b [4:0];
+  assign _157_ = $signed(\singlecycle_datapath.alu.operand_a ) >>> (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:33.34-33.63" *) \singlecycle_datapath.alu.operand_b [4:0];
+  assign _158_ = $signed(\singlecycle_datapath.alu.operand_a ) - (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:30.34-30.58" *) $signed(\singlecycle_datapath.alu.operand_b );
+  assign _159_ = $signed(\singlecycle_datapath.alu.operand_a ) ^ (* scopename = "singlecycle_datapath alu" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/alu.sv:36.34-36.58" *) $signed(\singlecycle_datapath.alu.operand_b );
   function [31:0] _539_;
     input [31:0] a;
     input [127:0] b;
     input [3:0] s;
     (* full_case = 32'd1 *)
+    (* scopename = "singlecycle_datapath mux_next_pc_select multiplexer" *)
     (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *)
     (* parallel_case *)
     casez (s)
@@ -1727,15 +2028,16 @@ module riscv_core(clock, reset, bus_address, bus_read_data, bus_write_data, bus_
     endcase
   endfunction
   assign \singlecycle_datapath.program_counter.next  = _539_(32'hxxxxxxxx, { \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0] , \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[1] , \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1], 33'h000000000 }, { _163_, _162_, _161_, _160_ });
-  assign _160_ = next_pc_select == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 2'h3;
-  assign _161_ = next_pc_select == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 2'h2;
-  assign _162_ = next_pc_select == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 2'h1;
-  assign _163_ = ! (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) next_pc_select;
+  assign _160_ = next_pc_select == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath mux_next_pc_select multiplexer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 2'h3;
+  assign _161_ = next_pc_select == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath mux_next_pc_select multiplexer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 2'h2;
+  assign _162_ = next_pc_select == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath mux_next_pc_select multiplexer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 2'h1;
+  assign _163_ = ! (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath mux_next_pc_select multiplexer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) next_pc_select;
   function [31:0] _544_;
     input [31:0] a;
     input [63:0] b;
     input [1:0] s;
     (* full_case = 32'd1 *)
+    (* scopename = "singlecycle_datapath mux_operand_a multiplexer" *)
     (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *)
     (* parallel_case *)
     casez (s)
@@ -1748,12 +2050,13 @@ module riscv_core(clock, reset, bus_address, bus_read_data, bus_write_data, bus_
     endcase
   endfunction
   assign \singlecycle_datapath.alu.operand_a  = _544_(32'hxxxxxxxx, { \singlecycle_datapath.mux_operand_a.multiplexer.input_array[0] , \singlecycle_datapath.program_counter.value  }, { _164_, \singlecycle_datapath.mux_operand_a.multiplexer.sel  });
-  assign _164_ = ~ (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) \singlecycle_datapath.mux_operand_a.multiplexer.sel ;
+  assign _164_ = ~ (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath mux_operand_a multiplexer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) \singlecycle_datapath.mux_operand_a.multiplexer.sel ;
   function [31:0] _546_;
     input [31:0] a;
     input [63:0] b;
     input [1:0] s;
     (* full_case = 32'd1 *)
+    (* scopename = "singlecycle_datapath mux_operand_b multiplexer" *)
     (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *)
     (* parallel_case *)
     casez (s)
@@ -1766,12 +2069,13 @@ module riscv_core(clock, reset, bus_address, bus_read_data, bus_write_data, bus_
     endcase
   endfunction
   assign \singlecycle_datapath.alu.operand_b  = _546_(32'hxxxxxxxx, { \data_memory_interface.write_data , \singlecycle_datapath.adder_pc_plus_immediate.operand_b  }, { _165_, \singlecycle_datapath.mux_operand_b.multiplexer.sel  });
-  assign _165_ = ~ (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) \singlecycle_datapath.mux_operand_b.multiplexer.sel ;
+  assign _165_ = ~ (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath mux_operand_b multiplexer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) \singlecycle_datapath.mux_operand_b.multiplexer.sel ;
   function [31:0] _548_;
     input [31:0] a;
     input [159:0] b;
     input [4:0] s;
     (* full_case = 32'd1 *)
+    (* scopename = "singlecycle_datapath mux_reg_writeback multiplexer" *)
     (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *)
     (* parallel_case *)
     casez (s)
@@ -1789,64 +2093,65 @@ module riscv_core(clock, reset, bus_address, bus_read_data, bus_write_data, bus_
         _548_ = a;
     endcase
   endfunction
-  assign \singlecycle_datapath.regfile.rd_data  = _548_(32'hxxxxxxxx, { 32'h00000000, \singlecycle_datapath.adder_pc_plus_immediate.operand_b , \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0] , \data_memory_interface.read_data , \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0] }, { _068_, _170_, _171_, _172_, _173_ });
-  assign _166_ = reg_writeback_select == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 3'h7;
-  assign _167_ = reg_writeback_select == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 3'h6;
-  assign _168_ = reg_writeback_select == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 3'h5;
-  assign _169_ = reg_writeback_select == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 3'h4;
-  assign _170_ = reg_writeback_select == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 3'h3;
-  assign _171_ = reg_writeback_select == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 3'h2;
-  assign _172_ = reg_writeback_select == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 3'h1;
-  assign _173_ = ! (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) reg_writeback_select;
-  assign _174_ = | (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35" *) inst[11:7];
-  assign _175_ = _020_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _020_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h0a;
-  assign _176_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _175_ : _334_;
-  assign _177_ = _018_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _178_ = _018_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _018_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h09;
-  assign _179_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _178_ : _177_;
-  assign _180_ = _016_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _181_ = _016_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _016_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h08;
-  assign _182_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _181_ : _180_;
-  assign _183_ = _015_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _184_ = _015_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _015_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h07;
-  assign _185_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _184_ : _183_;
-  assign _186_ = _013_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _187_ = _013_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _013_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h06;
-  assign _188_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _187_ : _186_;
-  assign _189_ = _011_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _190_ = _011_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _011_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h05;
-  assign _191_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _190_ : _189_;
-  assign _192_ = _009_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _193_ = _009_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _009_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h04;
-  assign _194_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _193_ : _192_;
-  assign _195_ = _008_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _196_ = _008_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _008_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h03;
-  assign _197_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _196_ : _195_;
-  assign _198_ = _006_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _199_ = _006_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _006_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h02;
-  assign _200_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _199_ : _198_;
-  assign _201_ = _004_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _202_ = _004_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _004_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h01;
-  assign _203_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _202_ : _201_;
-  assign _204_ = _002_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _205_ = _002_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _002_ = ! (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) inst[11:7];
-  assign _206_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _205_ : _204_;
+  assign \singlecycle_datapath.regfile.rd_data  = _548_(32'hxxxxxxxx, { 32'h00000000, \singlecycle_datapath.adder_pc_plus_immediate.operand_b , \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0] , \data_memory_interface.read_data , \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0] }, { _080_, _170_, _171_, _172_, _173_ });
+  assign _166_ = reg_writeback_select == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath mux_reg_writeback multiplexer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 3'h7;
+  assign _167_ = reg_writeback_select == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath mux_reg_writeback multiplexer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 3'h6;
+  assign _168_ = reg_writeback_select == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath mux_reg_writeback multiplexer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 3'h5;
+  assign _169_ = reg_writeback_select == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath mux_reg_writeback multiplexer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 3'h4;
+  assign _170_ = reg_writeback_select == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath mux_reg_writeback multiplexer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 3'h3;
+  assign _171_ = reg_writeback_select == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath mux_reg_writeback multiplexer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 3'h2;
+  assign _172_ = reg_writeback_select == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath mux_reg_writeback multiplexer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) 3'h1;
+  assign _173_ = ! (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath mux_reg_writeback multiplexer" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/multiplexer.sv:21.18-21.29" *) reg_writeback_select;
+  assign _174_ = | (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35" *) inst[11:7];
+  assign _175_ = _021_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _021_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h0a;
+  assign _176_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _175_ : _334_;
+  assign _177_ = _022_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _022_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h09;
+  assign _178_ = _022_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _179_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _178_ : _177_;
+  assign _180_ = _023_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _023_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h08;
+  assign _181_ = _023_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _182_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _181_ : _180_;
+  assign _183_ = _024_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _024_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h07;
+  assign _184_ = _024_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _185_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _184_ : _183_;
+  assign _186_ = _025_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _025_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h06;
+  assign _187_ = _025_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _188_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _187_ : _186_;
+  assign _189_ = _026_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _026_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h05;
+  assign _190_ = _026_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _191_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _190_ : _189_;
+  assign _192_ = _027_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _027_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h04;
+  assign _193_ = _027_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _194_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _193_ : _192_;
+  assign _195_ = _028_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _028_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h03;
+  assign _196_ = _028_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _197_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _196_ : _195_;
+  assign _198_ = _029_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _029_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h02;
+  assign _199_ = _029_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _200_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _199_ : _198_;
+  assign _201_ = _030_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _030_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h01;
+  assign _202_ = _030_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _203_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _202_ : _201_;
+  assign _204_ = _031_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _031_ = ! (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) inst[11:7];
+  assign _205_ = _031_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _206_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _205_ : _204_;
   function [31:0] _601_;
     input [31:0] a;
     input [1023:0] b;
     input [31:0] s;
     (* full_case = 32'd1 *)
+    (* scopename = "singlecycle_datapath regfile" *)
     (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *)
     (* parallel_case *)
     casez (s)
@@ -1919,43 +2224,44 @@ module riscv_core(clock, reset, bus_address, bus_read_data, bus_write_data, bus_
     endcase
   endfunction
   assign \data_memory_interface.write_data  = _601_(32'hxxxxxxxx, { \singlecycle_datapath.regfile.register[0] , \singlecycle_datapath.regfile.register[1] , \singlecycle_datapath.regfile.register[2] , \singlecycle_datapath.regfile.register[3] , \singlecycle_datapath.regfile.register[4] , \singlecycle_datapath.regfile.register[5] , \singlecycle_datapath.regfile.register[6] , \singlecycle_datapath.regfile.register[7] , \singlecycle_datapath.regfile.register[8] , \singlecycle_datapath.regfile.register[9] , \singlecycle_datapath.regfile.register[10] , \singlecycle_datapath.regfile.register[11] , \singlecycle_datapath.regfile.register[12] , \singlecycle_datapath.regfile.register[13] , \singlecycle_datapath.regfile.register[14] , \singlecycle_datapath.regfile.register[15] , \singlecycle_datapath.regfile.register[16] , \singlecycle_datapath.regfile.register[17] , \singlecycle_datapath.regfile.register[18] , \singlecycle_datapath.regfile.register[19] , \singlecycle_datapath.regfile.register[20] , \singlecycle_datapath.regfile.register[21] , \singlecycle_datapath.regfile.register[22] , \singlecycle_datapath.regfile.register[23] , \singlecycle_datapath.regfile.register[24] , \singlecycle_datapath.regfile.register[25] , \singlecycle_datapath.regfile.register[26] , \singlecycle_datapath.regfile.register[27] , \singlecycle_datapath.regfile.register[28] , \singlecycle_datapath.regfile.register[29] , \singlecycle_datapath.regfile.register[30] , \singlecycle_datapath.regfile.register[31]  }, { _238_, _237_, _236_, _235_, _234_, _233_, _232_, _231_, _230_, _229_, _228_, _227_, _226_, _225_, _224_, _223_, _222_, _221_, _220_, _219_, _218_, _217_, _216_, _215_, _214_, _213_, _212_, _211_, _210_, _209_, _208_, _207_ });
-  assign _207_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h1f;
-  assign _208_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h1e;
-  assign _209_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h1d;
-  assign _210_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h1c;
-  assign _211_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h1b;
-  assign _212_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h1a;
-  assign _213_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h19;
-  assign _214_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h18;
-  assign _215_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h17;
-  assign _216_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h16;
-  assign _217_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h15;
-  assign _218_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h14;
-  assign _219_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h13;
-  assign _220_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h12;
-  assign _221_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h11;
-  assign _222_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h10;
-  assign _223_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h0f;
-  assign _224_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h0e;
-  assign _225_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h0d;
-  assign _226_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h0c;
-  assign _227_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h0b;
-  assign _228_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h0a;
-  assign _229_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h09;
-  assign _230_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h08;
-  assign _231_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h07;
-  assign _232_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h06;
-  assign _233_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h05;
-  assign _234_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h04;
-  assign _235_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h03;
-  assign _236_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h02;
-  assign _237_ = inst[24:20] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h01;
-  assign _238_ = ! (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) inst[24:20];
+  assign _207_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h1f;
+  assign _208_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h1e;
+  assign _209_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h1d;
+  assign _210_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h1c;
+  assign _211_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h1b;
+  assign _212_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h1a;
+  assign _213_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h19;
+  assign _214_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h18;
+  assign _215_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h17;
+  assign _216_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h16;
+  assign _217_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h15;
+  assign _218_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h14;
+  assign _219_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h13;
+  assign _220_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h12;
+  assign _221_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h11;
+  assign _222_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h10;
+  assign _223_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h0f;
+  assign _224_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h0e;
+  assign _225_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h0d;
+  assign _226_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h0c;
+  assign _227_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h0b;
+  assign _228_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h0a;
+  assign _229_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h09;
+  assign _230_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h08;
+  assign _231_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h07;
+  assign _232_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h06;
+  assign _233_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h05;
+  assign _234_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h04;
+  assign _235_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h03;
+  assign _236_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h02;
+  assign _237_ = inst[24:20] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) 5'h01;
+  assign _238_ = ! (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:33.23-33.31" *) inst[24:20];
   function [31:0] _634_;
     input [31:0] a;
     input [1023:0] b;
     input [31:0] s;
     (* full_case = 32'd1 *)
+    (* scopename = "singlecycle_datapath regfile" *)
     (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *)
     (* parallel_case *)
     casez (s)
@@ -2028,123 +2334,123 @@ module riscv_core(clock, reset, bus_address, bus_read_data, bus_write_data, bus_
     endcase
   endfunction
   assign \singlecycle_datapath.mux_operand_a.multiplexer.input_array[0]  = _634_(32'hxxxxxxxx, { \singlecycle_datapath.regfile.register[0] , \singlecycle_datapath.regfile.register[1] , \singlecycle_datapath.regfile.register[2] , \singlecycle_datapath.regfile.register[3] , \singlecycle_datapath.regfile.register[4] , \singlecycle_datapath.regfile.register[5] , \singlecycle_datapath.regfile.register[6] , \singlecycle_datapath.regfile.register[7] , \singlecycle_datapath.regfile.register[8] , \singlecycle_datapath.regfile.register[9] , \singlecycle_datapath.regfile.register[10] , \singlecycle_datapath.regfile.register[11] , \singlecycle_datapath.regfile.register[12] , \singlecycle_datapath.regfile.register[13] , \singlecycle_datapath.regfile.register[14] , \singlecycle_datapath.regfile.register[15] , \singlecycle_datapath.regfile.register[16] , \singlecycle_datapath.regfile.register[17] , \singlecycle_datapath.regfile.register[18] , \singlecycle_datapath.regfile.register[19] , \singlecycle_datapath.regfile.register[20] , \singlecycle_datapath.regfile.register[21] , \singlecycle_datapath.regfile.register[22] , \singlecycle_datapath.regfile.register[23] , \singlecycle_datapath.regfile.register[24] , \singlecycle_datapath.regfile.register[25] , \singlecycle_datapath.regfile.register[26] , \singlecycle_datapath.regfile.register[27] , \singlecycle_datapath.regfile.register[28] , \singlecycle_datapath.regfile.register[29] , \singlecycle_datapath.regfile.register[30] , \singlecycle_datapath.regfile.register[31]  }, { _270_, _269_, _268_, _267_, _266_, _265_, _264_, _263_, _262_, _261_, _260_, _259_, _258_, _257_, _256_, _255_, _254_, _253_, _252_, _251_, _250_, _249_, _248_, _247_, _246_, _245_, _244_, _243_, _242_, _241_, _240_, _239_ });
-  assign _239_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h1f;
-  assign _240_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h1e;
-  assign _241_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h1d;
-  assign _242_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h1c;
-  assign _243_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h1b;
-  assign _244_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h1a;
-  assign _245_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h19;
-  assign _246_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h18;
-  assign _247_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h17;
-  assign _248_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h16;
-  assign _249_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h15;
-  assign _250_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h14;
-  assign _251_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h13;
-  assign _252_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h12;
-  assign _253_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h11;
-  assign _254_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h10;
-  assign _255_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h0f;
-  assign _256_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h0e;
-  assign _257_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h0d;
-  assign _258_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h0c;
-  assign _259_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h0b;
-  assign _260_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h0a;
-  assign _261_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h09;
-  assign _262_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h08;
-  assign _263_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h07;
-  assign _264_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h06;
-  assign _265_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h05;
-  assign _266_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h04;
-  assign _267_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h03;
-  assign _268_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h02;
-  assign _269_ = inst[19:15] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h01;
-  assign _270_ = ! (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) inst[19:15];
-  assign _271_ = _001_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _272_ = _001_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _001_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h1f;
-  assign _273_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _272_ : _271_;
-  assign _274_ = _026_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _275_ = _026_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _026_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h1e;
-  assign _276_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _275_ : _274_;
-  assign _277_ = _019_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _278_ = _019_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _019_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h1d;
-  assign _279_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _278_ : _277_;
-  assign _280_ = _012_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _281_ = _012_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _012_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h1c;
-  assign _282_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _281_ : _280_;
-  assign _283_ = _005_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _284_ = _005_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _005_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h1b;
-  assign _285_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _284_ : _283_;
-  assign _286_ = _031_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _287_ = _031_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _031_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h1a;
-  assign _288_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _287_ : _286_;
-  assign _289_ = _028_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _290_ = _028_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _028_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h19;
-  assign _291_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _290_ : _289_;
-  assign _292_ = _024_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _293_ = _024_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _024_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h18;
-  assign _294_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _293_ : _292_;
-  assign _295_ = _021_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _296_ = _021_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _021_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h17;
-  assign _297_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _296_ : _295_;
-  assign _298_ = _017_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _299_ = _017_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _017_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h16;
-  assign _300_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _299_ : _298_;
-  assign _301_ = _014_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _302_ = _014_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _014_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h15;
-  assign _303_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _302_ : _301_;
-  assign _304_ = _010_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _305_ = _010_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _010_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h14;
-  assign _306_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _305_ : _304_;
-  assign _307_ = _007_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _308_ = _007_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _007_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h13;
-  assign _309_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _308_ : _307_;
-  assign _310_ = _003_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _311_ = _003_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _003_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h12;
-  assign _312_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _311_ : _310_;
-  assign _313_ = _000_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _314_ = _000_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _000_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h11;
-  assign _315_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _314_ : _313_;
-  assign _316_ = _030_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _317_ = _030_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _030_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h10;
-  assign _318_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _317_ : _316_;
-  assign _319_ = _029_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _320_ = _029_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _029_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h0f;
-  assign _321_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _320_ : _319_;
-  assign _322_ = _027_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _323_ = _027_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _027_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h0e;
-  assign _324_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _323_ : _322_;
-  assign _325_ = _025_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _326_ = _025_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _025_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h0d;
-  assign _327_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _326_ : _325_;
-  assign _328_ = _023_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _329_ = _023_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _023_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h0c;
-  assign _330_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _329_ : _328_;
-  assign _331_ = _022_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
-  assign _332_ = _022_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
-  assign _022_ = inst[11:7] == (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) 5'h0b;
-  assign _333_ = _174_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _332_ : _331_;
-  assign _334_ = _020_ ? (* full_case = 32'd1 *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _239_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h1f;
+  assign _240_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h1e;
+  assign _241_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h1d;
+  assign _242_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h1c;
+  assign _243_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h1b;
+  assign _244_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h1a;
+  assign _245_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h19;
+  assign _246_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h18;
+  assign _247_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h17;
+  assign _248_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h16;
+  assign _249_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h15;
+  assign _250_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h14;
+  assign _251_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h13;
+  assign _252_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h12;
+  assign _253_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h11;
+  assign _254_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h10;
+  assign _255_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h0f;
+  assign _256_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h0e;
+  assign _257_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h0d;
+  assign _258_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h0c;
+  assign _259_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h0b;
+  assign _260_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h0a;
+  assign _261_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h09;
+  assign _262_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h08;
+  assign _263_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h07;
+  assign _264_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h06;
+  assign _265_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h05;
+  assign _266_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h04;
+  assign _267_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h03;
+  assign _268_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h02;
+  assign _269_ = inst[19:15] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) 5'h01;
+  assign _270_ = ! (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:32.23-32.31" *) inst[19:15];
+  assign _271_ = _000_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _000_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h1f;
+  assign _272_ = _000_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _273_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _272_ : _271_;
+  assign _274_ = _001_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _001_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h1e;
+  assign _275_ = _001_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _276_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _275_ : _274_;
+  assign _277_ = _002_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _002_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h1d;
+  assign _278_ = _002_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _279_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _278_ : _277_;
+  assign _280_ = _003_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _003_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h1c;
+  assign _281_ = _003_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _282_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _281_ : _280_;
+  assign _283_ = _004_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _004_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h1b;
+  assign _284_ = _004_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _285_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _284_ : _283_;
+  assign _286_ = _005_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _005_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h1a;
+  assign _287_ = _005_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _288_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _287_ : _286_;
+  assign _289_ = _006_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _006_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h19;
+  assign _290_ = _006_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _291_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _290_ : _289_;
+  assign _292_ = _007_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _007_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h18;
+  assign _293_ = _007_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _294_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _293_ : _292_;
+  assign _295_ = _008_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _008_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h17;
+  assign _296_ = _008_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _297_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _296_ : _295_;
+  assign _298_ = _009_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _009_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h16;
+  assign _299_ = _009_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _300_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _299_ : _298_;
+  assign _301_ = _010_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _010_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h15;
+  assign _302_ = _010_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _303_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _302_ : _301_;
+  assign _304_ = _011_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _011_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h14;
+  assign _305_ = _011_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _306_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _305_ : _304_;
+  assign _307_ = _012_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _012_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h13;
+  assign _308_ = _012_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _309_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _308_ : _307_;
+  assign _310_ = _013_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _013_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h12;
+  assign _311_ = _013_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _312_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _311_ : _310_;
+  assign _313_ = _014_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _014_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h11;
+  assign _314_ = _014_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _315_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _314_ : _313_;
+  assign _316_ = _015_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _015_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h10;
+  assign _317_ = _015_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _318_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _317_ : _316_;
+  assign _319_ = _016_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _016_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h0f;
+  assign _320_ = _016_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _321_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _320_ : _319_;
+  assign _322_ = _017_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _017_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h0e;
+  assign _323_ = _017_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _324_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _323_ : _322_;
+  assign _325_ = _018_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _018_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h0d;
+  assign _326_ = _018_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _327_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _326_ : _325_;
+  assign _328_ = _019_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _019_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h0c;
+  assign _329_ = _019_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _330_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _329_ : _328_;
+  assign _331_ = _020_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
+  assign _020_ = inst[11:7] == (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 5'h0b;
+  assign _332_ = _020_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.37-40.68" *) \singlecycle_datapath.regfile.rd_data  : 32'hxxxxxxxx;
+  assign _333_ = _174_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.17-40.35|/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:40.13-41.67" *) _332_ : _331_;
+  assign _334_ = _021_ ? (* full_case = 32'd1 *) (* scopename = "singlecycle_datapath regfile" *) (* src = "/workspace/Incremental-Synthesis-Flow/results/eco-002/work/new/core/common/regfile.sv:41.37-41.66" *) 32'd0 : 32'hxxxxxxxx;
   assign \singlecycle_ctlpath.alu_control.m_extension_funct  = inst[14] ? _336_ : _335_;
   assign _335_ = inst[13] ? _338_ : _337_;
   assign _336_ = inst[13] ? _340_ : _339_;
@@ -2159,168 +2465,168 @@ module riscv_core(clock, reset, bus_address, bus_read_data, bus_write_data, bus_
   assign _344_ = inst[12] ? 4'h7 : 4'h6;
   assign _345_ = inst[12] ? 4'h4 : 4'h8;
   assign _346_ = inst[12] ? 4'ha : 4'h9;
-  assign \singlecycle_datapath.mux_reg_writeback.in6  = 32'd0;
-  assign \singlecycle_datapath.mux_reg_writeback.in5  = 32'd0;
-  assign \singlecycle_datapath.mux_reg_writeback.in4  = 32'd0;
-  assign \singlecycle_datapath.mux_reg_writeback.in3  = \singlecycle_datapath.adder_pc_plus_immediate.operand_b ;
-  assign \singlecycle_datapath.mux_reg_writeback.in2  = \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0] ;
-  assign \singlecycle_datapath.mux_reg_writeback.in1  = \data_memory_interface.read_data ;
-  assign \singlecycle_datapath.mux_reg_writeback.in0  = { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0] };
-  assign \singlecycle_datapath.alu_operand_a  = \singlecycle_datapath.alu.operand_a ;
-  assign \singlecycle_datapath.next_pc  = \singlecycle_datapath.program_counter.next ;
-  assign \singlecycle_datapath.pc_plus_immediate  = \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[1] ;
-  assign \singlecycle_datapath.pc_plus_4  = \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0] ;
-  assign \singlecycle_datapath.rs2_data  = \data_memory_interface.write_data ;
-  assign \singlecycle_datapath.program_counter.write_enable  = pc_write_enable;
-  assign \singlecycle_datapath.program_counter.reset  = reset;
-  assign \singlecycle_datapath.program_counter.clock  = clock;
-  assign \singlecycle_datapath.rs1_data  = \singlecycle_datapath.mux_operand_a.multiplexer.input_array[0] ;
-  assign \singlecycle_datapath.rd_data  = \singlecycle_datapath.regfile.rd_data ;
-  assign \singlecycle_datapath.alu_function  = \singlecycle_datapath.alu.alu_function ;
-  assign \singlecycle_datapath.next_pc_select  = next_pc_select;
-  assign \singlecycle_datapath.reg_writeback_select  = reg_writeback_select;
-  assign \singlecycle_ctlpath.control_transfer.inst_funct3  = inst[14:12];
-  assign \singlecycle_ctlpath.control_transfer.take_branch  = \singlecycle_ctlpath.singlecycle_control.take_branch ;
-  assign \singlecycle_datapath.alu_operand_b_select  = \singlecycle_datapath.mux_operand_b.multiplexer.sel ;
-  assign \singlecycle_datapath.alu_operand_a_select  = \singlecycle_datapath.mux_operand_a.multiplexer.sel ;
-  assign \singlecycle_datapath.regfile_write_enable  = regfile_write_enable;
-  assign \singlecycle_datapath.pc_write_enable  = pc_write_enable;
-  assign \singlecycle_datapath.alu_result_equal_zero  = \singlecycle_ctlpath.control_transfer.result_equal_zero ;
-  assign \singlecycle_datapath.pc  = \singlecycle_datapath.program_counter.value ;
-  assign \singlecycle_datapath.inst_rs2  = inst[24:20];
-  assign \singlecycle_datapath.inst_rs1  = inst[19:15];
-  assign \singlecycle_datapath.inst_rd  = inst[11:7];
-  assign \singlecycle_datapath.immediate  = \singlecycle_datapath.adder_pc_plus_immediate.operand_b ;
-  assign \singlecycle_ctlpath.singlecycle_control.inst_opcode  = inst[6:0];
   assign \singlecycle_ctlpath.singlecycle_control.pc_write_enable  = pc_write_enable;
-  assign \singlecycle_ctlpath.singlecycle_control.regfile_write_enable  = regfile_write_enable;
-  assign \singlecycle_ctlpath.singlecycle_control.alu_operand_a_select  = \singlecycle_datapath.mux_operand_a.multiplexer.sel ;
-  assign \singlecycle_ctlpath.singlecycle_control.alu_operand_b_select  = \singlecycle_datapath.mux_operand_b.multiplexer.sel ;
-  assign \singlecycle_ctlpath.singlecycle_control.alu_op_type  = \singlecycle_ctlpath.alu_control.alu_op_type ;
-  assign \singlecycle_ctlpath.singlecycle_control.data_mem_read_enable  = bus_read_enable;
-  assign \singlecycle_ctlpath.singlecycle_control.data_mem_write_enable  = bus_write_enable;
-  assign \singlecycle_ctlpath.singlecycle_control.reg_writeback_select  = reg_writeback_select;
   assign \singlecycle_ctlpath.singlecycle_control.next_pc_select  = next_pc_select;
-  assign \singlecycle_datapath.data_mem_write_data  = \data_memory_interface.write_data ;
-  assign \singlecycle_datapath.data_mem_address  = { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0] };
-  assign \singlecycle_datapath.mux_reg_writeback.in7  = 32'd0;
-  assign \singlecycle_datapath.data_mem_read_data  = \data_memory_interface.read_data ;
-  assign \singlecycle_datapath.reset  = reset;
-  assign \singlecycle_datapath.clock  = clock;
-  assign \instruction_decoder.inst_rs2  = inst[24:20];
-  assign \singlecycle_datapath.mux_reg_writeback.sel  = reg_writeback_select;
-  assign \instruction_decoder.inst_rs1  = inst[19:15];
-  assign \instruction_decoder.inst_rd  = inst[11:7];
-  assign \instruction_decoder.inst_funct7  = inst[31:25];
-  assign \singlecycle_datapath.mux_reg_writeback.out  = \singlecycle_datapath.regfile.rd_data ;
-  assign \instruction_decoder.inst_funct3  = inst[14:12];
-  assign \instruction_decoder.inst_opcode  = inst[6:0];
-  assign \instruction_decoder.inst  = inst;
-  assign \singlecycle_datapath.alu_result  = { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0] };
-  assign \singlecycle_datapath.adder_pc_plus_4.result  = \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0] ;
-  assign \singlecycle_datapath.adder_pc_plus_4.operand_b  = \singlecycle_datapath.program_counter.value ;
-  assign \immediate_generator.immediate  = \singlecycle_datapath.adder_pc_plus_immediate.operand_b ;
-  assign \singlecycle_datapath.alu.unsigned_multiplication  = \singlecycle_datapath.alu.signed_unsigned_multiplication ;
-  assign \singlecycle_datapath.alu.result_equal_zero  = \singlecycle_ctlpath.control_transfer.result_equal_zero ;
-  assign \singlecycle_datapath.alu.result [1:0] = \data_memory_interface.address [1:0];
-  assign \singlecycle_datapath.mux_next_pc_select.multiplexer.in_bus  = { \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0] , \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[1] , \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1], 33'h000000000 };
-  assign \singlecycle_datapath.mux_next_pc_select.multiplexer.sel  = next_pc_select;
-  assign \singlecycle_datapath.mux_next_pc_select.multiplexer.out  = \singlecycle_datapath.program_counter.next ;
-  assign \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[2]  = { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1], 1'h0 };
-  assign \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[3]  = 32'd0;
-  assign \immediate_generator.inst  = inst;
-  assign \singlecycle_ctlpath.alu_control.inst_funct3  = inst[14:12];
-  assign \singlecycle_ctlpath.alu_control.inst_funct7  = inst[31:25];
-  assign \singlecycle_ctlpath.alu_control.alu_function  = \singlecycle_datapath.alu.alu_function ;
-  assign \singlecycle_ctlpath.alu_control.default_funct [4] = 1'h0;
-  assign \singlecycle_datapath.mux_next_pc_select.out  = \singlecycle_datapath.program_counter.next ;
-  assign \singlecycle_datapath.mux_next_pc_select.sel  = next_pc_select;
-  assign \singlecycle_datapath.mux_next_pc_select.in3  = 32'd0;
-  assign \singlecycle_datapath.mux_next_pc_select.in2  = { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1], 1'h0 };
-  assign \singlecycle_datapath.mux_next_pc_select.in1  = \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[1] ;
-  assign \singlecycle_datapath.mux_next_pc_select.in0  = \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0] ;
-  assign \singlecycle_datapath.mux_operand_a.multiplexer.in_bus  = { \singlecycle_datapath.mux_operand_a.multiplexer.input_array[0] , \singlecycle_datapath.program_counter.value  };
-  assign \singlecycle_datapath.mux_operand_a.multiplexer.out  = \singlecycle_datapath.alu.operand_a ;
-  assign \singlecycle_datapath.mux_operand_a.multiplexer.input_array[1]  = \singlecycle_datapath.program_counter.value ;
-  assign \singlecycle_datapath.adder_pc_plus_4.operand_a  = 32'd4;
+  assign \singlecycle_ctlpath.singlecycle_control.inst_opcode  = inst[6:0];
+  assign \singlecycle_ctlpath.singlecycle_control.regfile_write_enable  = regfile_write_enable;
+  assign \singlecycle_ctlpath.singlecycle_control.data_mem_write_enable  = bus_write_enable;
+  assign \singlecycle_ctlpath.singlecycle_control.data_mem_read_enable  = bus_read_enable;
+  assign \singlecycle_ctlpath.singlecycle_control.alu_operand_b_select  = \singlecycle_datapath.mux_operand_b.multiplexer.sel ;
+  assign \singlecycle_ctlpath.singlecycle_control.alu_operand_a_select  = \singlecycle_datapath.mux_operand_a.multiplexer.sel ;
+  assign \singlecycle_ctlpath.singlecycle_control.alu_op_type  = \singlecycle_ctlpath.alu_control.alu_op_type ;
+  assign \singlecycle_datapath.alu_function  = \singlecycle_datapath.alu.alu_function ;
+  assign \singlecycle_datapath.alu_operand_a  = \singlecycle_datapath.alu.operand_a ;
+  assign \singlecycle_datapath.alu_operand_a_select  = \singlecycle_datapath.mux_operand_a.multiplexer.sel ;
   assign \singlecycle_datapath.alu_operand_b  = \singlecycle_datapath.alu.operand_b ;
-  assign \singlecycle_datapath.adder_pc_plus_immediate.result  = \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[1] ;
-  assign \singlecycle_datapath.adder_pc_plus_immediate.operand_a  = \singlecycle_datapath.program_counter.value ;
-  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.input_array[7]  = 32'd0;
-  assign \singlecycle_datapath.mux_operand_a.out  = \singlecycle_datapath.alu.operand_a ;
-  assign \singlecycle_datapath.mux_operand_a.sel  = \singlecycle_datapath.mux_operand_a.multiplexer.sel ;
-  assign \singlecycle_datapath.mux_operand_a.in1  = \singlecycle_datapath.program_counter.value ;
-  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.input_array[6]  = 32'd0;
-  assign \singlecycle_datapath.mux_operand_a.in0  = \singlecycle_datapath.mux_operand_a.multiplexer.input_array[0] ;
-  assign \singlecycle_datapath.mux_operand_b.multiplexer.in_bus  = { \data_memory_interface.write_data , \singlecycle_datapath.adder_pc_plus_immediate.operand_b  };
-  assign \singlecycle_datapath.mux_operand_b.multiplexer.out  = \singlecycle_datapath.alu.operand_b ;
-  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.input_array[5]  = 32'd0;
-  assign \singlecycle_datapath.mux_operand_b.multiplexer.input_array[0]  = \data_memory_interface.write_data ;
-  assign \singlecycle_datapath.mux_operand_b.multiplexer.input_array[1]  = \singlecycle_datapath.adder_pc_plus_immediate.operand_b ;
-  assign \singlecycle_ctlpath.alu_op_type  = \singlecycle_ctlpath.alu_control.alu_op_type ;
-  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.input_array[4]  = 32'd0;
-  assign \singlecycle_ctlpath.take_branch  = \singlecycle_ctlpath.singlecycle_control.take_branch ;
-  assign \singlecycle_ctlpath.next_pc_select  = next_pc_select;
+  assign \singlecycle_datapath.alu_operand_b_select  = \singlecycle_datapath.mux_operand_b.multiplexer.sel ;
+  assign \singlecycle_datapath.alu_result  = { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0] };
+  assign \singlecycle_datapath.alu_result_equal_zero  = \singlecycle_ctlpath.control_transfer.result_equal_zero ;
+  assign \singlecycle_datapath.clock  = clock;
+  assign \singlecycle_datapath.data_mem_address  = { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0] };
+  assign \singlecycle_datapath.data_mem_read_data  = \data_memory_interface.read_data ;
+  assign \singlecycle_datapath.data_mem_write_data  = \data_memory_interface.write_data ;
+  assign \singlecycle_datapath.immediate  = \singlecycle_datapath.adder_pc_plus_immediate.operand_b ;
+  assign \singlecycle_datapath.inst_rd  = inst[11:7];
+  assign \singlecycle_datapath.inst_rs1  = inst[19:15];
+  assign \singlecycle_datapath.inst_rs2  = inst[24:20];
+  assign \singlecycle_datapath.next_pc  = \singlecycle_datapath.program_counter.next ;
+  assign \singlecycle_datapath.next_pc_select  = next_pc_select;
+  assign \singlecycle_datapath.pc  = \singlecycle_datapath.program_counter.value ;
+  assign \singlecycle_datapath.pc_plus_4  = \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0] ;
+  assign \singlecycle_datapath.pc_plus_immediate  = \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[1] ;
+  assign \singlecycle_datapath.pc_write_enable  = pc_write_enable;
+  assign \singlecycle_datapath.rd_data  = \singlecycle_datapath.regfile.rd_data ;
+  assign \singlecycle_datapath.reg_writeback_select  = reg_writeback_select;
   assign \singlecycle_ctlpath.alu_function  = \singlecycle_datapath.alu.alu_function ;
-  assign \singlecycle_ctlpath.reg_writeback_select  = reg_writeback_select;
-  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.input_array[3]  = \singlecycle_datapath.adder_pc_plus_immediate.operand_b ;
-  assign \singlecycle_ctlpath.data_mem_write_enable  = bus_write_enable;
-  assign \singlecycle_ctlpath.data_mem_read_enable  = bus_read_enable;
-  assign \singlecycle_ctlpath.alu_operand_b_select  = \singlecycle_datapath.mux_operand_b.multiplexer.sel ;
+  assign \singlecycle_ctlpath.alu_op_type  = \singlecycle_ctlpath.alu_control.alu_op_type ;
   assign \singlecycle_ctlpath.alu_operand_a_select  = \singlecycle_datapath.mux_operand_a.multiplexer.sel ;
-  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.input_array[2]  = \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0] ;
-  assign \singlecycle_ctlpath.regfile_write_enable  = regfile_write_enable;
-  assign \singlecycle_ctlpath.pc_write_enable  = pc_write_enable;
+  assign \singlecycle_ctlpath.alu_operand_b_select  = \singlecycle_datapath.mux_operand_b.multiplexer.sel ;
   assign \singlecycle_ctlpath.alu_result_equal_zero  = \singlecycle_ctlpath.control_transfer.result_equal_zero ;
-  assign \singlecycle_ctlpath.inst_funct7  = inst[31:25];
-  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.input_array[1]  = \data_memory_interface.read_data ;
+  assign \singlecycle_ctlpath.data_mem_read_enable  = bus_read_enable;
+  assign \singlecycle_ctlpath.data_mem_write_enable  = bus_write_enable;
   assign \singlecycle_ctlpath.inst_funct3  = inst[14:12];
+  assign \singlecycle_ctlpath.inst_funct7  = inst[31:25];
   assign \singlecycle_ctlpath.inst_opcode  = inst[6:0];
-  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.input_array[0]  = { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0] };
-  assign \singlecycle_datapath.mux_operand_b.out  = \singlecycle_datapath.alu.operand_b ;
-  assign \singlecycle_datapath.mux_operand_b.sel  = \singlecycle_datapath.mux_operand_b.multiplexer.sel ;
-  assign \singlecycle_datapath.mux_operand_b.in1  = \singlecycle_datapath.adder_pc_plus_immediate.operand_b ;
-  assign \singlecycle_datapath.mux_operand_b.in0  = \data_memory_interface.write_data ;
-  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.in_bus  = { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0], \data_memory_interface.read_data , \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0] , \singlecycle_datapath.adder_pc_plus_immediate.operand_b , 128'h00000000000000000000000000000000 };
-  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.sel  = reg_writeback_select;
-  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.out  = \singlecycle_datapath.regfile.rd_data ;
-  assign \data_memory_interface.sign_fix  = \data_memory_interface.read_data ;
-  assign \data_memory_interface.bus_write_enable  = bus_write_enable;
-  assign \data_memory_interface.bus_read_enable  = bus_read_enable;
-  assign \data_memory_interface.bus_byte_enable  = bus_byte_enable;
-  assign \data_memory_interface.bus_write_data  = bus_write_data;
-  assign \data_memory_interface.bus_read_data  = bus_read_data;
-  assign \data_memory_interface.bus_address  = { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0] };
+  assign \singlecycle_ctlpath.next_pc_select  = next_pc_select;
+  assign \singlecycle_ctlpath.pc_write_enable  = pc_write_enable;
+  assign \singlecycle_ctlpath.alu_control.alu_function  = \singlecycle_datapath.alu.alu_function ;
+  assign \singlecycle_ctlpath.reg_writeback_select  = reg_writeback_select;
+  assign \singlecycle_ctlpath.regfile_write_enable  = regfile_write_enable;
+  assign \singlecycle_ctlpath.take_branch  = \singlecycle_ctlpath.singlecycle_control.take_branch ;
+  assign \instruction_decoder.inst  = inst;
+  assign \instruction_decoder.inst_funct3  = inst[14:12];
+  assign \instruction_decoder.inst_funct7  = inst[31:25];
+  assign \instruction_decoder.inst_opcode  = inst[6:0];
+  assign \instruction_decoder.inst_rd  = inst[11:7];
+  assign \instruction_decoder.inst_rs1  = inst[19:15];
+  assign \instruction_decoder.inst_rs2  = inst[24:20];
+  assign \singlecycle_datapath.regfile_write_enable  = regfile_write_enable;
+  assign \immediate_generator.immediate  = \singlecycle_datapath.adder_pc_plus_immediate.operand_b ;
+  assign \immediate_generator.inst  = inst;
+  assign \singlecycle_datapath.reset  = reset;
+  assign \singlecycle_ctlpath.alu_control.default_funct [4] = 1'h0;
+  assign \singlecycle_datapath.rs1_data  = \singlecycle_datapath.mux_operand_a.multiplexer.input_array[0] ;
+  assign \singlecycle_datapath.rs2_data  = \data_memory_interface.write_data ;
+  assign \singlecycle_ctlpath.alu_control.inst_funct3  = inst[14:12];
+  assign \singlecycle_ctlpath.singlecycle_control.reg_writeback_select  = reg_writeback_select;
+  assign \singlecycle_ctlpath.control_transfer.take_branch  = \singlecycle_ctlpath.singlecycle_control.take_branch ;
+  assign \singlecycle_ctlpath.alu_control.inst_funct7  = inst[31:25];
   assign \data_memory_interface.address [31:2] = \singlecycle_datapath.alu.result [31:2];
-  assign \data_memory_interface.data_format  = inst[14:12];
-  assign \data_memory_interface.write_enable  = bus_write_enable;
-  assign \data_memory_interface.read_enable  = bus_read_enable;
+  assign \singlecycle_ctlpath.control_transfer.inst_funct3  = inst[14:12];
+  assign \data_memory_interface.bus_address  = { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0] };
+  assign \data_memory_interface.bus_byte_enable  = bus_byte_enable;
+  assign \data_memory_interface.bus_read_data  = bus_read_data;
+  assign \data_memory_interface.bus_read_enable  = bus_read_enable;
+  assign \data_memory_interface.bus_write_data  = bus_write_data;
+  assign \data_memory_interface.bus_write_enable  = bus_write_enable;
   assign \data_memory_interface.clock  = clock;
+  assign \data_memory_interface.data_format  = inst[14:12];
+  assign \singlecycle_datapath.regfile.clock  = clock;
   assign \singlecycle_datapath.regfile.i  = 32'd32;
-  assign \singlecycle_datapath.regfile.rs2_data  = \data_memory_interface.write_data ;
+  assign \singlecycle_datapath.regfile.rd_address  = inst[11:7];
+  assign \singlecycle_datapath.regfile.reset  = reset;
+  assign \singlecycle_datapath.regfile.rs1_address  = inst[19:15];
   assign \singlecycle_datapath.regfile.rs1_data  = \singlecycle_datapath.mux_operand_a.multiplexer.input_array[0] ;
   assign \singlecycle_datapath.regfile.rs2_address  = inst[24:20];
-  assign \singlecycle_datapath.regfile.rs1_address  = inst[19:15];
-  assign \singlecycle_datapath.regfile.rd_address  = inst[11:7];
+  assign \singlecycle_datapath.regfile.rs2_data  = \data_memory_interface.write_data ;
   assign \singlecycle_datapath.regfile.write_enable  = regfile_write_enable;
-  assign \singlecycle_datapath.regfile.reset  = reset;
-  assign \singlecycle_datapath.regfile.clock  = clock;
-  assign write_enable = bus_write_enable;
-  assign read_enable = bus_read_enable;
+  assign \data_memory_interface.read_enable  = bus_read_enable;
+  assign \data_memory_interface.sign_fix  = \data_memory_interface.read_data ;
+  assign \data_memory_interface.write_enable  = bus_write_enable;
+  assign \singlecycle_datapath.program_counter.clock  = clock;
+  assign \singlecycle_datapath.program_counter.reset  = reset;
+  assign \singlecycle_datapath.program_counter.write_enable  = pc_write_enable;
+  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.sel  = reg_writeback_select;
+  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.out  = \singlecycle_datapath.regfile.rd_data ;
+  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.input_array[7]  = 32'd0;
+  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.input_array[6]  = 32'd0;
+  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.input_array[5]  = 32'd0;
+  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.input_array[4]  = 32'd0;
+  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.input_array[3]  = \singlecycle_datapath.adder_pc_plus_immediate.operand_b ;
+  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.input_array[2]  = \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0] ;
+  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.input_array[1]  = \data_memory_interface.read_data ;
+  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.input_array[0]  = { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0] };
+  assign \singlecycle_datapath.mux_reg_writeback.multiplexer.in_bus  = { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0], \data_memory_interface.read_data , \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0] , \singlecycle_datapath.adder_pc_plus_immediate.operand_b , 128'h00000000000000000000000000000000 };
+  assign \singlecycle_datapath.mux_reg_writeback.in0  = { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0] };
+  assign \singlecycle_datapath.mux_reg_writeback.in1  = \data_memory_interface.read_data ;
+  assign \singlecycle_datapath.mux_reg_writeback.in2  = \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0] ;
+  assign \singlecycle_datapath.mux_reg_writeback.in3  = \singlecycle_datapath.adder_pc_plus_immediate.operand_b ;
+  assign \singlecycle_datapath.mux_reg_writeback.in4  = 32'd0;
+  assign \singlecycle_datapath.mux_reg_writeback.in5  = 32'd0;
+  assign \singlecycle_datapath.mux_reg_writeback.in6  = 32'd0;
+  assign \singlecycle_datapath.mux_reg_writeback.in7  = 32'd0;
+  assign \singlecycle_datapath.mux_reg_writeback.out  = \singlecycle_datapath.regfile.rd_data ;
+  assign \singlecycle_datapath.mux_reg_writeback.sel  = reg_writeback_select;
+  assign \singlecycle_datapath.mux_operand_b.multiplexer.out  = \singlecycle_datapath.alu.operand_b ;
+  assign \singlecycle_datapath.mux_operand_b.multiplexer.input_array[1]  = \singlecycle_datapath.adder_pc_plus_immediate.operand_b ;
+  assign \singlecycle_datapath.mux_operand_b.multiplexer.input_array[0]  = \data_memory_interface.write_data ;
+  assign \singlecycle_datapath.mux_operand_b.multiplexer.in_bus  = { \data_memory_interface.write_data , \singlecycle_datapath.adder_pc_plus_immediate.operand_b  };
+  assign \singlecycle_datapath.mux_operand_b.in0  = \data_memory_interface.write_data ;
+  assign \singlecycle_datapath.mux_operand_b.in1  = \singlecycle_datapath.adder_pc_plus_immediate.operand_b ;
+  assign \singlecycle_datapath.mux_operand_b.out  = \singlecycle_datapath.alu.operand_b ;
+  assign \singlecycle_datapath.mux_operand_b.sel  = \singlecycle_datapath.mux_operand_b.multiplexer.sel ;
+  assign \singlecycle_datapath.mux_operand_a.multiplexer.out  = \singlecycle_datapath.alu.operand_a ;
+  assign \singlecycle_datapath.mux_operand_a.multiplexer.input_array[1]  = \singlecycle_datapath.program_counter.value ;
+  assign \singlecycle_datapath.mux_operand_a.multiplexer.in_bus  = { \singlecycle_datapath.mux_operand_a.multiplexer.input_array[0] , \singlecycle_datapath.program_counter.value  };
+  assign \singlecycle_datapath.mux_operand_a.in0  = \singlecycle_datapath.mux_operand_a.multiplexer.input_array[0] ;
+  assign \singlecycle_datapath.mux_operand_a.in1  = \singlecycle_datapath.program_counter.value ;
+  assign \singlecycle_datapath.mux_operand_a.out  = \singlecycle_datapath.alu.operand_a ;
+  assign \singlecycle_datapath.mux_operand_a.sel  = \singlecycle_datapath.mux_operand_a.multiplexer.sel ;
+  assign \singlecycle_datapath.mux_next_pc_select.multiplexer.sel  = next_pc_select;
+  assign \singlecycle_datapath.mux_next_pc_select.multiplexer.out  = \singlecycle_datapath.program_counter.next ;
+  assign \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[3]  = 32'd0;
+  assign \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[2]  = { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1], 1'h0 };
+  assign \singlecycle_datapath.mux_next_pc_select.multiplexer.in_bus  = { \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0] , \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[1] , \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1], 33'h000000000 };
+  assign \singlecycle_datapath.mux_next_pc_select.in0  = \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0] ;
+  assign \singlecycle_datapath.mux_next_pc_select.in1  = \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[1] ;
+  assign \singlecycle_datapath.mux_next_pc_select.in2  = { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1], 1'h0 };
+  assign \singlecycle_datapath.mux_next_pc_select.in3  = 32'd0;
+  assign \singlecycle_datapath.mux_next_pc_select.out  = \singlecycle_datapath.program_counter.next ;
+  assign \singlecycle_datapath.mux_next_pc_select.sel  = next_pc_select;
+  assign \singlecycle_datapath.alu.result [1:0] = \data_memory_interface.address [1:0];
+  assign \singlecycle_datapath.alu.result_equal_zero  = \singlecycle_ctlpath.control_transfer.result_equal_zero ;
+  assign \singlecycle_datapath.alu.unsigned_multiplication  = \singlecycle_datapath.alu.signed_unsigned_multiplication ;
+  assign \singlecycle_datapath.adder_pc_plus_immediate.operand_a  = \singlecycle_datapath.program_counter.value ;
+  assign \singlecycle_datapath.adder_pc_plus_immediate.result  = \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[1] ;
+  assign \singlecycle_datapath.adder_pc_plus_4.operand_a  = 32'd4;
+  assign \singlecycle_datapath.adder_pc_plus_4.operand_b  = \singlecycle_datapath.program_counter.value ;
+  assign \singlecycle_datapath.adder_pc_plus_4.result  = \singlecycle_datapath.mux_next_pc_select.multiplexer.input_array[0] ;
   assign address = { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0] };
-  assign write_data = \data_memory_interface.write_data ;
-  assign read_data = \data_memory_interface.read_data ;
-  assign alu_result_equal_zero = \singlecycle_ctlpath.control_transfer.result_equal_zero ;
   assign alu_function = \singlecycle_datapath.alu.alu_function ;
-  assign immediate = \singlecycle_datapath.adder_pc_plus_immediate.operand_b ;
-  assign inst_rs2 = inst[24:20];
-  assign inst_rs1 = inst[19:15];
-  assign inst_rd = inst[11:7];
-  assign inst_funct7 = inst[31:25];
-  assign inst_funct3 = inst[14:12];
-  assign inst_opcode = inst[6:0];
-  assign alu_operand_b_select = \singlecycle_datapath.mux_operand_b.multiplexer.sel ;
   assign alu_operand_a_select = \singlecycle_datapath.mux_operand_a.multiplexer.sel ;
-  assign pc = \singlecycle_datapath.program_counter.value ;
+  assign alu_operand_b_select = \singlecycle_datapath.mux_operand_b.multiplexer.sel ;
+  assign alu_result_equal_zero = \singlecycle_ctlpath.control_transfer.result_equal_zero ;
   assign bus_address = { \singlecycle_datapath.alu.result [31:2], \data_memory_interface.address [1:0] };
+  assign immediate = \singlecycle_datapath.adder_pc_plus_immediate.operand_b ;
+  assign inst_funct3 = inst[14:12];
+  assign inst_funct7 = inst[31:25];
+  assign inst_opcode = inst[6:0];
+  assign inst_rd = inst[11:7];
+  assign inst_rs1 = inst[19:15];
+  assign inst_rs2 = inst[24:20];
+  assign pc = \singlecycle_datapath.program_counter.value ;
+  assign read_data = \data_memory_interface.read_data ;
+  assign read_enable = bus_read_enable;
+  assign write_data = \data_memory_interface.write_data ;
+  assign write_enable = bus_write_enable;
 endmodule

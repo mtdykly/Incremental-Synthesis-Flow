@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "returncode": 0,
-  "seconds": 0.5766352713108063,
+  "seconds": 0.31656484492123127,
   "log": "/workspace/Incremental-Synthesis-Flow/results/eco-002/base/frontend.log",
   "command": [
     "yosys",
@@ -30,5 +30,6 @@
     "core/singlecycle/singlecycle_ctlpath.sv",
     "core/singlecycle/singlecycle_datapath.sv",
     "core/singlecycle/toplevel.sv"
-  ]
+  ],
+  "provenance_manifest": "/workspace/Incremental-Synthesis-Flow/results/eco-002/base/source_manifest.json"
 }

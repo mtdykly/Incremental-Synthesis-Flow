@@ -7,6 +7,7 @@ reference result. Initialization and state-cell semantics remain exact checks.
 """
 import copy
 import json
+import re
 from pathlib import Path
 from canonical import intrinsic_signature
 from region import is_hard_boundary
@@ -73,6 +74,26 @@ def write_transition_verification(path, candidate, reference, top, pairs):
     problem = build_transition_problem(candidate, reference, top, pairs)
     data = path.with_suffix('.json')
     data.write_text(json.dumps(problem))
+    reference_mod = reference['modules'][top]
+    points = {port: {'kind': 'output', 'port': port, 'new_bits': value['bits']}
+              for port, value in reference_mod['ports'].items() if value['direction'] == 'output'}
+    state_pairs = [(b, n) for b, n in sorted(pairs.items())
+                   if is_hard_boundary(candidate['modules'][top]['cells'][b]['type'])]
+    for i, (b, n) in enumerate(state_pairs):
+        cell = reference_mod['cells'][n]
+        for pin, bits in cell['connections'].items():
+            if cell['port_directions'][pin] == 'input':
+                points[f'__state_{i}_{pin}'] = {'kind': 'state_input', 'base_cell': b,
+                                               'new_cell': n, 'pin': pin, 'new_bits': bits}
+    for i, (b, n) in enumerate(sorted(pairs.items())):
+        cell = reference_mod['cells'][n]
+        if is_hard_boundary(cell['type']):
+            continue
+        for pin, bits in cell['connections'].items():
+            if cell['port_directions'][pin] == 'output':
+                points[f'__proof_{i}_{pin}'] = {'kind': 'internal', 'base_cell': b,
+                                               'new_cell': n, 'pin': pin, 'new_bits': bits}
+    path.with_suffix('.points.json').write_text(json.dumps(points, indent=2))
     # Do not synthesize the proof with opt -full: mux/reduce rewrites can
     # change x propagation, even with -keepdc. Fold expressions conservatively
     # and merge identical cells to keep shared arithmetic cones tractable.
@@ -80,3 +101,10 @@ def write_transition_verification(path, candidate, reference, top, pairs):
                     'equiv_make gold gate equiv\n'
                     'hierarchy -top equiv\nopt_expr -keepdc\nopt_merge\nopt_clean\ncheck -assert\n'
                     'equiv_simple -undef\nequiv_status -assert\n')
+
+
+def unproven_points(log, point_map):
+    """Only parse the final unproven list, not intermediate solver attempts."""
+    lines = '\n'.join(line for line in log.splitlines() if 'Unproven $equiv ' in line)
+    return [dict(name=name, **point) for name, point in sorted(point_map.items())
+            if re.search(r'\\' + re.escape(name) + r'(?:_gold|_gate)?(?=\s|\[|$)', lines)]

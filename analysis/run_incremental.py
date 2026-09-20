@@ -84,7 +84,13 @@ def plan_command(args):
                               args.yosys, args.timeout)
         match = merge_matches(base, new, match, proofs)
     dump_json(match, os.path.join(analysis_dir, 'incremental_matches.json'))
-    plan = plan_regions(base, new, match)
+    from rtl_region import seed_mode, build_rtl_plan
+    mode = seed_mode(args)
+    extra = getattr(args, '_extra_region', None)
+    if mode == 'netlist':
+        plan = plan_regions(base, new, match, (extra or {}).get('base'), (extra or {}).get('new'))
+    else:
+        plan = build_rtl_plan(root, args.case, base, new, match, mode, extra)
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
     from formal.build_match_problem import design_digest
     plan['design_digest'] = design_digest(base, new)
@@ -134,7 +140,7 @@ def stitch_command(args):
     dump_json(stitched, output_path)
     equiv_path = os.path.join(output_dir, "verify_stitched.ys")
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-    from formal.verify_transition import write_transition_verification
+    from formal.verify_transition import write_transition_verification, unproven_points
     write_transition_verification(equiv_path, stitched, load_json(reference_path),
                                   plan['top'], plan['retained_pairs'])
     print(f"Stitched netlist: {output_path}")
@@ -143,6 +149,8 @@ def stitch_command(args):
     outcome.update(verified=outcome['status'] == 'passed',
                    proof_kind='transition_refinement',
                    undef_policy='reference_x_is_dont_care')
+    outcome['unproven_points'] = unproven_points(
+        Path(outcome['log']).read_text(), load_json(Path(equiv_path).with_suffix('.points.json')))
     dump_json(outcome, os.path.join(output_dir, 'verification.json'))
     print(f"Verification: {outcome['status']}")
     return 0 if outcome['verified'] else 3
@@ -156,6 +164,8 @@ def main(argv=None):
     plan_parser = subparsers.add_parser("plan", help="match and extract a region")
     plan_parser.add_argument("case")
     plan_parser.add_argument("--topology-rounds", type=int, default=2)
+    plan_parser.add_argument('--seed-mode', choices=['netlist', 'rtl', 'hybrid'])
+    plan_parser.add_argument('--rtl-guided', action='store_true')
     plan_parser.add_argument('--formal', action='store_true')
     plan_parser.add_argument('--formal-results', help='import results for these exact input netlists')
     plan_parser.add_argument('--yosys', default='yosys')

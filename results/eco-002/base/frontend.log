@@ -660,64 +660,65 @@ Found and cleaned up 1 empty switch in `$paramod$99da07bf27abaac915a8c95d36d6f28
 Removing empty process `$paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.$proc$/workspace/Incremental-Synthesis-Flow/results/eco-002/work/base/core/common/multiplexer.sv:21$110'.
 Cleaned up 33 empty switches.
 
-22.12. Executing OPT_EXPR pass (perform const folding).
-Optimizing module $paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.
-<suppressed ~1 debug messages>
-Optimizing module $paramod\adder\WIDTH=s32'00000000000000000000000000100000.
-Optimizing module singlecycle_datapath.
-Optimizing module singlecycle_ctlpath.
-Optimizing module singlecycle_control.
-Optimizing module riscv_core.
-Optimizing module $paramod\multiplexer4\WIDTH=s32'00000000000000000000000000100000.
-Optimizing module regfile.
-<suppressed ~42 debug messages>
-Optimizing module $paramod\multiplexer2\WIDTH=s32'00000000000000000000000000100000.
-Optimizing module $paramod\multiplexer8\WIDTH=s32'00000000000000000000000000100000.
-Optimizing module $paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register.
-<suppressed ~1 debug messages>
+23. Executing JSON backend.
+
+24. Executing OPT_EXPR pass (perform const folding).
 Optimizing module $paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.
 <suppressed ~1 debug messages>
-Optimizing module instruction_decoder.
-Optimizing module immediate_generator.
-Optimizing module data_memory_interface.
-<suppressed ~2 debug messages>
-Optimizing module control_transfer.
+Optimizing module $paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.
 <suppressed ~1 debug messages>
-Optimizing module alu_control.
-<suppressed ~3 debug messages>
-Optimizing module alu.
-<suppressed ~5 debug messages>
 Optimizing module $paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.
 <suppressed ~1 debug messages>
+Optimizing module $paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\adder\WIDTH=s32'00000000000000000000000000100000.
+Optimizing module $paramod\multiplexer2\WIDTH=s32'00000000000000000000000000100000.
+Optimizing module $paramod\multiplexer4\WIDTH=s32'00000000000000000000000000100000.
+Optimizing module $paramod\multiplexer8\WIDTH=s32'00000000000000000000000000100000.
+Optimizing module alu.
+<suppressed ~5 debug messages>
+Optimizing module alu_control.
+<suppressed ~3 debug messages>
+Optimizing module control_transfer.
+<suppressed ~1 debug messages>
+Optimizing module data_memory_interface.
+<suppressed ~6 debug messages>
+Optimizing module immediate_generator.
+Optimizing module instruction_decoder.
+Optimizing module regfile.
+<suppressed ~42 debug messages>
+Optimizing module riscv_core.
+Optimizing module singlecycle_control.
+Optimizing module singlecycle_ctlpath.
+Optimizing module singlecycle_datapath.
 
-23. Executing FLATTEN pass (flatten design).
-Deleting now unused module $paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.
-Deleting now unused module $paramod\adder\WIDTH=s32'00000000000000000000000000100000.
-Deleting now unused module singlecycle_datapath.
-Deleting now unused module singlecycle_ctlpath.
-Deleting now unused module singlecycle_control.
-Deleting now unused module $paramod\multiplexer4\WIDTH=s32'00000000000000000000000000100000.
-Deleting now unused module regfile.
-Deleting now unused module $paramod\multiplexer2\WIDTH=s32'00000000000000000000000000100000.
-Deleting now unused module $paramod\multiplexer8\WIDTH=s32'00000000000000000000000000100000.
-Deleting now unused module $paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register.
+25. Executing FLATTEN pass (flatten design).
 Deleting now unused module $paramod$5ef3be0bfad1454aaa6432c4ab405bbd7cbab26b\multiplexer.
-Deleting now unused module instruction_decoder.
-Deleting now unused module immediate_generator.
-Deleting now unused module data_memory_interface.
-Deleting now unused module control_transfer.
-Deleting now unused module alu_control.
-Deleting now unused module alu.
+Deleting now unused module $paramod$6a3d32cf08b5e9a4d56891e3d8781ccd4215c4af\multiplexer.
 Deleting now unused module $paramod$99da07bf27abaac915a8c95d36d6f2808394e702\multiplexer.
+Deleting now unused module $paramod$e358a763f16798cd10903dfd37e7986c0fbbe40f\register.
+Deleting now unused module $paramod\adder\WIDTH=s32'00000000000000000000000000100000.
+Deleting now unused module $paramod\multiplexer2\WIDTH=s32'00000000000000000000000000100000.
+Deleting now unused module $paramod\multiplexer4\WIDTH=s32'00000000000000000000000000100000.
+Deleting now unused module $paramod\multiplexer8\WIDTH=s32'00000000000000000000000000100000.
+Deleting now unused module alu.
+Deleting now unused module alu_control.
+Deleting now unused module control_transfer.
+Deleting now unused module data_memory_interface.
+Deleting now unused module immediate_generator.
+Deleting now unused module instruction_decoder.
+Deleting now unused module regfile.
+Deleting now unused module singlecycle_control.
+Deleting now unused module singlecycle_ctlpath.
+Deleting now unused module singlecycle_datapath.
 <suppressed ~20 debug messages>
 
-24. Executing OPT pass (performing simple optimizations).
+26. Executing OPT pass (performing simple optimizations).
 
-24.1. Executing OPT_EXPR pass (perform const folding).
+26.1. Executing OPT_EXPR pass (perform const folding).
 Optimizing module riscv_core.
-<suppressed ~4 debug messages>
 
-24.2. Executing OPT_MERGE pass (detect identical cells).
+26.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\riscv_core'.
 Computing hashes of 616 cells of `\riscv_core'.
 Finding duplicate cells in `\riscv_core'.
@@ -728,71 +729,71 @@ Finding duplicate cells in `\riscv_core'.
 <suppressed ~504 debug messages>
 Removed a total of 168 cells.
 
-24.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+26.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \riscv_core..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
     dead port 1/2 on $mux $flatten\singlecycle_ctlpath.\alu_control.$procmux$1767.
-    dead port 2/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1829.
-    dead port 2/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1820.
-    dead port 1/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1818.
-    dead port 2/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1808.
-    dead port 2/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1800.
-    dead port 2/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1793.
-    dead port 1/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1791.
-    dead port 2/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1783.
-    dead port 2/2 on $mux $flatten\singlecycle_ctlpath.\control_transfer.$procmux$1741.
-    dead port 1/2 on $mux $flatten\singlecycle_ctlpath.\control_transfer.$procmux$1730.
-    dead port 1/2 on $mux $flatten\singlecycle_ctlpath.\control_transfer.$procmux$1724.
-    dead port 1/2 on $mux $flatten\singlecycle_ctlpath.\control_transfer.$procmux$1721.
-    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$375.
-    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$375.
-    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$372.
-    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$372.
-    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$369.
-    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$369.
-    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$366.
-    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$366.
-    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$363.
-    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$363.
-    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$361.
-    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$361.
-    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$357.
-    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$357.
-    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$355.
-    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$355.
-    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$351.
-    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$351.
-    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$349.
-    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$349.
-    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$345.
-    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$345.
     dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$343.
     dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$343.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$345.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$345.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$349.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$349.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$351.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$351.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$355.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$355.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$357.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$357.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$361.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$361.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$363.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$363.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$366.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$366.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$369.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$369.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$372.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$372.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$375.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\regfile.$procmux$375.
+    dead port 1/2 on $mux $flatten\singlecycle_ctlpath.\control_transfer.$procmux$1721.
+    dead port 2/2 on $mux $flatten\singlecycle_ctlpath.\control_transfer.$procmux$1741.
+    dead port 1/2 on $mux $flatten\singlecycle_ctlpath.\control_transfer.$procmux$1724.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1783.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1791.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1793.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1800.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1808.
+    dead port 1/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1818.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1820.
+    dead port 2/2 on $mux $flatten\singlecycle_datapath.\alu.$procmux$1829.
+    dead port 1/2 on $mux $flatten\singlecycle_ctlpath.\control_transfer.$procmux$1730.
 Removed 37 multiplexer ports.
 <suppressed ~305 debug messages>
 
-24.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+26.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \riscv_core.
-    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$168: { $auto$opt_reduce.cc:137:opt_pmux$1993 $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$267_CMP $auto$opt_reduce.cc:137:opt_pmux$1991 $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$269_CMP $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$272_CMP }
-    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$204: { $auto$opt_reduce.cc:137:opt_pmux$1997 $auto$opt_reduce.cc:137:opt_pmux$1995 }
-    New ctrl vector for $pmux cell $flatten\singlecycle_datapath.\alu.$procmux$1832: { $flatten\singlecycle_datapath.\alu.$procmux$1833_CMP $flatten\singlecycle_datapath.\alu.$procmux$1834_CMP $flatten\singlecycle_datapath.\alu.$procmux$1835_CMP $flatten\singlecycle_datapath.\alu.$procmux$1836_CMP $auto$opt_reduce.cc:137:opt_pmux$1999 $flatten\singlecycle_datapath.\alu.$procmux$1839_CMP $flatten\singlecycle_datapath.\alu.$procmux$1840_CMP $flatten\singlecycle_datapath.\alu.$procmux$1841_CMP $flatten\singlecycle_datapath.\alu.$procmux$1842_CMP $flatten\singlecycle_datapath.\alu.$procmux$1843_CMP $flatten\singlecycle_datapath.\alu.$procmux$1844_CMP $flatten\singlecycle_datapath.\alu.$procmux$1845_CMP $flatten\singlecycle_datapath.\alu.$procmux$1846_CMP $flatten\singlecycle_datapath.\alu.$procmux$1847_CMP $flatten\singlecycle_datapath.\alu.$procmux$1848_CMP $flatten\singlecycle_datapath.\alu.$procmux$1849_CMP $flatten\singlecycle_datapath.\alu.$procmux$1850_CMP }
-    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$216: { $auto$opt_reduce.cc:137:opt_pmux$2001 $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$270_CMP }
-    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$264: { $auto$opt_reduce.cc:137:opt_pmux$2003 $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$267_CMP }
-    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$180: { $auto$opt_reduce.cc:137:opt_pmux$2007 $auto$opt_reduce.cc:137:opt_pmux$2005 }
-    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$228: $auto$opt_reduce.cc:137:opt_pmux$2009
-    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$156: { $auto$opt_reduce.cc:137:opt_pmux$2011 $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$274_CMP }
-    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$192: { $auto$opt_reduce.cc:137:opt_pmux$2015 $auto$opt_reduce.cc:137:opt_pmux$2013 }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$192: { $auto$opt_reduce.cc:137:opt_pmux$1993 $auto$opt_reduce.cc:137:opt_pmux$1991 }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$240: { $auto$opt_reduce.cc:137:opt_pmux$1995 $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$146_CMP }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$156: { $auto$opt_reduce.cc:137:opt_pmux$1997 $flatten\immediate_generator.$procmux$1706_CMP [0] }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$204: { $auto$opt_reduce.cc:137:opt_pmux$2001 $auto$opt_reduce.cc:137:opt_pmux$1999 }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$252: { $flatten\immediate_generator.$procmux$1702_CMP $auto$opt_reduce.cc:137:opt_pmux$2003 }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$168: { $auto$opt_reduce.cc:137:opt_pmux$2007 $flatten\immediate_generator.$procmux$1704_CMP $auto$opt_reduce.cc:137:opt_pmux$2005 $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$149_CMP $flatten\immediate_generator.$procmux$1706_CMP [2] }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$216: { $auto$opt_reduce.cc:137:opt_pmux$2009 $flatten\immediate_generator.$procmux$1705_CMP [1] }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$264: { $auto$opt_reduce.cc:137:opt_pmux$2011 $flatten\immediate_generator.$procmux$1704_CMP }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$180: { $auto$opt_reduce.cc:137:opt_pmux$2015 $auto$opt_reduce.cc:137:opt_pmux$2013 }
     New ctrl vector for $pmux cell $flatten\singlecycle_datapath.\mux_reg_writeback.\multiplexer.$procmux$1691: { $auto$opt_reduce.cc:137:opt_pmux$2017 $flatten\singlecycle_datapath.\mux_reg_writeback.\multiplexer.$procmux$1696_CMP $flatten\singlecycle_datapath.\mux_reg_writeback.\multiplexer.$procmux$1697_CMP $flatten\singlecycle_datapath.\mux_reg_writeback.\multiplexer.$procmux$1698_CMP $flatten\singlecycle_datapath.\mux_reg_writeback.\multiplexer.$procmux$1699_CMP }
-    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$252: { $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$265_CMP $auto$opt_reduce.cc:137:opt_pmux$2019 }
-    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$144: { $auto$opt_reduce.cc:137:opt_pmux$2023 $auto$opt_reduce.cc:137:opt_pmux$2021 $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$268_CMP $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$274_CMP }
-    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\alu_control.$procmux$1748: { $auto$opt_reduce.cc:137:opt_pmux$2029 $auto$opt_reduce.cc:137:opt_pmux$2027 $auto$opt_reduce.cc:137:opt_pmux$2025 }
-    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$240: { $auto$opt_reduce.cc:137:opt_pmux$2031 $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$266_CMP }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\alu_control.$procmux$1748: { $auto$opt_reduce.cc:137:opt_pmux$2023 $auto$opt_reduce.cc:137:opt_pmux$2021 $auto$opt_reduce.cc:137:opt_pmux$2019 }
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$228: $auto$opt_reduce.cc:137:opt_pmux$2025
+    New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\singlecycle_control.$procmux$144: { $auto$opt_reduce.cc:137:opt_pmux$2029 $auto$opt_reduce.cc:137:opt_pmux$2027 $flatten\immediate_generator.$procmux$1703_CMP [1] $flatten\immediate_generator.$procmux$1706_CMP [0] }
+    New ctrl vector for $pmux cell $flatten\singlecycle_datapath.\alu.$procmux$1832: { $flatten\singlecycle_datapath.\alu.$procmux$1784_CMP $flatten\singlecycle_datapath.\alu.$procmux$1794_CMP $flatten\singlecycle_datapath.\alu.$procmux$1809_CMP $flatten\singlecycle_datapath.\alu.$procmux$1821_CMP $auto$opt_reduce.cc:137:opt_pmux$2031 $flatten\singlecycle_datapath.\alu.$procmux$1839_CMP $flatten\singlecycle_datapath.\alu.$procmux$1840_CMP $flatten\singlecycle_datapath.\alu.$procmux$1841_CMP $flatten\singlecycle_datapath.\alu.$procmux$1842_CMP $flatten\singlecycle_datapath.\alu.$procmux$1843_CMP $flatten\singlecycle_datapath.\alu.$procmux$1844_CMP $flatten\singlecycle_datapath.\alu.$procmux$1845_CMP $flatten\singlecycle_datapath.\alu.$procmux$1846_CMP $flatten\singlecycle_datapath.\alu.$procmux$1847_CMP $flatten\singlecycle_datapath.\alu.$procmux$1848_CMP $flatten\singlecycle_datapath.\alu.$procmux$1849_CMP $flatten\singlecycle_datapath.\alu.$procmux$1850_CMP }
   Optimizing cells in module \riscv_core.
 Performed a total of 14 changes.
 
-24.5. Executing OPT_MERGE pass (detect identical cells).
+26.5. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\riscv_core'.
 Computing hashes of 444 cells of `\riscv_core'.
 Finding duplicate cells in `\riscv_core'.
@@ -801,41 +802,41 @@ Finding duplicate cells in `\riscv_core'.
 <suppressed ~12 debug messages>
 Removed a total of 4 cells.
 
-24.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1912 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$733_Y, Q = \singlecycle_datapath.regfile.register[17]).
-Handling D = Q on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($adff) from module riscv_core (removing D path).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1954 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$383_Y, Q = \singlecycle_datapath.regfile.register[31]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1861 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1685_Y, Q = \singlecycle_datapath.regfile.register[0]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1915 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$695_Y, Q = \singlecycle_datapath.regfile.register[18]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1864 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1613_Y, Q = \singlecycle_datapath.regfile.register[1]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1942 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$443_Y, Q = \singlecycle_datapath.regfile.register[27]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1867 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1543_Y, Q = \singlecycle_datapath.regfile.register[2]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1918 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$659_Y, Q = \singlecycle_datapath.regfile.register[19]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1870 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1475_Y, Q = \singlecycle_datapath.regfile.register[3]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1873 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1409_Y, Q = \singlecycle_datapath.regfile.register[4]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1921 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$625_Y, Q = \singlecycle_datapath.regfile.register[20]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1876 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1345_Y, Q = \singlecycle_datapath.regfile.register[5]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1945 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$425_Y, Q = \singlecycle_datapath.regfile.register[28]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1879 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1283_Y, Q = \singlecycle_datapath.regfile.register[6]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1924 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$593_Y, Q = \singlecycle_datapath.regfile.register[21]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1882 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1223_Y, Q = \singlecycle_datapath.regfile.register[7]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1885 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1165_Y, Q = \singlecycle_datapath.regfile.register[8]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1927 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$563_Y, Q = \singlecycle_datapath.regfile.register[22]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1888 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1109_Y, Q = \singlecycle_datapath.regfile.register[9]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1948 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$409_Y, Q = \singlecycle_datapath.regfile.register[29]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1891 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1055_Y, Q = \singlecycle_datapath.regfile.register[10]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1930 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$535_Y, Q = \singlecycle_datapath.regfile.register[23]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1894 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1003_Y, Q = \singlecycle_datapath.regfile.register[11]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1897 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$953_Y, Q = \singlecycle_datapath.regfile.register[12]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1933 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$509_Y, Q = \singlecycle_datapath.regfile.register[24]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1900 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$905_Y, Q = \singlecycle_datapath.regfile.register[13]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1951 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$395_Y, Q = \singlecycle_datapath.regfile.register[30]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1903 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$859_Y, Q = \singlecycle_datapath.regfile.register[14]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1936 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$485_Y, Q = \singlecycle_datapath.regfile.register[25]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1906 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$815_Y, Q = \singlecycle_datapath.regfile.register[15]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1909 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$773_Y, Q = \singlecycle_datapath.regfile.register[16]).
-Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1939 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$463_Y, Q = \singlecycle_datapath.regfile.register[26]).
+26.6. Executing OPT_DFF pass (perform DFF optimizations).
 Adding EN signal on $flatten\singlecycle_datapath.\program_counter.$procdff$1969 ($adff) from module riscv_core (D = \singlecycle_datapath.program_counter.next, Q = \singlecycle_datapath.program_counter.value).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1954 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$383_Y, Q = \singlecycle_datapath.regfile.register[31]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1951 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$395_Y, Q = \singlecycle_datapath.regfile.register[30]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1948 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$409_Y, Q = \singlecycle_datapath.regfile.register[29]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1945 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$425_Y, Q = \singlecycle_datapath.regfile.register[28]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1942 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$443_Y, Q = \singlecycle_datapath.regfile.register[27]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1939 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$463_Y, Q = \singlecycle_datapath.regfile.register[26]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1936 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$485_Y, Q = \singlecycle_datapath.regfile.register[25]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1933 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$509_Y, Q = \singlecycle_datapath.regfile.register[24]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1930 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$535_Y, Q = \singlecycle_datapath.regfile.register[23]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1927 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$563_Y, Q = \singlecycle_datapath.regfile.register[22]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1924 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$593_Y, Q = \singlecycle_datapath.regfile.register[21]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1921 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$625_Y, Q = \singlecycle_datapath.regfile.register[20]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1918 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$659_Y, Q = \singlecycle_datapath.regfile.register[19]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1915 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$695_Y, Q = \singlecycle_datapath.regfile.register[18]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1912 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$733_Y, Q = \singlecycle_datapath.regfile.register[17]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1909 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$773_Y, Q = \singlecycle_datapath.regfile.register[16]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1906 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$815_Y, Q = \singlecycle_datapath.regfile.register[15]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1903 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$859_Y, Q = \singlecycle_datapath.regfile.register[14]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1900 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$905_Y, Q = \singlecycle_datapath.regfile.register[13]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1897 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$953_Y, Q = \singlecycle_datapath.regfile.register[12]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1894 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1003_Y, Q = \singlecycle_datapath.regfile.register[11]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1891 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1055_Y, Q = \singlecycle_datapath.regfile.register[10]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1888 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1109_Y, Q = \singlecycle_datapath.regfile.register[9]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1885 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1165_Y, Q = \singlecycle_datapath.regfile.register[8]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1882 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1223_Y, Q = \singlecycle_datapath.regfile.register[7]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1879 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1283_Y, Q = \singlecycle_datapath.regfile.register[6]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1876 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1345_Y, Q = \singlecycle_datapath.regfile.register[5]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1873 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1409_Y, Q = \singlecycle_datapath.regfile.register[4]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1870 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1475_Y, Q = \singlecycle_datapath.regfile.register[3]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1867 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1543_Y, Q = \singlecycle_datapath.regfile.register[2]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1864 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1613_Y, Q = \singlecycle_datapath.regfile.register[1]).
+Adding EN signal on $flatten\singlecycle_datapath.\regfile.$procdff$1861 ($adff) from module riscv_core (D = $flatten\singlecycle_datapath.\regfile.$procmux$1685_Y, Q = \singlecycle_datapath.regfile.register[0]).
+Handling D = Q on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($adff) from module riscv_core (removing D path).
 Setting constant 0-bit at position 0 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
 Setting constant 0-bit at position 1 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
 Setting constant 0-bit at position 2 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
@@ -868,6 +869,11 @@ Setting constant 0-bit at position 28 on $flatten\singlecycle_datapath.\regfile.
 Setting constant 0-bit at position 29 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
 Setting constant 0-bit at position 30 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
 Setting constant 0-bit at position 31 on $flatten\singlecycle_datapath.\regfile.$procdff$1858 ($dlatch) from module riscv_core.
+Setting constant 1-bit at position 0 on $flatten\singlecycle_datapath.\regfile.$procdff$1957 ($adff) from module riscv_core.
+Setting constant 1-bit at position 1 on $flatten\singlecycle_datapath.\regfile.$procdff$1957 ($adff) from module riscv_core.
+Setting constant 1-bit at position 2 on $flatten\singlecycle_datapath.\regfile.$procdff$1957 ($adff) from module riscv_core.
+Setting constant 1-bit at position 3 on $flatten\singlecycle_datapath.\regfile.$procdff$1957 ($adff) from module riscv_core.
+Setting constant 1-bit at position 4 on $flatten\singlecycle_datapath.\regfile.$procdff$1957 ($adff) from module riscv_core.
 Setting constant 1-bit at position 0 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
 Setting constant 1-bit at position 1 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
 Setting constant 1-bit at position 2 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
@@ -900,24 +906,19 @@ Setting constant 1-bit at position 28 on $flatten\singlecycle_datapath.\regfile.
 Setting constant 1-bit at position 29 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
 Setting constant 1-bit at position 30 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
 Setting constant 1-bit at position 31 on $flatten\singlecycle_datapath.\regfile.$procdff$1960 ($adff) from module riscv_core.
-Setting constant 1-bit at position 0 on $flatten\singlecycle_datapath.\regfile.$procdff$1963 ($adff) from module riscv_core.
-Setting constant 1-bit at position 1 on $flatten\singlecycle_datapath.\regfile.$procdff$1963 ($adff) from module riscv_core.
-Setting constant 1-bit at position 2 on $flatten\singlecycle_datapath.\regfile.$procdff$1963 ($adff) from module riscv_core.
-Setting constant 1-bit at position 3 on $flatten\singlecycle_datapath.\regfile.$procdff$1963 ($adff) from module riscv_core.
-Setting constant 1-bit at position 4 on $flatten\singlecycle_datapath.\regfile.$procdff$1963 ($adff) from module riscv_core.
 
-24.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+26.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \riscv_core..
 Removed 33 unused cells and 591 unused wires.
 <suppressed ~34 debug messages>
 
-24.8. Executing OPT_EXPR pass (perform const folding).
+26.8. Executing OPT_EXPR pass (perform const folding).
 Optimizing module riscv_core.
 <suppressed ~32 debug messages>
 
-24.9. Rerunning OPT passes. (Maybe there is more to do..)
+26.9. Rerunning OPT passes. (Maybe there is more to do..)
 
-24.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+26.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \riscv_core..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
@@ -925,31 +926,31 @@ Running muxtree optimizer on module \riscv_core..
 Removed 0 multiplexer ports.
 <suppressed ~259 debug messages>
 
-24.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+26.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \riscv_core.
     New ctrl vector for $pmux cell $flatten\singlecycle_ctlpath.\control_transfer.$procmux$1734: { $auto$opt_reduce.cc:137:opt_pmux$2196 $auto$opt_reduce.cc:137:opt_pmux$2194 }
   Optimizing cells in module \riscv_core.
 Performed a total of 1 changes.
 
-24.12. Executing OPT_MERGE pass (detect identical cells).
+26.12. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\riscv_core'.
 Computing hashes of 438 cells of `\riscv_core'.
 Finding duplicate cells in `\riscv_core'.
 Removed a total of 0 cells.
 
-24.13. Executing OPT_DFF pass (perform DFF optimizations).
+26.13. Executing OPT_DFF pass (perform DFF optimizations).
 
-24.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+26.14. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \riscv_core..
 Removed 0 unused cells and 32 unused wires.
 <suppressed ~1 debug messages>
 
-24.15. Executing OPT_EXPR pass (perform const folding).
+26.15. Executing OPT_EXPR pass (perform const folding).
 Optimizing module riscv_core.
 
-24.16. Rerunning OPT passes. (Maybe there is more to do..)
+26.16. Rerunning OPT passes. (Maybe there is more to do..)
 
-24.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+26.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \riscv_core..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
@@ -957,90 +958,90 @@ Running muxtree optimizer on module \riscv_core..
 Removed 0 multiplexer ports.
 <suppressed ~255 debug messages>
 
-24.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+26.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \riscv_core.
 Performed a total of 0 changes.
 
-24.19. Executing OPT_MERGE pass (detect identical cells).
+26.19. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\riscv_core'.
 Computing hashes of 438 cells of `\riscv_core'.
 Finding duplicate cells in `\riscv_core'.
 Removed a total of 0 cells.
 
-24.20. Executing OPT_DFF pass (perform DFF optimizations).
+26.20. Executing OPT_DFF pass (perform DFF optimizations).
 
-24.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+26.21. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \riscv_core..
 
-24.22. Executing OPT_EXPR pass (perform const folding).
+26.22. Executing OPT_EXPR pass (perform const folding).
 Optimizing module riscv_core.
 
-24.23. Finished fast OPT passes. (There is nothing left to do.)
+26.23. Finished fast OPT passes. (There is nothing left to do.)
 
-25. Executing MEMORY pass.
+27. Executing MEMORY pass.
 
-25.1. Executing OPT_MEM pass (optimize memories).
+27.1. Executing OPT_MEM pass (optimize memories).
 riscv_core.$flatten\singlecycle_ctlpath.\alu_control.$auto$proc_rom.cc:155:do_switch$137: removing const-0 lane 4
 Performed a total of 1 transformations.
 
-25.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+27.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
 Performed a total of 0 transformations.
 
-25.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+27.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
 
-25.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+27.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
 
-25.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
-Checking read port `$flatten\singlecycle_ctlpath.\alu_control.$auto$proc_rom.cc:155:do_switch$137'[0] in module `\riscv_core': no output FF found.
+27.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
 Checking read port `$flatten\singlecycle_ctlpath.\alu_control.$auto$proc_rom.cc:155:do_switch$133'[0] in module `\riscv_core': no output FF found.
-Checking read port address `$flatten\singlecycle_ctlpath.\alu_control.$auto$proc_rom.cc:155:do_switch$137'[0] in module `\riscv_core': no address FF found.
+Checking read port `$flatten\singlecycle_ctlpath.\alu_control.$auto$proc_rom.cc:155:do_switch$137'[0] in module `\riscv_core': no output FF found.
 Checking read port address `$flatten\singlecycle_ctlpath.\alu_control.$auto$proc_rom.cc:155:do_switch$133'[0] in module `\riscv_core': no address FF found.
+Checking read port address `$flatten\singlecycle_ctlpath.\alu_control.$auto$proc_rom.cc:155:do_switch$137'[0] in module `\riscv_core': no address FF found.
 
-25.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+27.6. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \riscv_core..
 
-25.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+27.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
 
-25.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+27.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
 Performed a total of 0 transformations.
 
-25.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+27.9. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \riscv_core..
 
-25.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+27.10. Executing MEMORY_COLLECT pass (generating $mem cells).
 
-25.11. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
-Mapping memory $flatten\singlecycle_ctlpath.\alu_control.$auto$proc_rom.cc:155:do_switch$137 in module \riscv_core:
-  created 8 $dff cells and 0 static cells of width 4.
-  read interface: 0 $dff and 7 $mux cells.
-  write interface: 0 write mux blocks.
+27.11. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
 Mapping memory $flatten\singlecycle_ctlpath.\alu_control.$auto$proc_rom.cc:155:do_switch$133 in module \riscv_core:
   created 8 $dff cells and 0 static cells of width 5.
   read interface: 0 $dff and 7 $mux cells.
   write interface: 0 write mux blocks.
+Mapping memory $flatten\singlecycle_ctlpath.\alu_control.$auto$proc_rom.cc:155:do_switch$137 in module \riscv_core:
+  created 8 $dff cells and 0 static cells of width 4.
+  read interface: 0 $dff and 7 $mux cells.
+  write interface: 0 write mux blocks.
 
-26. Executing OPT_CLEAN pass (remove unused cells and wires).
+28. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \riscv_core..
 Removed 0 unused cells and 16 unused wires.
 <suppressed ~1 debug messages>
 
-27. Executing CHECK pass (checking for obvious problems).
+29. Executing CHECK pass (checking for obvious problems).
 Checking module riscv_core...
 Found and reported 0 problems.
 
-28. Executing JSON backend.
+30. Executing JSON backend.
 
-29. Executing RTLIL backend.
+31. Executing RTLIL backend.
 Output filename: /workspace/Incremental-Synthesis-Flow/results/eco-002/base/design_flat.rtlil
 
-30. Executing Verilog backend.
+32. Executing Verilog backend.
 
-30.1. Executing BMUXMAP pass.
+32.1. Executing BMUXMAP pass.
 
-30.2. Executing DEMUXMAP pass.
+32.2. Executing DEMUXMAP pass.
 Dumping module `\riscv_core'.
 
 Warnings: 2 unique messages, 5 total
-End of script. Logfile hash: 7930d61fc8, time: 0.30s, user: 0.26s, system: 0.04s, MEM: 27.83 MB peak
+End of script. Logfile hash: 0676278379, time: 0.29s, user: 0.28s, system: 0.02s, MEM: 27.82 MB peak
 Yosys 0.67+24 (git sha1 0e82bbefe, Release, Clang /usr/bin/clang++ 18.1.8)
-Time spent: 18% 6x opt_clean (0 sec), 14% 21x read_verilog (0 sec), ...
+Time spent: 17% 6x opt_clean (0 sec), 14% 21x read_verilog (0 sec), ...

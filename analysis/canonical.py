@@ -14,7 +14,7 @@ def _normalize_scope_text(text):
     if text.startswith("$flatten"):
         text = text[len("$flatten"):]
 
-    text = text.strip(".")
+    text = text.replace(" ", ".").strip(".")
 
     return text
 
@@ -122,72 +122,11 @@ def _normalize_path(path):
 
 def canonical_sources(node_data):
 
-    attributes = node_data.get(
-        "attributes",
-        {}
-    )
-
-    src = attributes.get(
-        "src",
-        ""
-    )
-
-    if not isinstance(src, str):
-        return []
-
-    result = []
-
-    #
-    # Yosys 可能用 | 合并多个 src
-    #
-    for item in src.split("|"):
-
-        item = item.strip()
-
-        if not item:
-            continue
-
-        #
-        # 例如：
-        #
-        # /workspace/.../alu.sv:29.10-29.45
-        #
-        match = re.match(
-            r"^(.*?):(\d+)"
-            r"(?:\.\d+)?"
-            r"(?:-\d+(?:\.\d+)?)?$",
-            item
-        )
-
-        if match:
-
-            path = _normalize_path(
-                match.group(1)
-            )
-
-            line = int(
-                match.group(2)
-            )
-
-            result.append(
-                (
-                    path,
-                    line
-                )
-            )
-
-        else:
-
-            result.append(
-                (
-                    _normalize_path(item),
-                    None
-                )
-            )
-
-    return sorted(
-        set(result)
-    )
+    from source_map import parse_source_spans
+    src = node_data.get('attributes', {}).get('src', '')
+    # Preserve the matcher's historical anchor shape. The provenance index
+    # separately retains complete source spans and instance paths.
+    return sorted({(_normalize_path(s.path), s.start_line) for s in parse_source_spans(src)})
 
 
 def intrinsic_signature(node_data):

@@ -4,7 +4,7 @@
 
 ## 安装与复现
 
-需要 Python 3.10 及以上版本、支持 SAT 和 ABC 的 Yosys，以及以下 Python 依赖：
+需要 Python 3.10 及以上版本、支持 SAT、ABC 和 `flatten -scopename` 的 Yosys，以及以下 Python 依赖：
 
 ```sh
 python3 -m venv .venv
@@ -31,6 +31,40 @@ python scripts/run_incremental_case.py eco-002
 ```
 
 只有区域提取、局部综合、结构检查和最终 SAT 证明全部成功，`results/<case>/incremental/run_report.json` 才会记录 `status: success` 和 `verified: true`。工具错误、超时或证明失败均返回非零退出码。每次调用都会覆盖上一次运行的状态。
+
+## 从 RTL 修改定位逻辑锥
+
+新增的 RTL 引导模式把源码差异作为种子，经实例来源映射和网表边界检查生成
+重综合区域。当前仍使用完整的 New generic 网表进行安全补全、区域提取和最终
+验证；尚未实现直接抽取任意 New RTL 片段并独立综合，也不声称找到最小区域。
+
+```sh
+python scripts/run_incremental_case.py eco-002 \
+  --frontend --rtl-guided --seed-mode hybrid --formal --max-expansions 5
+```
+
+首次使用应加 `--frontend`，生成优化前层次化 `elaborated_hier.json`、来源摘要
+`source_manifest.json` 和带 scope 的展平网表。缓存运行时省略 `--frontend`，
+但 RTL、配置和网表摘要必须与前端记录一致；过期或缺失来源信息会被拒绝。
+
+| 模式 | 初始区域 | 安全边界 |
+| --- | --- | --- |
+| `netlist` | 原网表差分区域 | 保持原流程，无需 RTL 检出目录 |
+| `rtl` | RTL 源码／宏／上下文种子 | 未通过复用检查的 cell 仍必须补入区域 |
+| `hybrid` | RTL 种子与网表差分区域的并集 | 同样保留状态检查和最终证明 |
+
+不传新选项时保持 `netlist`；`--rtl-guided` 默认选 `hybrid`。
+`--formal` 是可选的候选证明回填，最终拼接证明始终执行。
+`--max-expansions` 限制初次验证失败后的扩张次数；只有存在可映射的未证明点时，
+才扩大组合扇入并重试。时钟／复位／使能函数发生未确认变化时，RTL 模式停止。
+
+`results/<case>/analysis/` 中的 `rtl_changes.json`、`source_index_*.json`、
+`rtl_seed_cells.json` 分别解释修改、来源和种子原因；`rtl_region.json` 对比源码
+种子与网表差分参考区域，`rtl_experiment.json` 保存工具版本、输入摘要、区域大小、
+耗时及验证结果。每次验证的日志、证明点映射和区域计划保存在运行报告指向的
+`incremental/attempts/` 子目录中。
+
+详见 [RTL 引导实现与限制](docs/rtl-guided.md)。
 
 ## 正确性模型
 
@@ -70,7 +104,7 @@ python formal/build_base_correspondence.py \
   --output results/base-correspondence
 ```
 
-前端将 `design_flat.json` 输出为标准的展平通用网表，同时生成同一综合阶段的 `design.rtlil` 和 `design.v` 表示。可选的映射阶段会输出 `mapped.json` 和 `mapped.v`。如果未提供 Liberty 文件，映射输出包含的是 Yosys 通用逻辑门，而非特定工艺的标准单元。
+前端将 `design_flat.json` 输出为标准的展平通用网表，同时生成同一综合阶段的 `design_flat.rtlil` 和 `design_flat.v` 表示。可选的映射阶段会输出 `mapped.json` 和 `mapped.v`。如果未提供 Liberty 文件，映射输出包含的是 Yosys 通用逻辑门，而非特定工艺的标准单元。
 
 Base 对应关系发现流程以共享主输入为基础，证明两侧同名的**组合逻辑**锥等价，并记录未知的状态边界。该流程支持 Yosys 内部单元；外部 Liberty 单元需要提供功能模型。对应关系发现仅用于诊断，不支持映射后门级网表的拼接。目前经过验证的增量实现仍基于通用网表。
 

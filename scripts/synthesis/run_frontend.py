@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 """Reproducible front end, with an optional separate full mapping stage."""
 import argparse
-import fnmatch
 import json
 import sys
+import subprocess
 from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'analysis'))
 from yosys_runner import quote, identifier, run_yosys
+from rtl_sources import source_files, snapshot_inputs, digest
 
 
 def generate(root, case, version, yosys='yosys', timeout=120, mapped=False, liberty=None):
@@ -17,9 +18,7 @@ def generate(root, case, version, yosys='yosys', timeout=120, mapped=False, libe
     work = root / 'results' / case / 'work' / version
     out = root / 'results' / case / version
     out.mkdir(parents=True, exist_ok=True)
-    files = sorted({p.resolve() for d in cfg['source_dirs'] for p in (work / d).rglob('*')
-                    if p.suffix in {'.v', '.sv'} and not any(fnmatch.fnmatch(p.name, pat)
-                    for pat in cfg.get('exclude_patterns', []))})
+    files = source_files(work, cfg)
     if not files:
         raise ValueError(f'no RTL sources in {work}; checkout the case first')
     includes = [
@@ -29,8 +28,10 @@ def generate(root, case, version, yosys='yosys', timeout=120, mapped=False, libe
     lines = [
         'read_verilog -sv ' + ' '.join(includes + [quote(p) for p in files]),
         'hierarchy -check -top ' + identifier(cfg['top']),
-        'proc',
-        'flatten',
+        'proc -noopt',
+        'write_json ' + quote(out / 'elaborated_hier.json'),
+        'opt_expr',
+        'flatten -scopename',
         'opt',
         'memory',
         'opt_clean',
@@ -52,6 +53,24 @@ def generate(root, case, version, yosys='yosys', timeout=120, mapped=False, libe
     result = run_yosys(script, out / 'frontend.log', yosys, timeout)
     result.update(mapping='liberty' if liberty else ('generic_gates' if mapped else 'none'),
                   sources=[str(p.relative_to(work.resolve())) for p in files])
+    if result['status'] == 'passed':
+        hashes, diagnostics = snapshot_inputs(work, cfg)
+        def git_head(directory):
+            proc = subprocess.run(['git', '-C', str(directory), 'rev-parse', 'HEAD'],
+                                  capture_output=True, text=True)
+            return proc.stdout.strip() if proc.returncode == 0 else None
+        log = (out / 'frontend.log').read_text()
+        manifest = {'schema_version': 1, 'top': cfg['top'], 'inputs': hashes,
+                    'compile_sources': result['sources'], 'diagnostics': diagnostics,
+                    'config_sha256': digest(root / 'benchmarks' / 'cases' / case / 'design.yaml'),
+                    'script_sha256': digest(script), 'frontend_python_sha256': digest(__file__),
+                    'yosys_version': next((line.strip() for line in log.splitlines()
+                                           if line.strip().startswith('Yosys ')), 'see frontend.log'),
+                    'framework_commit': git_head(ROOT), 'worktree_commit': git_head(work),
+                    'artifacts': {name: digest(out / name)
+                                  for name in ('design_flat.json', 'elaborated_hier.json')}}
+        (out / 'source_manifest.json').write_text(json.dumps(manifest, indent=2))
+        result['provenance_manifest'] = str(out / 'source_manifest.json')
     (out / 'frontend_report.json').write_text(json.dumps(result, indent=2))
     return result
 

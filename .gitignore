@@ -10,3 +10,10 @@ results/validation/
 results/*/base/design_flat.json
 results/*/new/design_flat.json
 benchmarks/source/
+
+results/*/analysis/rtl_*.json
+results/*/analysis/source_index_*.json
+results/*/base/elaborated_hier.json
+results/*/new/elaborated_hier.json
+results/*/base/source_manifest.json
+results/*/new/source_manifest.json
