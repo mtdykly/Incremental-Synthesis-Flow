@@ -1,6 +1,6 @@
 # 增量综合流程
 
-本项目在展平的 Yosys **通用（generic）**网表上，以寄存器为边界执行组合逻辑 ECO（工程变更）综合。流程保留 Base（基准版本）的单元，对 New（新版本）中尚未确定可复用的区域进行综合，重新连接区域外的负载端，并证明最终结果与 **New** 等价。Base 与 New 在功能上可以有意存在差异。
+本项目实现组合逻辑 ECO（工程变更）增量综合，支持 **Base 认证边界 + New pre-proc RTLIL 直接提取**，并保留展平 Yosys generic 网表差分流程作为基线。流程保留 Base（基准版本）的单元，对 New（新版本）中尚未确定可复用的区域进行综合，重新连接区域外的负载端，并证明最终结果与 **New** 等价。Base 与 New 在功能上可以有意存在差异。
 
 ## 安装与复现
 
@@ -24,7 +24,7 @@ bash scripts/benchmark/checkout_case.sh eco-002
 python scripts/run_incremental_case.py eco-002 --frontend
 ```
 
-`--frontend` 使用相同且确定的源文件列表和 Yosys 处理步骤，重新生成两份输入网表。不加此参数时，命令使用已有的 `results/<case>/{base,new}/design_flat.json` 文件。即使缺少源码检出目录，也可使用仓库中提交的 JSON 文件复现通用网表流程：
+在默认网表差分基线中，`--frontend` 使用相同且确定的源文件列表和 Yosys 处理步骤，重新生成两份输入网表。不加此参数时，命令使用已有的 `results/<case>/{base,new}/design_flat.json` 文件。即使缺少源码检出目录，也可使用仓库中提交的 JSON 文件复现通用网表流程：
 
 ```sh
 python scripts/run_incremental_case.py eco-002
@@ -32,11 +32,33 @@ python scripts/run_incremental_case.py eco-002
 
 只有区域提取、局部综合、结构检查和最终 SAT 证明全部成功，`results/<case>/incremental/run_report.json` 才会记录 `status: success` 和 `verified: true`。工具错误、超时或证明失败均返回非零退出码。每次调用都会覆盖上一次运行的状态。
 
-## 从 RTL 修改定位逻辑锥
+## 从 RTL 修改直接生成替换区域
 
-新增的 RTL 引导模式把源码差异作为种子，经实例来源映射和网表边界检查生成
-重综合区域。当前仍使用完整的 New generic 网表进行安全补全、区域提取和最终
-验证；尚未实现直接抽取任意 New RTL 片段并独立综合，也不声称找到最小区域。
+使用 `--rtl-direct`：New 只做 `read_verilog; hierarchy; uniquify`，由原生 Yosys
+插件在 `proc` 前复制完整组合 process 及依赖，单独综合后与 Base 拼接。
+定位、边界生成和拼接都不需要 `new/design_flat.json`。完整 New 的降低只发生在
+最后的隔离验证目录。Base 的候选边界在读取 New 之前独立通过 SAT 认证。
+
+```sh
+# 需要原生 Yosys、匹配的 yosys-config/开发头文件和 C++ 编译器。
+python scripts/benchmark/prepare_rtl_examples.py
+python scripts/run_incremental_case.py rtl-assign --rtl-direct --frontend
+python scripts/run_incremental_case.py rtl-process --rtl-direct --frontend
+python scripts/run_incremental_case.py rtl-macro --rtl-direct --frontend
+# 已有 eco-002 源码检出目录时：
+python scripts/run_incremental_case.py eco-002 --rtl-direct --frontend
+```
+
+后续运行省略 `--frontend` 复用 Base 契约；`--setup-base-only --frontend` 可单独执行
+离线 setup。New 每次重新展开。接口／边界变化提升到父包络，状态控制变化和无法
+认证的区域明确停止。此版尚未实现任意寄存器 Q/D 切割或语句级 SSA。
+详见 [RTL-direct 数据流、契约、证明与限制](docs/rtl-direct.md)。
+
+## RTL 引导网表差分基线
+
+原有 RTL 引导基线把源码差异作为种子，经实例来源映射和网表边界检查生成
+重综合区域。该基线使用完整的 New generic 网表进行安全补全、区域提取和最终
+验证，与上面的 `--rtl-direct` 独立，也不声称找到最小区域。
 
 ```sh
 python scripts/run_incremental_case.py eco-002 \
@@ -66,7 +88,7 @@ python scripts/run_incremental_case.py eco-002 \
 
 详见 [RTL 引导实现与限制](docs/rtl-guided.md)。
 
-## 正确性模型
+## 网表差分基线的正确性模型
 
 - 源码位置、作用域、名称和拓扑指纹用于提出候选单元对应关系，**不能**证明单元可复用。输入引脚检查会比较常量、对应的主输入，以及驱动单元输出端口和位的对应关系。
 - 只有明确支持的对称运算才允许交换完整操作数；减法、移位和多路选择器的输入必须保持顺序。

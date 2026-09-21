@@ -1,0 +1,5 @@
+design: rtl-assign
+top: top
+source_dirs: [rtl]
+include_dirs: [rtl]
+language: systemverilog

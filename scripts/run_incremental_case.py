@@ -15,6 +15,9 @@ from yosys_runner import run_yosys
 
 
 def run_case(args):
+    if getattr(args, 'rtl_direct', False):
+        from run_rtl_direct_case import run_case as run_direct
+        return run_direct(args)
     args = copy.copy(args)
     args._extra_region = None
     start = time.perf_counter()
@@ -111,13 +114,20 @@ def main():
     p.add_argument('--yosys', default='yosys')
     p.add_argument('--timeout', type=int, default=120)
     p.add_argument('--topology-rounds', type=int, default=2)
+    p.add_argument('--rtl-direct', action='store_true', help='extract New pre-proc RTLIL using Base-only certified cuts')
+    p.add_argument('--setup-base-only', action='store_true', help='with --rtl-direct: prepare offline Base contracts only')
     p.add_argument('--rtl-guided', action='store_true', help='use RTL hints with hybrid safety completion')
     p.add_argument('--seed-mode', choices=['netlist', 'rtl', 'hybrid'])
     p.add_argument('--max-expansions', type=int, default=5)
     p.add_argument('--formal', action='store_true')
-    p.add_argument('--frontend', action='store_true', help='regenerate both IRs from existing case checkouts')
+    p.add_argument('--frontend', action='store_true', help='regenerate frontend (rtl-direct: rebuild offline Base setup)')
     p.set_defaults(replacement=None)
-    return run_case(p.parse_args())
+    args = p.parse_args()
+    if args.setup_base_only and not args.rtl_direct:
+        p.error('--setup-base-only requires --rtl-direct')
+    if args.rtl_direct and (args.rtl_guided or args.seed_mode):
+        p.error('--rtl-direct is a separate flow; do not combine with --rtl-guided or --seed-mode')
+    return run_case(args)
 
 
 if __name__ == '__main__':

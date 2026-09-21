@@ -1,0 +1,5 @@
+design: rtl-macro
+top: top
+source_dirs: [rtl]
+include_dirs: [rtl]
+language: systemverilog

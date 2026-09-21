@@ -1,4 +1,7 @@
-# RTL 引导的组合逻辑 ECO
+# RTL 引导的组合逻辑 ECO 基线
+
+本文描述仍使用完整 New generic 的 `--rtl-guided` 基线。新增的直接提取路径见
+[RTL-direct](rtl-direct.md)，通过独立的 `--rtl-direct` 入口运行。
 
 这一版实现“RTL 定位器 + 已有 generic 增量闭环”。RTL 提示影响重综合区域，
 但不授予 cell 复用权限。完整 New generic 网表仍是本版必要输入。证明比较

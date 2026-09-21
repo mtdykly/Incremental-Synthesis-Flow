@@ -17,3 +17,8 @@ results/*/base/elaborated_hier.json
 results/*/new/elaborated_hier.json
 results/*/base/source_manifest.json
 results/*/new/source_manifest.json
+
+# Native RTLIL extractor and reproducible direct-flow caches
+yosys-plugin/build/
+results/*/base/rtl_direct/
+results/*/new/rtl_direct/

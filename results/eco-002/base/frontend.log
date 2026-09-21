@@ -1042,6 +1042,6 @@ Output filename: /workspace/Incremental-Synthesis-Flow/results/eco-002/base/desi
 Dumping module `\riscv_core'.
 
 Warnings: 2 unique messages, 5 total
-End of script. Logfile hash: 0676278379, time: 0.29s, user: 0.28s, system: 0.02s, MEM: 27.82 MB peak
+End of script. Logfile hash: 0676278379, time: 0.30s, user: 0.28s, system: 0.02s, MEM: 27.83 MB peak
 Yosys 0.67+24 (git sha1 0e82bbefe, Release, Clang /usr/bin/clang++ 18.1.8)
-Time spent: 17% 6x opt_clean (0 sec), 14% 21x read_verilog (0 sec), ...
+Time spent: 17% 6x opt_clean (0 sec), 13% 3x opt_dff (0 sec), ...
